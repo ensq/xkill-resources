@@ -1,6 +1,7 @@
 # Use .texdesc to specify what files are to be loaded as textures.
 # TEXDESC-header is marked with prefix 'h'. Header info makes out name of TEXDESC and path to textures named in .texdesc.
 # TEXDESC-texture is marked with prefix 't'. Second parameter specifies texture ID, and the third the name of said texture.
+# ID 0 is reserved for default placeholder-texture.
 
 ########
 #HEADER#
@@ -10,8 +11,12 @@ h default xkill-textures/
 ##########
 #TEXTURES#
 ##########
-t 0 bricks.dds
-t 1 bricks_nmap.dds
+t 0 placeholder.dds
 
-t 2 floor.dds
-t 3 floor_nmap.dds
+t 1 bricks.dds
+t 2 bricks_nmap.dds
+
+t 3 floor.dds
+t 4 floor_nmap.dds
+
+t 5 bthcolor.dds
