@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/xkill">
+    <file>images/arena1.png</file>
+    <file>images/proc1.png</file>
+  </qresource>
+</RCC>
