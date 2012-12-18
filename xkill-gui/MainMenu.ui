@@ -1421,7 +1421,7 @@ p, li { white-space: pre-wrap; }
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_Exit">
+             <widget class="QPushButton" name="pushButton_exit">
               <property name="text">
                <string>Exit</string>
               </property>
@@ -2039,7 +2039,7 @@ p, li { white-space: pre-wrap; }
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_Exit_2">
+           <widget class="QPushButton" name="pushButton_exit_2">
             <property name="text">
              <string>Exit</string>
             </property>
@@ -2080,10 +2080,10 @@ p, li { white-space: pre-wrap; }
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_13">
            <item>
-            <widget class="QTreeView" name="treeView_EntityBrowser"/>
+            <widget class="QTreeView" name="treeView_entityBrowser"/>
            </item>
            <item>
-            <widget class="QTreeView" name="treeView_EntityInspector">
+            <widget class="QTreeView" name="treeView_entityInspector">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -2109,7 +2109,7 @@ p, li { white-space: pre-wrap; }
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_14">
            <item>
-            <widget class="QTreeView" name="treeView_AttributeInspector"/>
+            <widget class="QTreeView" name="treeView_attributeInspector"/>
            </item>
           </layout>
          </widget>
