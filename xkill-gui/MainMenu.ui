@@ -36,7 +36,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -95,7 +95,7 @@
                               </layout>
                              </item>
                              <item>
-                              <widget class="QSlider" name="horizontalSlider_2">
+                              <widget class="QSlider" name="horizontalSlider_numPlayers">
                                <property name="toolTip">
                                 <string/>
                                </property>
@@ -360,7 +360,7 @@
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="pushButton_7">
+                     <widget class="QPushButton" name="pushButton_startGame">
                       <property name="text">
                        <string>Start game</string>
                       </property>
@@ -2156,7 +2156,7 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_2</sender>
+   <sender>horizontalSlider_numPlayers</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_17</receiver>
    <slot>setNum(int)</slot>
