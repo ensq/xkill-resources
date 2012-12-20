@@ -15,6 +15,7 @@ h default xkill-models/
 #TEXTURES#
 ##########
 m 0 xkill_process.obj 1
+#m 1 xkillArena.obj          0
 m 1 xkillArena1.obj          0
 m 3 xkillArena2.obj          0
 m 2 projectile.obj          1
