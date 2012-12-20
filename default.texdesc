@@ -20,3 +20,7 @@ t 3 floor.dds
 t 4 floor_nmap.dds
 
 t 5 bthcolor.dds
+
+t 6 xkill_arena_bottom.dds
+t 7 xkill_arena_middle.dds
+t 8 xkill_arena_top.dds
