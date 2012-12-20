@@ -103,7 +103,7 @@
                                 <number>1</number>
                                </property>
                                <property name="maximum">
-                                <number>8</number>
+                                <number>64</number>
                                </property>
                                <property name="pageStep">
                                 <number>1</number>
@@ -697,7 +697,7 @@ p, li { white-space: pre-wrap; }
                      </size>
                     </property>
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="widget">
                      <attribute name="title">
@@ -1806,6 +1806,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_2">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="text">
                      <string>Apply</string>
                     </property>
@@ -1813,6 +1816,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_4">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="text">
                      <string>Restore</string>
                     </property>
