@@ -1863,17 +1863,11 @@ p, li { white-space: pre-wrap; }
              <layout class="QHBoxLayout" name="horizontalLayout_23">
               <item>
                <widget class="QTreeWidget" name="treeWidget">
-                <property name="minimumSize">
-                 <size>
-                  <width>300</width>
-                  <height>0</height>
-                 </size>
-                </property>
                 <property name="rootIsDecorated">
                  <bool>false</bool>
                 </property>
                 <property name="columnCount">
-                 <number>3</number>
+                 <number>2</number>
                 </property>
                 <column>
                  <property name="text">
@@ -1885,17 +1879,9 @@ p, li { white-space: pre-wrap; }
                   <string>Key</string>
                  </property>
                 </column>
-                <column>
-                 <property name="text">
-                  <string>Alternative</string>
-                 </property>
-                </column>
                 <item>
                  <property name="text">
                   <string>Forward</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
                  </property>
                  <property name="text">
                   <string>W</string>
@@ -1906,18 +1892,12 @@ p, li { white-space: pre-wrap; }
                   <string>Backward</string>
                  </property>
                  <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
                   <string>S</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
                   <string>Left</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
                  </property>
                  <property name="text">
                   <string>A</string>
@@ -1928,9 +1908,6 @@ p, li { white-space: pre-wrap; }
                   <string>Right</string>
                  </property>
                  <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
                   <string>D</string>
                  </property>
                 </item>
@@ -1939,10 +1916,7 @@ p, li { white-space: pre-wrap; }
                   <string>Jump</string>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>Space</string>
                  </property>
                 </item>
                 <item>
@@ -1950,10 +1924,7 @@ p, li { white-space: pre-wrap; }
                   <string>Fire</string>
                  </property>
                  <property name="text">
-                  <string>R-Trigger</string>
-                 </property>
-                 <property name="text">
-                  <string>Space</string>
+                  <string>Mouse1</string>
                  </property>
                 </item>
                 <item>
@@ -1961,10 +1932,7 @@ p, li { white-space: pre-wrap; }
                   <string>Weapon 1</string>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>1</string>
                  </property>
                 </item>
                 <item>
@@ -1972,10 +1940,7 @@ p, li { white-space: pre-wrap; }
                   <string>Weapon 2</string>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>2</string>
                  </property>
                 </item>
                 <item>
@@ -1983,54 +1948,22 @@ p, li { white-space: pre-wrap; }
                   <string>Weapon 3</string>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Weapon Next</string>
-                 </property>
-                 <property name="text">
-                  <string>B-Button</string>
-                 </property>
-                 <property name="text">
-                  <string>E</string>
+                  <string>3</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
                   <string>Ammo 1</string>
                  </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
                 </item>
                 <item>
                  <property name="text">
                   <string>Ammo 2</string>
                  </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
                 </item>
                 <item>
                  <property name="text">
                   <string>Ammo 3</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
                  </property>
                 </item>
                 <item>
@@ -2038,10 +1971,15 @@ p, li { white-space: pre-wrap; }
                   <string>Ammo Next</string>
                  </property>
                  <property name="text">
-                  <string>X-Button</string>
+                  <string>Scroll Down</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Ammo Previous</string>
                  </property>
                  <property name="text">
-                  <string>Q</string>
+                  <string>Scroll Up</string>
                  </property>
                 </item>
                </widget>
