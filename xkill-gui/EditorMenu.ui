@@ -36,7 +36,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -53,7 +53,7 @@
             <item>
              <widget class="QTabWidget" name="tabWidget_2">
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="Start">
                <attribute name="title">
@@ -95,7 +95,7 @@
                               </layout>
                              </item>
                              <item>
-                              <widget class="QSlider" name="horizontalSlider_2">
+                              <widget class="QSlider" name="horizontalSlider_numPlayers">
                                <property name="toolTip">
                                 <string/>
                                </property>
@@ -103,7 +103,7 @@
                                 <number>1</number>
                                </property>
                                <property name="maximum">
-                                <number>8</number>
+                                <number>64</number>
                                </property>
                                <property name="pageStep">
                                 <number>1</number>
@@ -360,7 +360,7 @@
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="pushButton_7">
+                     <widget class="QPushButton" name="pushButton_startGame">
                       <property name="text">
                        <string>Start game</string>
                       </property>
@@ -697,7 +697,7 @@ p, li { white-space: pre-wrap; }
                      </size>
                     </property>
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="widget">
                      <attribute name="title">
@@ -1421,7 +1421,7 @@ p, li { white-space: pre-wrap; }
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_Exit">
+             <widget class="QPushButton" name="pushButton_exit">
               <property name="text">
                <string>Exit</string>
               </property>
@@ -1806,6 +1806,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_2">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="text">
                      <string>Apply</string>
                     </property>
@@ -1813,6 +1816,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_4">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="text">
                      <string>Restore</string>
                     </property>
@@ -2039,7 +2045,7 @@ p, li { white-space: pre-wrap; }
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_Exit_2">
+           <widget class="QPushButton" name="pushButton_exit_2">
             <property name="text">
              <string>Exit</string>
             </property>
@@ -2068,13 +2074,29 @@ p, li { white-space: pre-wrap; }
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout_17">
         <item>
-         <widget class="QGroupBox" name="groupBox_8">
-          <property name="title">
-           <string>Entity browser</string>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="maximumSize">
+           <size>
+            <width>160</width>
+            <height>16777215</height>
+           </size>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="title">
+           <string>Entity Browser</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
            <item>
-            <widget class="QTreeView" name="treeView_EntityBrowser"/>
+            <widget class="QTreeView" name="treeView_entityBrowser"/>
+           </item>
+           <item>
+            <widget class="QTreeView" name="treeView_entityInspector">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QPushButton" name="pushButton_editorRefresh">
@@ -2082,6 +2104,18 @@ p, li { white-space: pre-wrap; }
               <string>Refresh</string>
              </property>
             </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_AttributeInspector">
+          <property name="title">
+           <string>Attribute Inspector [Not implemented yet]</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QTreeView" name="treeView_attributeInspector"/>
            </item>
           </layout>
          </widget>
@@ -2128,7 +2162,7 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_2</sender>
+   <sender>horizontalSlider_numPlayers</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_17</receiver>
    <slot>setNum(int)</slot>
