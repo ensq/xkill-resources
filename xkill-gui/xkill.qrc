@@ -1,13 +1,12 @@
 <RCC>
   <qresource prefix="/xkill">
-    <file>images/363.png</file>
+    <file>images/a_bullet.png</file>
     <file>images/a_explosive.png</file>
-    <file>images/a_shatter.png</file>
-    <file>images/a_standard.png</file>
+    <file>images/a_scatter.png</file>
+    <file>images/arena1.png</file>
+    <file>images/proc1.png</file>
     <file>images/w_auto.png</file>
     <file>images/w_semi.png</file>
     <file>images/w_single.png</file>
-    <file>images/arena1.png</file>
-    <file>images/proc1.png</file>
   </qresource>
 </RCC>
