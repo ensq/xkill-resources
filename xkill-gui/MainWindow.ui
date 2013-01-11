@@ -27,7 +27,7 @@
   </widget>
   <widget class="QDockWidget" name="dockWidget">
    <property name="features">
-    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable|QDockWidget::DockWidgetVerticalTitleBar</set>
+    <set>QDockWidget::DockWidgetFeatureMask</set>
    </property>
    <property name="allowedAreas">
     <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
@@ -46,8 +46,8 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
-          <width>257</width>
+          <y>-133</y>
+          <width>281</width>
           <height>538</height>
          </rect>
         </property>
@@ -120,7 +120,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="label_simulationSpeed">
              <property name="text">
               <string>1.0</string>
              </property>
@@ -129,7 +129,7 @@
           </layout>
          </item>
          <item>
-          <widget class="QSlider" name="horizontalSlider">
+          <widget class="QSlider" name="horizontalSlider_simulationSpeed">
            <property name="maximum">
             <number>200</number>
            </property>
