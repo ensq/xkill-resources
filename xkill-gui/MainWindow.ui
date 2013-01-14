@@ -27,7 +27,7 @@
   </widget>
   <widget class="QDockWidget" name="dockWidget">
    <property name="features">
-    <set>QDockWidget::DockWidgetFeatureMask</set>
+    <set>QDockWidget::AllDockWidgetFeatures</set>
    </property>
    <property name="allowedAreas">
     <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
@@ -46,57 +46,41 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-133</y>
-          <width>281</width>
-          <height>538</height>
+          <y>0</y>
+          <width>235</width>
+          <height>383</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>Entity Browser</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTreeView" name="treeView_entityBrowser"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>Entity Inspector</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTreeView" name="treeView_entityInspector">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>150</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_editorRefresh">
-           <property name="text">
-            <string>Refresh</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QTreeView" name="treeView_entityBrowser"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_editorRefresh">
+               <property name="text">
+                <string>Refresh</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QTreeView" name="treeView_entityInspector"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </item>
          <item>
           <widget class="Line" name="line">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Attribute Inspector [Not implemented yet]</string>
            </property>
           </widget>
          </item>
@@ -152,25 +136,6 @@
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTabWidget" name="tabWidget_2">
-           <widget class="QWidget" name="tab_3">
-            <attribute name="title">
-             <string>Tab 1</string>
-            </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <item>
-              <widget class="QTableWidget" name="tableWidget_2"/>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_4">
-            <attribute name="title">
-             <string>Tab 2</string>
-            </attribute>
-           </widget>
           </widget>
          </item>
          <item>
