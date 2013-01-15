@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>678</width>
+    <width>784</width>
     <height>448</height>
    </rect>
   </property>
@@ -47,7 +47,7 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>235</width>
+          <width>466</width>
           <height>383</height>
          </rect>
         </property>
@@ -57,7 +57,17 @@
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
-              <widget class="QTreeView" name="treeView_entityBrowser"/>
+              <widget class="QTreeView" name="treeView_entityBrowser">
+               <property name="styleSheet">
+                <string notr="true">QTreeView
+{
+	alternate-background-color: #DDD;
+}</string>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
              </item>
              <item>
               <widget class="QPushButton" name="pushButton_editorRefresh">
@@ -71,7 +81,17 @@
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_5">
              <item>
-              <widget class="QTreeView" name="treeView_entityInspector"/>
+              <widget class="QTreeView" name="treeView_entityInspector">
+               <property name="styleSheet">
+                <string notr="true">QTreeView
+{
+	alternate-background-color: #DDD;
+}</string>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -85,7 +105,17 @@
           </widget>
          </item>
          <item>
-          <widget class="QTreeView" name="treeView_attributeInspector"/>
+          <widget class="QTreeView" name="treeView_attributeInspector">
+           <property name="styleSheet">
+            <string notr="true">QTreeView
+{
+	alternate-background-color: #DDD;
+}</string>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="Line" name="line_2">
