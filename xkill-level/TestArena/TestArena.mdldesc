@@ -15,18 +15,46 @@ h default /
 #LEVEL MODELS#
 ##############
 #m <100 FILENAME 0/1(static/dynamic)
-m 101 FloorMesh.obj 0
-m 102 WallMesh.obj 0
+m 101 Floor1Mesh.obj 0
+m 102 Floor2Mesh.obj 0
+m 103 Wall1Mesh.obj 0
+m 104 Wall2Mesh.obj 0
+m 105 Wall3Mesh.obj 0
+m 106 Ramp1Mesh.obj 0
 
 ################
 #WORLD ENTITIES#
 ################
 
-#w meshID X    Y   Z   QX     QY    QZ    QW
-w  101    0    0   0   0      0     0     1
-w  102    0    0   0   0      0     0     1
-w  101   -8    3   0   0      0    -0.35  0.937
-
+#w meshID X    Y     Z   QX     QY    QZ    QW
+w  101    0    0     0   0      0     0     1
+                     
+w  102   -20   1.5   0   0      0     0     1
+w  102   20    1.5   0   0      0     0     1
+                     
+w  103    12   3     0   0      0     0     1
+w  103   -12   3     0   0      0     0     1
+                     
+w  104    12   3     7.5 0      0     0     1
+w  104    12   3    -7.5 0      0     0     1
+w  104   -12   3     7.5 0      0     0     1
+w  104   -12   3    -7.5 0      0     0     1
+w  104    9.5  3     12  0      0.7   0     0.7
+w  104    5.5  3     12  0      0.7   0     0.7
+w  104   -9.5  3     12  0      0.7   0     0.7
+w  104   -5.5  3     12  0      0.7   0     0.7
+w  104    9.5  3    -12  0      0.7   0     0.7
+w  104    5.5  3    -12  0      0.7   0     0.7
+w  104   -9.5  3    -12  0      0.7   0     0.7
+w  104   -5.5  3    -12  0      0.7   0     0.7
+                     
+w  105    0    3     12  0      0     0     1
+w  105    0    3    -12  0      0     0     1
+                     
+w  106    11   1.5 -5.5 0      0     0     1
+w  106    11   1.5  5.5 0      0     0     1
+w  106   -11   1.5 -5.5 0      1     0     0
+w  106   -11   1.5  5.5 0      1     0     0
 
 ##############
 #SPAWN POINTS#
@@ -71,6 +99,9 @@ a RANDOM 0 0 0
 
 
 #l TYPE AR AG AB DR  DG  DB  SR  SG  SB AX AY AZ PX PY PZ DX DY DZ R P
+# 1 = POINT
+# 2 = DIR
+# 3 = SPOT
 #l POINT 255 0 0 1 0 2 0
-l DIR   10 10 10 150 150 150 150 150 0  0  0  0  0  0  0  -1 -1 0  0 0
+l  2   0.8 0.8 0.8 0.2 0.2 0.2 1 1 1  0  0  0  0  0  0  0.57 -0.57 0.57  0 0
 #l SPOT 255 255 255 10 2 0 0 0 0
