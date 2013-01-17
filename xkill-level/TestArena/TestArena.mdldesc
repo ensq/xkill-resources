@@ -21,6 +21,7 @@ m 103 Wall1Mesh.obj 0
 m 104 Wall2Mesh.obj 0
 m 105 Wall3Mesh.obj 0
 m 106 Ramp1Mesh.obj 0
+m 107 ThinWallMesh.obj 0
 
 ################
 #WORLD ENTITIES#
@@ -34,7 +35,10 @@ w  102   20    1.5   0   0      0     0     1
                      
 w  103    12   3     0   0      0     0     1
 w  103   -12   3     0   0      0     0     1
+
+w  107   0     3     0   0      0     0     1
                      
+					 
 w  104    12   3     7.5 0      0     0     1
 w  104    12   3    -7.5 0      0     0     1
 w  104   -12   3     7.5 0      0     0     1
