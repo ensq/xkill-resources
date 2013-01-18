@@ -1,0 +1,111 @@
+# Use .lvldesc to specify what files are to be loaded and interpreted as level world parts
+# LVLDESC-header is marked with prefix 'h'. Header info makes out name of LVLDESC and path to models named in .lvldesc.
+# LVLDESC-model is marked with prefix 'm'. Second parameter specifies model ID, and the third the name of said model. Fourth parameter specifies whether of not model is dynamic.
+
+######################################
+# USE _SPACES_ TO SEPERATE ARGUMENTS.#	
+######################################
+
+########
+#HEADER#
+########
+h default /
+
+##############
+#LEVEL MODELS#
+##############
+#m <100 FILENAME 0/1(static/dynamic)
+m 101 Floor1Mesh.obj 0
+m 102 Floor2Mesh.obj 0
+m 103 Wall1Mesh.obj 0
+m 104 Wall2Mesh.obj 0
+m 105 Wall3Mesh.obj 0
+m 106 Ramp1Mesh.obj 0
+m 107 ThinWallMesh.obj 0
+
+################
+#WORLD ENTITIES#
+################
+
+#w meshID X    Y     Z   QX     QY    QZ    QW
+w  101    0    0     0   0      0     0     1
+                     
+w  102   -20   1.5   0   0      0     0     1
+w  102   20    1.5   0   0      0     0     1
+                     
+w  103    12   3     0   0      0     0     1
+w  103   -12   3     0   0      0     0     1
+
+w  107   0     3     0   0      0     0     1
+                     
+					 
+w  104    12   3     7.5 0      0     0     1
+w  104    12   3    -7.5 0      0     0     1
+w  104   -12   3     7.5 0      0     0     1
+w  104   -12   3    -7.5 0      0     0     1
+w  104    9.5  3     12  0      0.7   0     0.7
+w  104    5.5  3     12  0      0.7   0     0.7
+w  104   -9.5  3     12  0      0.7   0     0.7
+w  104   -5.5  3     12  0      0.7   0     0.7
+w  104    9.5  3    -12  0      0.7   0     0.7
+w  104    5.5  3    -12  0      0.7   0     0.7
+w  104   -9.5  3    -12  0      0.7   0     0.7
+w  104   -5.5  3    -12  0      0.7   0     0.7
+                     
+w  105    0    3     12  0      0     0     1
+w  105    0    3    -12  0      0     0     1
+                     
+w  106    11   1.0 -5.5 0      0     0     1
+w  106    11   1.0  5.5 0      0     0     1
+w  106   -11   1.0 -5.5 0      1     0     0
+w  106   -11   1.0  5.5 0      1     0     0
+
+##############
+#SPAWN POINTS#
+##############
+
+#s X Y Z Radius
+s 5 3 5 1
+s 5 3 -5 1
+s -5 3 5 1
+s -5 3 -5 1
+
+#######
+#HACKS#
+#######
+
+#c TYPE X Y Z
+c SPEEDHACK 0 2 0
+c WALLHACK 0 2 0
+
+######
+#AMMO#
+######
+
+#a TYPE X Y Z
+a SINGLE 5 2 0
+a SHATTER -5 2 0
+a EXPLOSIVE 0 2 5
+a CYCLE 0 2 -5
+a RANDOM 0 0 0
+
+########
+#LIGHTS#
+########
+#AR/G/B Ambient rgb
+#DR/G/B Diffuse rgb
+#SR/G/B Specular rgb
+#AX/Y/Z Attenuation xyz
+#PX/Y/Z Position xyz (not used by dir)
+#DX/Y/Z Direction xyz (not used by point)
+#R		Range (not used by dir)
+#P		SpotPow (Only used by spot)
+
+
+#l TYPE AR AG AB DR  DG  DB  SR  SG  SB AX AY AZ PX PY PZ DX DY DZ R P
+# 1 = POINT
+# 2 = DIR
+# 3 = SPOT
+#l POINT 255 0 0 1 0 2 0
+l  2   0.8 0.8 0.8 0.2 0.2 0.2 1 1 1  0  0  0  0  0  0  0.57 -0.57 0.57  0 0
+#l SPOT 255 255 255 10 2 0 0 0 0
