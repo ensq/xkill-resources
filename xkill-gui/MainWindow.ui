@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>678</width>
+    <width>784</width>
     <height>448</height>
    </rect>
   </property>
@@ -27,7 +27,7 @@
   </widget>
   <widget class="QDockWidget" name="dockWidget">
    <property name="features">
-    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable|QDockWidget::DockWidgetVerticalTitleBar</set>
+    <set>QDockWidget::AllDockWidgetFeatures</set>
    </property>
    <property name="allowedAreas">
     <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
@@ -47,44 +47,59 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>257</width>
-          <height>538</height>
+          <width>388</width>
+          <height>383</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>Entity Browser</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTreeView" name="treeView_entityBrowser"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>Entity Inspector</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTreeView" name="treeView_entityInspector">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>150</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_editorRefresh">
-           <property name="text">
-            <string>Refresh</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QTreeView" name="treeView_entityBrowser">
+               <property name="styleSheet">
+                <string notr="true">QTreeView
+{
+	/*Green*/
+	background-color: #DFFFE0;
+	alternate-background-color: #C2FEC2;
+}</string>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_editorRefresh">
+               <property name="text">
+                <string>Refresh</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QTreeView" name="treeView_entityInspector">
+               <property name="styleSheet">
+                <string notr="true">QTreeView
+{
+	/*Blue*/
+	background-color: #C8FFFF;
+	alternate-background-color: #E6FFFF;
+}</string>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </item>
          <item>
           <widget class="Line" name="line">
@@ -94,14 +109,26 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Attribute Inspector [Not implemented yet]</string>
+          <widget class="QTreeView" name="treeView_attributeInspector">
+           <property name="styleSheet">
+            <string notr="true">QTreeView
+{
+	/*Violet*/
+	background-color: #FFFEDF;
+	alternate-background-color: #FFFDC2;
+}</string>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QTreeView" name="treeView_attributeInspector"/>
+          <widget class="QCheckBox" name="checkBox_autoRefresh">
+           <property name="text">
+            <string>Auto Refresh (Read Only)</string>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="Line" name="line_2">
@@ -120,7 +147,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="label_simulationSpeed">
              <property name="text">
               <string>1.0</string>
              </property>
@@ -129,7 +156,7 @@
           </layout>
          </item>
          <item>
-          <widget class="QSlider" name="horizontalSlider">
+          <widget class="QSlider" name="horizontalSlider_simulationSpeed">
            <property name="maximum">
             <number>200</number>
            </property>
@@ -152,25 +179,6 @@
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTabWidget" name="tabWidget_2">
-           <widget class="QWidget" name="tab_3">
-            <attribute name="title">
-             <string>Tab 1</string>
-            </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <item>
-              <widget class="QTableWidget" name="tableWidget_2"/>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_4">
-            <attribute name="title">
-             <string>Tab 2</string>
-            </attribute>
-           </widget>
           </widget>
          </item>
          <item>

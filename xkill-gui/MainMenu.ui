@@ -52,6 +52,9 @@
            <layout class="QHBoxLayout" name="horizontalLayout_21">
             <item>
              <widget class="QTabWidget" name="tabWidget_2">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="currentIndex">
                <number>0</number>
               </property>
@@ -150,6 +153,9 @@
                            </item>
                            <item>
                             <widget class="QSlider" name="horizontalSlider_4">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
                              <property name="toolTip">
                               <string/>
                              </property>
@@ -202,6 +208,9 @@
                            </item>
                            <item>
                             <widget class="QSlider" name="horizontalSlider_6">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
                              <property name="toolTip">
                               <string/>
                              </property>
@@ -254,6 +263,9 @@
                            </item>
                            <item>
                             <widget class="QSlider" name="horizontalSlider_7">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
                              <property name="toolTip">
                               <string/>
                              </property>
@@ -541,6 +553,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QGroupBox" name="groupBox_19">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="title">
                      <string>Game Mode</string>
                     </property>
@@ -622,6 +637,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QGroupBox" name="groupBox_7">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
                     <property name="title">
                      <string>XML viewer</string>
                     </property>
@@ -690,6 +708,9 @@ p, li { white-space: pre-wrap; }
                  <layout class="QVBoxLayout" name="verticalLayout_15">
                   <item>
                    <widget class="QTabWidget" name="tabWidget_4">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
                     <property name="minimumSize">
                      <size>
                       <width>248</width>
@@ -697,7 +718,7 @@ p, li { white-space: pre-wrap; }
                      </size>
                     </property>
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>3</number>
                     </property>
                     <widget class="QWidget" name="widget">
                      <attribute name="title">
@@ -706,6 +727,9 @@ p, li { white-space: pre-wrap; }
                      <layout class="QHBoxLayout" name="horizontalLayout_35">
                       <item>
                        <widget class="QGroupBox" name="groupBox_37">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Standard</string>
                         </property>
@@ -761,6 +785,9 @@ p, li { white-space: pre-wrap; }
                       </item>
                       <item>
                        <widget class="QGroupBox" name="groupBox_38">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Special</string>
                         </property>
@@ -833,6 +860,9 @@ p, li { white-space: pre-wrap; }
                      <layout class="QHBoxLayout" name="horizontalLayout_36">
                       <item>
                        <widget class="QGroupBox" name="groupBox_39">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Standard</string>
                         </property>
@@ -925,6 +955,9 @@ p, li { white-space: pre-wrap; }
                      <layout class="QHBoxLayout" name="horizontalLayout_4">
                       <item>
                        <widget class="QGroupBox" name="groupBox_22">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Offensive</string>
                         </property>
@@ -990,6 +1023,9 @@ p, li { white-space: pre-wrap; }
                       </item>
                       <item>
                        <widget class="QGroupBox" name="groupBox_21">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Defensive</string>
                         </property>
@@ -1062,6 +1098,9 @@ p, li { white-space: pre-wrap; }
                       </item>
                       <item>
                        <widget class="QGroupBox" name="groupBox_23">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Support</string>
                         </property>
@@ -1082,7 +1121,7 @@ p, li { white-space: pre-wrap; }
                          <item>
                           <widget class="QCheckBox" name="checkBox_45">
                            <property name="enabled">
-                            <bool>true</bool>
+                            <bool>false</bool>
                            </property>
                            <property name="text">
                             <string>memcopy </string>
@@ -1105,7 +1144,7 @@ p, li { white-space: pre-wrap; }
                          <item>
                           <widget class="QCheckBox" name="checkBox_54">
                            <property name="enabled">
-                            <bool>true</bool>
+                            <bool>false</bool>
                            </property>
                            <property name="text">
                             <string>long jump</string>
@@ -1163,6 +1202,9 @@ p, li { white-space: pre-wrap; }
                      <layout class="QHBoxLayout" name="horizontalLayout">
                       <item>
                        <widget class="QGroupBox" name="groupBox_17">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Physics</string>
                         </property>
@@ -1222,6 +1264,9 @@ p, li { white-space: pre-wrap; }
                       </item>
                       <item>
                        <widget class="QGroupBox" name="groupBox_10">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Time</string>
                         </property>
@@ -1271,6 +1316,9 @@ p, li { white-space: pre-wrap; }
                       </item>
                       <item>
                        <widget class="QGroupBox" name="groupBox_16">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
                         <property name="title">
                          <string>Scheduler </string>
                         </property>
@@ -1456,7 +1504,7 @@ p, li { white-space: pre-wrap; }
           <item>
            <widget class="QTabWidget" name="tabWidget_3">
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="Video">
              <attribute name="title">
@@ -1469,6 +1517,9 @@ p, li { white-space: pre-wrap; }
                  <layout class="QHBoxLayout" name="horizontalLayout_2">
                   <item>
                    <widget class="QGroupBox" name="groupBox_2">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="title">
                      <string>General</string>
                     </property>
@@ -1590,6 +1641,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QGroupBox" name="groupBox_3">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="title">
                      <string>Shaders</string>
                     </property>
@@ -1686,6 +1740,9 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item>
                    <widget class="QGroupBox" name="groupBox_5">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="title">
                      <string>Shadows</string>
                     </property>
@@ -1862,202 +1919,106 @@ p, li { white-space: pre-wrap; }
              </attribute>
              <layout class="QHBoxLayout" name="horizontalLayout_23">
               <item>
-               <widget class="QTreeWidget" name="treeWidget">
-                <property name="minimumSize">
-                 <size>
-                  <width>300</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="rootIsDecorated">
-                 <bool>false</bool>
-                </property>
-                <property name="columnCount">
-                 <number>3</number>
-                </property>
-                <column>
-                 <property name="text">
-                  <string>Action</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Key</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Alternative</string>
-                 </property>
-                </column>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
                 <item>
-                 <property name="text">
-                  <string>Forward</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
-                  <string>W</string>
-                 </property>
+                 <widget class="QComboBox" name="comboBox_Input"/>
                 </item>
                 <item>
-                 <property name="text">
-                  <string>Backward</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
-                  <string>S</string>
-                 </property>
+                 <widget class="QTableView" name="tableView_Input">
+                  <property name="showDropIndicator" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="showGrid">
+                   <bool>false</bool>
+                  </property>
+                  <property name="gridStyle">
+                   <enum>Qt::NoPen</enum>
+                  </property>
+                  <property name="sortingEnabled">
+                   <bool>false</bool>
+                  </property>
+                  <attribute name="horizontalHeaderDefaultSectionSize">
+                   <number>200</number>
+                  </attribute>
+                  <attribute name="verticalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                 </widget>
                 </item>
                 <item>
-                 <property name="text">
-                  <string>Left</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
-                  <string>A</string>
-                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_30">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Sensitivity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_Input">
+                    <property name="minimum">
+                     <number>1</number>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="sliderPosition">
+                     <number>50</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="spinBox">
+                    <property name="frame">
+                     <bool>true</bool>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                    <property name="buttonSymbols">
+                     <enum>QAbstractSpinBox::NoButtons</enum>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="value">
+                     <number>50</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
                 </item>
                 <item>
-                 <property name="text">
-                  <string>Right</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Analog</string>
-                 </property>
-                 <property name="text">
-                  <string>D</string>
-                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_29">
+                  <item>
+                   <widget class="QCheckBox" name="checkBox_Input">
+                    <property name="text">
+                     <string>Inverted</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Input">
+                    <property name="text">
+                     <string>Save</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Jump</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Fire</string>
-                 </property>
-                 <property name="text">
-                  <string>R-Trigger</string>
-                 </property>
-                 <property name="text">
-                  <string>Space</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Weapon 1</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Weapon 2</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Weapon 3</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Weapon Next</string>
-                 </property>
-                 <property name="text">
-                  <string>B-Button</string>
-                 </property>
-                 <property name="text">
-                  <string>E</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Ammo 1</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Ammo 2</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Ammo 3</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Ammo Next</string>
-                 </property>
-                 <property name="text">
-                  <string>X-Button</string>
-                 </property>
-                 <property name="text">
-                  <string>Q</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_17">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
+               </layout>
               </item>
              </layout>
             </widget>
@@ -2130,73 +2091,6 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab">
-       <attribute name="title">
-        <string>Editor</string>
-       </attribute>
-       <layout class="QHBoxLayout" name="horizontalLayout_17">
-        <item>
-         <widget class="QGroupBox" name="groupBox_9">
-          <property name="maximumSize">
-           <size>
-            <width>160</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="title">
-           <string>Entity Browser</string>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_13">
-           <item>
-            <widget class="QTreeView" name="treeView_entityBrowser"/>
-           </item>
-           <item>
-            <widget class="QTreeView" name="treeView_entityInspector">
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>100</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_editorRefresh">
-             <property name="text">
-              <string>Refresh</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="groupBox_AttributeInspector">
-          <property name="title">
-           <string>Attribute Inspector [Not implemented yet]</string>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_14">
-           <item>
-            <widget class="QTreeView" name="treeView_attributeInspector"/>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </widget>
      </widget>
     </item>
    </layout>
@@ -2214,11 +2108,11 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
+     <x>146</x>
      <y>286</y>
     </hint>
     <hint type="destinationlabel">
-     <x>399</x>
+     <x>364</x>
      <y>255</y>
     </hint>
    </hints>
@@ -2230,11 +2124,11 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>148</x>
+     <x>147</x>
      <y>132</y>
     </hint>
     <hint type="destinationlabel">
-     <x>398</x>
+     <x>364</x>
      <y>101</y>
     </hint>
    </hints>
@@ -2246,11 +2140,11 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
+     <x>146</x>
      <y>184</y>
     </hint>
     <hint type="destinationlabel">
-     <x>399</x>
+     <x>364</x>
      <y>153</y>
     </hint>
    </hints>
@@ -2262,11 +2156,11 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
+     <x>146</x>
      <y>235</y>
     </hint>
     <hint type="destinationlabel">
-     <x>399</x>
+     <x>364</x>
      <y>204</y>
     </hint>
    </hints>
@@ -2278,12 +2172,44 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>400</x>
-     <y>190</y>
+     <x>95</x>
+     <y>86</y>
     </hint>
     <hint type="destinationlabel">
-     <x>462</x>
-     <y>159</y>
+     <x>100</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Input</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Input</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>493</x>
+     <y>317</y>
     </hint>
    </hints>
   </connection>
