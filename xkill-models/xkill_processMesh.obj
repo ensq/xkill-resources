@@ -1,6 +1,9 @@
 # Blender v2.64 (sub 0) OBJ File: 'xkill_process_18.blend'
 # www.blender.org
 o Cube.001_Cube.000
+mtllib xkill_process.mtl
+g default
+usemtl initialShadingGroup
 v 0.037255 0.031255 -0.042099
 v 0.033190 -0.045289 -0.053307
 v 0.043714 -0.074837 0.019895
@@ -41094,6 +41097,8 @@ vn -0.399579 0.713492 0.575488
 vn -0.089419 0.260170 -0.961394
 vn -0.621387 0.700919 0.350017
 s 1
+g process
+usemtl initialShadingGroup
 f 1//1 2650//2 7855//3
 f 1//1 7855//3 2638//4
 f 1//1 2638//4 7856//5
