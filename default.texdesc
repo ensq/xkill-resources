@@ -24,3 +24,6 @@ t 5 bthcolor.dds
 t 6 xkill_arena_bottom.dds
 t 7 xkill_arena_middle.dds
 t 8 xkill_arena_top.dds
+
+t 9 char.dds
+t 10 projectile.dds
