@@ -718,7 +718,7 @@ p, li { white-space: pre-wrap; }
                      </size>
                     </property>
                     <property name="currentIndex">
-                     <number>5</number>
+                     <number>4</number>
                     </property>
                     <widget class="QWidget" name="widget">
                      <attribute name="title">
@@ -1413,8 +1413,8 @@ p, li { white-space: pre-wrap; }
                        <rect>
                         <x>10</x>
                         <y>0</y>
-                        <width>401</width>
-                        <height>224</height>
+                        <width>411</width>
+                        <height>211</height>
                        </rect>
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -1667,7 +1667,7 @@ p, li { white-space: pre-wrap; }
                                </widget>
                               </item>
                               <item>
-                               <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+                               <widget class="QDoubleSpinBox" name="doubleSpinBox_Ammo_Spread">
                                 <property name="readOnly">
                                  <bool>true</bool>
                                 </property>
@@ -1680,7 +1680,7 @@ p, li { white-space: pre-wrap; }
                                </widget>
                               </item>
                               <item>
-                               <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+                               <widget class="QDoubleSpinBox" name="doubleSpinBox_Ammo_VelocityVariation">
                                 <property name="readOnly">
                                  <bool>true</bool>
                                 </property>
@@ -1731,7 +1731,7 @@ p, li { white-space: pre-wrap; }
                                 </widget>
                                </item>
                                <item>
-                                <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+                                <widget class="QDoubleSpinBox" name="doubleSpinBox_Ammo_ExplosionSphere">
                                  <property name="readOnly">
                                   <bool>true</bool>
                                  </property>
@@ -1767,7 +1767,7 @@ p, li { white-space: pre-wrap; }
                         <x>0</x>
                         <y>0</y>
                         <width>421</width>
-                        <height>216</height>
+                        <height>211</height>
                        </rect>
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_19">
@@ -1940,7 +1940,7 @@ p, li { white-space: pre-wrap; }
                                    <number>1</number>
                                   </property>
                                   <property name="maximum">
-                                   <number>100</number>
+                                   <number>500</number>
                                   </property>
                                   <property name="orientation">
                                    <enum>Qt::Horizontal</enum>
@@ -1989,10 +1989,94 @@ p, li { white-space: pre-wrap; }
                                    <number>1</number>
                                   </property>
                                   <property name="maximum">
-                                   <number>100</number>
+                                   <number>1000</number>
                                   </property>
                                   <property name="orientation">
                                    <enum>Qt::Horizontal</enum>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QVBoxLayout" name="verticalLayout_37">
+                                <item>
+                                 <widget class="QSpinBox" name="spinBox_9">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="buttonSymbols">
+                                   <enum>QAbstractSpinBox::NoButtons</enum>
+                                  </property>
+                                  <property name="minimum">
+                                   <number>1</number>
+                                  </property>
+                                  <property name="maximum">
+                                   <number>500</number>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="doubleSpinBox_FiringMode_ReloadTime">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="buttonSymbols">
+                                   <enum>QAbstractSpinBox::NoButtons</enum>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>10.000000000000000</double>
+                                  </property>
+                                  <property name="singleStep">
+                                   <double>0.100000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QSpinBox" name="spinBox_10">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="buttonSymbols">
+                                   <enum>QAbstractSpinBox::NoButtons</enum>
+                                  </property>
+                                  <property name="minimum">
+                                   <number>1</number>
+                                  </property>
+                                  <property name="maximum">
+                                   <number>100</number>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="doubleSpinBox_FiringMode_DamageModifier">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="buttonSymbols">
+                                   <enum>QAbstractSpinBox::NoButtons</enum>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>1.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>1000.000000000000000</double>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QDoubleSpinBox" name="doubleSpinBox_FiringMode_ExplosionSphereModifier">
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="buttonSymbols">
+                                   <enum>QAbstractSpinBox::NoButtons</enum>
+                                  </property>
+                                  <property name="minimum">
+                                   <double>1.000000000000000</double>
+                                  </property>
+                                  <property name="maximum">
+                                   <double>1000.000000000000000</double>
                                   </property>
                                  </widget>
                                 </item>
@@ -2776,12 +2860,12 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>95</x>
-     <y>86</y>
+     <x>93</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>100</x>
-     <y>90</y>
+     <x>98</x>
+     <y>68</y>
     </hint>
    </hints>
   </connection>
@@ -2792,12 +2876,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>494</x>
-     <y>324</y>
+     <x>109</x>
+     <y>60</y>
     </hint>
     <hint type="destinationlabel">
-     <x>439</x>
-     <y>324</y>
+     <x>77</x>
+     <y>60</y>
     </hint>
    </hints>
   </connection>
@@ -2808,12 +2892,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>345</x>
-     <y>329</y>
+     <x>77</x>
+     <y>60</y>
     </hint>
     <hint type="destinationlabel">
-     <x>519</x>
-     <y>332</y>
+     <x>109</x>
+     <y>60</y>
     </hint>
    </hints>
   </connection>
@@ -2862,6 +2946,22 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>410</x>
      <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Weapon_RateOfFire</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_10</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>389</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>230</y>
     </hint>
    </hints>
   </connection>
