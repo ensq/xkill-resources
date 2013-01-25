@@ -2,6 +2,7 @@
 # TEXDESC-header is marked with prefix 'h'. Header info makes out name of TEXDESC and path to textures named in .texdesc.
 # TEXDESC-texture is marked with prefix 't'. Second parameter specifies texture ID, and the third the name of said texture.
 # ID 0 is reserved for default placeholder-texture.
+# ID 100 and up are also defined in ManagementTex.h and needs to be changed if the ids in this file are updated.
 
 ########
 #HEADER#
@@ -27,3 +28,5 @@ t 8 xkill_arena_top.dds
 
 t 9 char.dds
 t 10 projectile.dds
+
+t 101 cross_hair.dds
