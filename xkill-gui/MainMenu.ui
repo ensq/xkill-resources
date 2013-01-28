@@ -718,7 +718,7 @@ p, li { white-space: pre-wrap; }
                      </size>
                     </property>
                     <property name="currentIndex">
-                     <number>4</number>
+                     <number>5</number>
                     </property>
                     <widget class="QWidget" name="widget">
                      <attribute name="title">
@@ -1414,7 +1414,7 @@ p, li { white-space: pre-wrap; }
                         <x>10</x>
                         <y>0</y>
                         <width>411</width>
-                        <height>211</height>
+                        <height>224</height>
                        </rect>
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -1767,7 +1767,7 @@ p, li { white-space: pre-wrap; }
                         <x>0</x>
                         <y>0</y>
                         <width>421</width>
-                        <height>211</height>
+                        <height>221</height>
                        </rect>
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_19">
@@ -2912,8 +2912,8 @@ p, li { white-space: pre-wrap; }
      <y>137</y>
     </hint>
     <hint type="destinationlabel">
-     <x>411</x>
-     <y>136</y>
+     <x>443</x>
+     <y>141</y>
     </hint>
    </hints>
   </connection>
@@ -2944,8 +2944,8 @@ p, li { white-space: pre-wrap; }
      <y>186</y>
     </hint>
     <hint type="destinationlabel">
-     <x>410</x>
-     <y>185</y>
+     <x>443</x>
+     <y>193</y>
     </hint>
    </hints>
   </connection>
@@ -2961,7 +2961,23 @@ p, li { white-space: pre-wrap; }
     </hint>
     <hint type="destinationlabel">
      <x>442</x>
-     <y>230</y>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Weapon_ClipSize</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_9</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>188</y>
     </hint>
    </hints>
   </connection>
