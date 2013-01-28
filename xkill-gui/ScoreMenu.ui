@@ -23,6 +23,19 @@
       <property name="focusPolicy">
        <enum>Qt::NoFocus</enum>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget
+{
+	color: #fff;
+	background-color: #000;
+}
+
+QHeaderView::section 
+{
+     background: black;
+ }
+</string>
+      </property>
       <property name="rootIsDecorated">
        <bool>true</bool>
       </property>
