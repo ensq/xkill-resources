@@ -29,4 +29,6 @@ t 8 xkill_arena_top.dds
 t 9 char.dds
 t 10 projectile.dds
 t 11 hpack.dds
+t 12 healthpack_2_1_1.dds
+
 t 101 cross_hair.dds
