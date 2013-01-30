@@ -1,6 +1,13 @@
 # Use .mdldesc to specify what files are to be loaded and interpreted as models.
 # MDLDESC-header is marked with prefix 'h'. Header info makes out name of MDLDESC and path to models named in .mdldesc.
 # MDLDESC-model is marked with prefix 'm'. Second parameter specifies model ID, and the third the name of said model. Fourth parameter specifies whether of not model is dynamic.
+# Fifth parameter is the type of vertex:
+#		0 VERTEX_TYPE_POS_COLOR,
+#		1 VERTEX_TYPE_POS_NORM_TEX,
+#		2 VERTEX_TYPE_POS_NORM_SKINNED,
+#		3 VERTEX_TYPE_POS_NORM_TEX_SKINNED,
+#		4 VERTEX_TYPE_POS_NORM_TEX_TAN_SKINNED
+
 
 ######################################
 # USE _SPACES_ TO SEPERATE ARGUMENTS.#
@@ -14,6 +21,7 @@ h default xkill-models/
 ##########
 #TEXTURES#
 ##########
-m 0 xkill_processMesh.obj 1
-m 1 healthpackMesh.obj    1
-m 2 ProjectileMesh.obj    1
+m 0 xkill_processMesh.obj 1 1
+m 1 healthpackMesh.obj    1 1
+m 2 ProjectileMesh.obj    1 1
+m 3 Soldier_2k_poly.fbx 1 1
