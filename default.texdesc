@@ -14,7 +14,6 @@ h default xkill-textures/
 ##########
 t 0 placeholder.dds
 
-t 1 bricks.dds
 t 2 bricks_nmap.dds
 
 t 3 floor.dds
