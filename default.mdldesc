@@ -24,4 +24,5 @@ h default xkill-models/
 m 0 xkill_processMesh.obj 1 1
 m 1 healthpackMesh.obj    1 1
 m 2 ProjectileMesh.obj    1 1
-m 3 Soldier_2k_poly.fbx 1 1
+m 3 xkill_process.fbx 1 1
+m 4 Soldier_2k_poly.fbx 1 1
