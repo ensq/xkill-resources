@@ -2272,7 +2272,7 @@ p, li { white-space: pre-wrap; }
           <item>
            <widget class="QTabWidget" name="tabWidget_3">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="Video">
              <attribute name="title">
@@ -2771,9 +2771,19 @@ p, li { white-space: pre-wrap; }
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_29">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_Input">
+                   <widget class="QCheckBox" name="checkBox_Input_Inverted">
                     <property name="text">
                      <string>Inverted</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QCheckBox" name="checkBox_Input_Rumble">
+                    <property name="text">
+                     <string>Rumble</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -2790,20 +2800,145 @@ p, li { white-space: pre-wrap; }
               </item>
              </layout>
             </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Sound</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>11</y>
+                <width>489</width>
+                <height>61</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <widget class="QWidget" name="">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>461</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QCheckBox" name="checkBox_Sound_Mute">
+                  <property name="text">
+                   <string>Mute sound</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="text">
+                   <string>Volume</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Sound_Volume">
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="sliderPosition">
+                   <number>100</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="spinBox_2">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                  <property name="buttonSymbols">
+                   <enum>QAbstractSpinBox::NoButtons</enum>
+                  </property>
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="value">
+                   <number>100</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_13">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>79</y>
+                <width>491</width>
+                <height>231</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <widget class="QWidget" name="">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>471</width>
+                 <height>211</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_31">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>Fmod sounds</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QListView" name="listView_Sound_Fmod"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_36">
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>In-Game events</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QListView" name="listView_Sound_InGame"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
            </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_20">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
           </item>
          </layout>
         </item>
@@ -2940,12 +3075,12 @@ p, li { white-space: pre-wrap; }
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>93</x>
-     <y>64</y>
+     <x>95</x>
+     <y>86</y>
     </hint>
     <hint type="destinationlabel">
-     <x>98</x>
-     <y>68</y>
+     <x>100</x>
+     <y>90</y>
     </hint>
    </hints>
   </connection>
@@ -2956,12 +3091,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>109</x>
-     <y>60</y>
+     <x>519</x>
+     <y>332</y>
     </hint>
     <hint type="destinationlabel">
-     <x>77</x>
-     <y>60</y>
+     <x>148</x>
+     <y>334</y>
     </hint>
    </hints>
   </connection>
@@ -2972,12 +3107,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>77</x>
-     <y>60</y>
+     <x>148</x>
+     <y>334</y>
     </hint>
     <hint type="destinationlabel">
-     <x>109</x>
-     <y>60</y>
+     <x>519</x>
+     <y>332</y>
     </hint>
    </hints>
   </connection>
@@ -2988,12 +3123,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>365</x>
-     <y>137</y>
+     <x>406</x>
+     <y>118</y>
     </hint>
     <hint type="destinationlabel">
-     <x>443</x>
-     <y>141</y>
+     <x>441</x>
+     <y>119</y>
     </hint>
    </hints>
   </connection>
@@ -3004,12 +3139,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>385</x>
-     <y>157</y>
+     <x>406</x>
+     <y>143</y>
     </hint>
     <hint type="destinationlabel">
-     <x>419</x>
-     <y>157</y>
+     <x>441</x>
+     <y>145</y>
     </hint>
    </hints>
   </connection>
@@ -3020,12 +3155,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>369</x>
-     <y>186</y>
+     <x>406</x>
+     <y>168</y>
     </hint>
     <hint type="destinationlabel">
-     <x>443</x>
-     <y>193</y>
+     <x>441</x>
+     <y>171</y>
     </hint>
    </hints>
   </connection>
@@ -3040,8 +3175,8 @@ p, li { white-space: pre-wrap; }
      <y>256</y>
     </hint>
     <hint type="destinationlabel">
-     <x>442</x>
-     <y>250</y>
+     <x>440</x>
+     <y>228</y>
     </hint>
    </hints>
   </connection>
@@ -3052,12 +3187,28 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>369</x>
-     <y>191</y>
+     <x>387</x>
+     <y>175</y>
     </hint>
     <hint type="destinationlabel">
-     <x>412</x>
-     <y>188</y>
+     <x>440</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Sound_Volume</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>110</y>
     </hint>
    </hints>
   </connection>
