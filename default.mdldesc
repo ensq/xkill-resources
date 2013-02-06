@@ -22,10 +22,10 @@ h default xkill-models/
 #TEXTURES#
 ##########
 
-m 0 xkill_processMesh.obj 1 1
-m 1 healthpackMesh.obj    1 1
-m 2 ProjectileMesh.obj    1 1
-
+#m 0 xkill_process.obj 1 1
+#m 1 healthpack.obj 1 1
+#m 2 Projectile.obj 1 1
+m 2 rifle.obj 1 1
 m 3 healthpack.obj 1 1
 m 4 ammosingle.obj 1 1
 m 5 ammoscatter.obj 1 1
