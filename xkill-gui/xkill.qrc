@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>arrow.png</file>
+    <file>checkboxoff.png</file>
+    <file>checkboxon.png</file>
+    <file>radiooff.png</file>
+    <file>radioon.png</file>
+    <file>white.png</file>
+    <file>mainmenu.png</file>
     <file>images/a_bullet.png</file>
     <file>images/a_explosive.png</file>
     <file>images/a_scatter.png</file>
