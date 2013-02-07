@@ -178,7 +178,7 @@ alternate-background-color: black;
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -2153,8 +2153,6 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
        <zorder></zorder>
-       <zorder>pushButton_exit_4</zorder>
-       <zorder>layoutWidget_3</zorder>
        <zorder>verticalSpacer_8</zorder>
       </widget>
       <widget class="QWidget" name="Options">
