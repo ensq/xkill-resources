@@ -17,7 +17,31 @@
    <enum>Qt::LeftToRight</enum>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">QWidget
+{
+color: lightgreen;
+border: 2px solid white;
+padding: 1px;
+border-radius: 4px;
+background: black;
+}
+QTabBar::tab
+{
+background: black;
+border: 2px solid white;
+border-radius: 4px;
+margin: 4px;
+min-width: 50px;
+}
+QTabBar::tab:selected
+{
+color: red;
+margin: 2px;
+}
+QTabBar::tab:!selected
+{
+color: lightgreen;
+}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">

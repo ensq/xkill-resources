@@ -159,7 +159,12 @@ QTableView
 selection-background-color: green;
 alternate-background-color: black;
 }
-</string>
+
+QHeaderView::section
+{
+background: lightgreen;
+color: black;
+}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_21">
