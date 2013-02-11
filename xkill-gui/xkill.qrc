@@ -1,6 +1,9 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>buttons/ButtonTest_Normal.png</file>
+    <file>buttons/ButtonTest_Selected.png</file>
     <file>arrow.png</file>
+    <file>images/menu_background.png</file>
     <file>checkboxoff.png</file>
     <file>checkboxon.png</file>
     <file>radiooff.png</file>
@@ -16,4 +19,5 @@
     <file>images/w_semi.png</file>
     <file>images/w_single.png</file>
   </qresource>
+  <qresource prefix="images"/>
 </RCC>
