@@ -26,18 +26,18 @@ QPushButton
 {
 	color: #222;
 	font-size:40px;
-	border-image: url(:/xkill/buttons/button_normal.png);
+	/* border-image: url(:/xkill/buttons/button_normal.png);*/
+
+	padding: 0px 15px;
+	margin: 0px 5px;
+	border: none;
+	border: 3px  solid rgba(255, 255, 255, 0);
 }
 
 QPushButton:hover
 {
-	border-image: url(:/xkill/buttons/button_selected.png);
-}
-
-
-QPushButton:pressed
-{
-/* border-width: 5;*/
+	/*border-image: url(:/xkill/buttons/button_selected.png);*/
+	border: 3px solid grey;
 }
 
  QSlider::groove:horizontal 
@@ -102,10 +102,10 @@ QSlider::handle:horizontal
    <widget class="QFrame" name="frame_menu">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>40</x>
       <y>230</y>
-      <width>231</width>
-      <height>178</height>
+      <width>261</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -178,6 +178,19 @@ QSlider::handle:horizontal
          </property>
         </widget>
        </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </item>
      <item>
@@ -198,9 +211,9 @@ QSlider::handle:horizontal
    <widget class="QPushButton" name="pushButton_9">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>189</x>
       <y>560</y>
-      <width>140</width>
+      <width>181</width>
       <height>48</height>
      </rect>
     </property>
@@ -220,8 +233,8 @@ QSlider::handle:horizontal
    <widget class="QPushButton" name="pushButton_11">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>500</y>
+      <x>390</x>
+      <y>560</y>
       <width>201</width>
       <height>48</height>
      </rect>
@@ -243,9 +256,9 @@ QSlider::handle:horizontal
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>210</y>
-      <width>291</width>
-      <height>25</height>
+      <y>230</y>
+      <width>311</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -255,13 +268,13 @@ QSlider::handle:horizontal
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>360</x>
       <y>40</y>
-      <width>393</width>
-      <height>391</height>
+      <width>411</width>
+      <height>411</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -288,6 +301,12 @@ QSlider::handle:horizontal
           </item>
           <item>
            <widget class="QSlider" name="horizontalSlider">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -299,17 +318,29 @@ QSlider::handle:horizontal
       </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <widget class="QPushButton" name="pushButton_12">
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Level</string>
          </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_12">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/buttons/arrow_left.png);
 }
@@ -318,47 +349,47 @@ QPushButton:hover
 {
 	border-image: url(:/xkill/buttons/arrow_left_selected.png);
 }</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>16</width>
-           <height>16</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>120</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="xkill.qrc">:/xkill/images/arena1.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_13">
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>120</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="xkill.qrc">:/xkill/images/arena1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_13">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/buttons/arrow_right.png);
 }
@@ -367,9 +398,44 @@ QPushButton:hover
 {
 	border-image: url(:/xkill/buttons/arrow_right_selected.png);
 }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="text">
-          <string/>
+          <string>Customize</string>
          </property>
          <property name="iconSize">
           <size>
@@ -379,23 +445,20 @@ QPushButton:hover
          </property>
         </widget>
        </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_10">
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Customize</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>16</width>
-         <height>16</height>
-        </size>
-       </property>
-      </widget>
      </item>
      <item>
       <spacer name="verticalSpacer">
@@ -404,8 +467,8 @@ QPushButton:hover
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>20</width>
-         <height>40</height>
+         <width>388</width>
+         <height>133</height>
         </size>
        </property>
       </spacer>
@@ -414,22 +477,20 @@ QPushButton:hover
    </widget>
    <zorder>label_background</zorder>
    <zorder>label</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
    <zorder>frame_menu</zorder>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>horizontalSpacer_2</zorder>
    <zorder>layoutWidget</zorder>
-   <zorder>frame_menu_2</zorder>
-   <zorder>label_3</zorder>
    <zorder>pushButton_9</zorder>
-   <zorder>pushButton_12</zorder>
-   <zorder>pushButton_13</zorder>
-   <zorder>pushButton_13</zorder>
-   <zorder>pushButton_12</zorder>
-   <zorder>label_3</zorder>
    <zorder>pushButton_11</zorder>
    <zorder>label_5</zorder>
+   <zorder>verticalSpacer</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder></zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>pushButton_10</zorder>
+   <zorder>horizontalSpacer_3</zorder>
+   <zorder>horizontalSpacer_4</zorder>
   </widget>
  </widget>
  <resources>
