@@ -6,7 +6,8 @@
 #		1 VERTEX_TYPE_POS_NORM_TEX,
 #		2 VERTEX_TYPE_POS_NORM_SKINNED,
 #		3 VERTEX_TYPE_POS_NORM_TEX_SKINNED,
-#		4 VERTEX_TYPE_POS_NORM_TEX_TAN_SKINNED
+#		4 VERTEX_TYPE_POS_NORM_TEX_TAN_SKINNED,
+#		5 VERTEX_TYPE_POS_NORM_TEX_TAN
 
 
 ######################################
@@ -21,6 +22,7 @@ h default xkill-models/
 ##########
 #TEXTURES#
 ##########
+
 #m 0 xkill_process.obj 1 1
 #m 1 healthpack.obj 1 1
 #m 2 Projectile.obj 1 1
@@ -33,3 +35,6 @@ m 7 process.obj 1 1
 m 8 projectileexplosive.obj 1 1
 m 9 projectilescatter.obj 1 1
 m 10 projectilesingle.obj 1 1
+
+m 11 xkill_process.fbx 1 1
+m 12 humanoid.fbx 1 1
