@@ -559,7 +559,7 @@ alternate-background-color: black;
                    </size>
                   </property>
                   <property name="currentIndex">
-                   <number>0</number>
+                   <number>2</number>
                   </property>
                   <widget class="QWidget" name="Weapon">
                    <property name="autoFillBackground">
@@ -1817,7 +1817,7 @@ alternate-background-color: black;
              <enum>QTabWidget::North</enum>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="Input">
              <attribute name="title">
