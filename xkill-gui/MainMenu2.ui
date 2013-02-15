@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2016</width>
+    <width>2591</width>
     <height>928</height>
    </rect>
   </property>
@@ -31,7 +31,7 @@ QPushButton
 	padding: 0px 15px;
 	margin: 0px 5px;
 
-	border: 3px  solid rgba(255, 255, 255, 1);
+	border: 1px  solid rgba(grey, 255);
 	background: rgba(255, 255, 255, 1);
 }
 
@@ -59,7 +59,30 @@ QSlider::handle:horizontal
  QSlider::handle:horizontal:hover
 {
 	border: 3px solid black;
- }</string>
+ }
+
+QCheckBox::indicator
+{
+width: 13px;
+height: 13px;
+}
+
+QCheckBox::indicator:checked
+{
+image: url(:xkill/checkboxon.png);
+}
+
+/*
+QCheckBox::indicator:unchecked
+{
+image: url(:xkill/checkboxoff.png);
+}
+
+QCheckBox::indicator:checked
+{
+image: url(:xkill/checkboxon.png);
+}
+*/</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_background">
@@ -126,7 +149,7 @@ QSlider::handle:horizontal
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="pushButton_start">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -142,7 +165,7 @@ QSlider::handle:horizontal
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="pushButton_settings">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -158,7 +181,7 @@ QSlider::handle:horizontal
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="pushButton_quit">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -248,7 +271,7 @@ QSlider::handle:horizontal
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="pushButton_video">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -264,7 +287,7 @@ QSlider::handle:horizontal
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_14">
+        <widget class="QPushButton" name="pushButton_audio">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -280,7 +303,7 @@ QSlider::handle:horizontal
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="QPushButton" name="pushButton_input">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -328,9 +351,9 @@ QSlider::handle:horizontal
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>10</y>
-      <width>581</width>
+      <x>300</x>
+      <y>20</y>
+      <width>531</width>
       <height>491</height>
      </rect>
     </property>
@@ -350,6 +373,22 @@ QSlider::handle:horizontal
         <size>
          <width>40</width>
          <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_22">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>0</height>
         </size>
        </property>
       </spacer>
@@ -383,6 +422,19 @@ QSlider::handle:horizontal
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_11">
               <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
                <widget class="QLabel" name="label_2">
                 <property name="text">
                  <string>No. Players </string>
@@ -401,6 +453,19 @@ QSlider::handle:horizontal
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                 </property>
                </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </item>
@@ -425,19 +490,6 @@ QSlider::handle:horizontal
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_21">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>400</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
            </layout>
           </item>
@@ -492,8 +544,14 @@ QPushButton:hover
             <widget class="QLabel" name="label_3">
              <property name="minimumSize">
               <size>
-               <width>200</width>
-               <height>120</height>
+               <width>300</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>150</height>
               </size>
              </property>
              <property name="text">
@@ -544,20 +602,7 @@ QPushButton:hover
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <spacer name="horizontalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_10">
+          <widget class="QPushButton" name="pushButton_customize">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -571,19 +616,6 @@ QPushButton:hover
             </size>
            </property>
           </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
          </item>
         </layout>
        </item>
@@ -615,13 +647,29 @@ QPushButton:hover
        </property>
       </spacer>
      </item>
+     <item>
+      <spacer name="horizontalSpacer_21">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
     </layout>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>260</y>
+      <x>1910</x>
+      <y>530</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -633,7 +681,7 @@ QPushButton:hover
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_menu_4">
+   <widget class="QFrame" name="frame_input">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -730,7 +778,7 @@ QPushButton:hover
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="frame_menu_5">
+   <widget class="QFrame" name="frame_audio">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -779,6 +827,19 @@ QPushButton:hover
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_12">
            <item>
+            <spacer name="horizontalSpacer_25">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="label_11">
              <property name="text">
               <string>Ambient</string>
@@ -814,6 +875,19 @@ QPushButton:hover
              </property>
             </widget>
            </item>
+           <item>
+            <spacer name="horizontalSpacer_24">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
           </layout>
          </item>
          <item>
@@ -841,6 +915,19 @@ QPushButton:hover
         <layout class="QVBoxLayout" name="verticalLayout_9">
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <spacer name="horizontalSpacer_26">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item>
             <widget class="QLabel" name="label_12">
              <property name="text">
@@ -877,6 +964,19 @@ QPushButton:hover
              </property>
             </widget>
            </item>
+           <item>
+            <spacer name="horizontalSpacer_27">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
           </layout>
          </item>
          <item>
@@ -904,6 +1004,19 @@ QPushButton:hover
         <layout class="QVBoxLayout" name="verticalLayout_10">
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <spacer name="horizontalSpacer_28">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item>
             <widget class="QLabel" name="label_13">
              <property name="text">
@@ -939,6 +1052,19 @@ QPushButton:hover
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
              </property>
             </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_29">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
            </item>
           </layout>
          </item>
@@ -1006,11 +1132,11 @@ QPushButton:hover
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="frame_menu_6">
+   <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>70</y>
+      <x>1930</x>
+      <y>570</y>
       <width>501</width>
       <height>271</height>
      </rect>
@@ -1137,7 +1263,7 @@ QPushButton:hover
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="frame_menu_7">
+   <widget class="QFrame" name="frame_video">
     <property name="geometry">
      <rect>
       <x>1370</x>
@@ -1278,25 +1404,51 @@ QPushButton:hover
      </item>
     </layout>
    </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>300</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>300</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>frame_main</zorder>
    <zorder>label_background</zorder>
    <zorder>frame_settings</zorder>
    <zorder>frame_start</zorder>
    <zorder>label_5</zorder>
-   <zorder>frame_menu_4</zorder>
-   <zorder>frame_menu_5</zorder>
-   <zorder>frame_menu_6</zorder>
-   <zorder>frame_menu_7</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_18</zorder>
-   <zorder>label_11</zorder>
+   <zorder>frame_input</zorder>
+   <zorder>frame_audio</zorder>
+   <zorder>frame_customize</zorder>
+   <zorder>frame_video</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>checkBox_2</zorder>
   </widget>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
-  <include location="../../../../.designer/backup/xkill.qrc"/>
+  <include location="xkill.qrc"/>
  </resources>
  <connections>
   <connection>
