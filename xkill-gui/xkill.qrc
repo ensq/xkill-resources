@@ -1,28 +1,30 @@
 <RCC>
   <qresource prefix="/xkill">
-    <file>buttons/arrow_left.png</file>
-    <file>buttons/arrow_left_selected.png</file>
-    <file>buttons/arrow_right.png</file>
-    <file>buttons/arrow_right_selected.png</file>
-    <file>buttons/button_selected2.png</file>
-    <file>buttons/button_normal.png</file>
-    <file>buttons/button_selected.png</file>
+    <file>images/buttons/radiobutton_checked.png</file>
+    <file>images/buttons/combobox.png</file>
+    <file>images/icons/misc/movie.png</file>
     <file>arrow.png</file>
-    <file>images/menu_background.png</file>
     <file>checkboxoff.png</file>
     <file>checkboxon.png</file>
     <file>radiooff.png</file>
     <file>radioon.png</file>
     <file>white.png</file>
     <file>mainmenu.png</file>
-    <file>images/a_bullet.png</file>
-    <file>images/a_explosive.png</file>
-    <file>images/a_scatter.png</file>
-    <file>images/arena1.png</file>
-    <file>images/proc1.png</file>
-    <file>images/w_auto.png</file>
-    <file>images/w_semi.png</file>
-    <file>images/w_single.png</file>
+    <file>images/animations/menu_opening.gif</file>
+    <file>images/buttons/arrow_left.png</file>
+    <file>images/buttons/arrow_left_selected.png</file>
+    <file>images/buttons/arrow_right.png</file>
+    <file>images/buttons/arrow_right_selected.png</file>
+    <file>images/decorations/menu_background.png</file>
+    <file>images/buttons/checkbox_checked.png</file>
+    <file>images/decorations/menu_background2.png</file>
+    <file>images/decorations/proc1.png</file>
+    <file>images/icons/levels/arena1.png</file>
+    <file>images/icons/weapons/a_bullet.png</file>
+    <file>images/icons/weapons/a_explosive.png</file>
+    <file>images/icons/weapons/a_scatter.png</file>
+    <file>images/icons/weapons/w_auto.png</file>
+    <file>images/icons/weapons/w_semi.png</file>
+    <file>images/icons/weapons/w_single.png</file>
   </qresource>
-  <qresource prefix="images"/>
 </RCC>
