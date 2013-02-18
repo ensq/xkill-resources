@@ -1,6 +1,8 @@
 <RCC>
   <qresource prefix="/xkill">
     <file>images/buttons/radiobutton_checked.png</file>
+    <file>fonts/arcade_interlaced.ttf</file>
+    <file>fonts/arcade_rounded.ttf</file>
     <file>images/buttons/combobox.png</file>
     <file>images/icons/misc/movie.png</file>
     <file>arrow.png</file>

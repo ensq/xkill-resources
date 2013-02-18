@@ -14,31 +14,11 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">h1
-{
-	background: rgb(255, 255, 0);
-}
-
-/* ALL*/ 
+   <string notr="true">/* ALL*/ 
 QWidget
  {
-    background: rgba(255, 255, 255, 0);
+     background-color: rgba(255, 255, 255, 0);
  }
-
-QFrame
- {
-	 background: rgba(0, 0, 0, 100);
- }
-
-/* LABEL*/
-QLabel, QCheckBox, QRadioButton
-{
-	background-color: rgba(255, 255, 255, 0);
-	/*font-family: 'Arcade Rounded';*/
-	color: #222;
-	color: rgba(255, 255, 255, 255);
-	font-size:20px;
-}
 
 /* SCROLL_AREA*/
 QScrollArea
@@ -49,33 +29,26 @@ QScrollArea
 /* GROUP_BOX*/
 QGroupBox
 {
-	/*border: 3px  solid rgba(0, 0, 0, 50);*/
-
-	background: rgba(0, 0, 0, 150);
-	border-radius: 10px;
-	/*background: rgba(255, 255, 255, 100);*/
+	border: 3px  solid rgba(0, 0, 0, 50);
 }
 
 /* PUSH_BUTTON*/
 QPushButton
 {
-	color: rgba(255, 255, 255, 150);
-	color: rgba(255, 255, 255, 100);	
+	color: rgba(0, 0, 0, 255);
 	font-size:40px;
 	/* border-image: url(:/xkill/buttons/button_normal.png);*/
 
-	padding: 5px 15px;
-	margin: px 5px;
-	font-family: 'Arcade Rounded';
+	padding: 0px 15px;
+	margin: 0px 5px;
 
-	
-	 background: rgba(0, 0, 0, 0);
+	border: 3px  solid rgb(150, 150, 150);
+	background: rgba(255, 255, 255, 1);
 }
 QPushButton::hover
 {
-	color: rgba(255, 255, 255, 255);
-	/*background: rgba(255, 255, 255, 100);
-	background: rgba(0, 0, 0, 100);*/
+	color: rgba(0, 0, 0, 255);
+	border: 3px  solid rgb(100, 100, 100);
 }
 
 /* COMBO_BOX*/
@@ -100,21 +73,11 @@ QComboBox::down-arrow
  }
 
 /*RADIO_BUTTON*/
-/* CHECK_BOX*/
-QCheckBox::indicator, QRadioButton::indicator
-{
-	border: 3px  solid rgb(255, 255, 255);
-	min-height: 20px;
-	min-width: 20px;
-}
-
-QCheckBox::indicator:hover, QRadioButton:indicator:hover
-{
-    border: 3px  solid rgb(150, 150, 150);
- }
-
 QRadioButton::indicator
 {
+    border: 3px  solid rgb(150, 150, 150);
+	min-height: 20px;
+	min-width: 20px;
 	border-radius: 10px;
  }
 
@@ -122,6 +85,23 @@ QRadioButton::indicator:checked
 {
 	image: url(:/xkill/images/buttons/radiobutton_checked.png);
 }
+
+
+/* CHECK_BOX*/
+QCheckBox
+{
+}
+QCheckBox::indicator
+{
+	border: 3px  solid rgb(150, 150, 150);
+	min-height: 20px;
+	min-width: 20px;
+}
+
+QCheckBox::indicator:hover, QRadioButton:indicator:hover
+{
+    border: 3px  solid rgb(100, 100, 100);
+ }
 
 QCheckBox::indicator:checked
 {
@@ -151,41 +131,45 @@ QScrollBar::add-line, QScrollBar::sub-line
  }
 
 
+/* LABEL*/
+QLabel, QCheckBox, QRadioButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	font-family: Verdana;
+	color: #222;
+	font-size:20px;
+}
 
 /* SLIDER*/
  QSlider::groove:horizontal 
 {
      height: 5px;
      background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
-	background: rgba(255, 255, 255, 52);
      margin: 2px 0;
  }
 
 QSlider::handle 
 {
 	background: rgb(255, 255, 255);
-     background: rgba(150, 150, 150, 255);
-     width: 40px;
+     border: 3px solid grey;
+     width: 25px;
      margin: -6px 0;
  }
 
  QSlider::handle:hover
 {
-	 background: rgba(255, 255, 255, 255);
+	border: 3px solid black;
  }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_background">
     <property name="geometry">
      <rect>
-      <x>-30</x>
+      <x>20</x>
       <y>-10</y>
-      <width>1201</width>
-      <height>971</height>
+      <width>931</width>
+      <height>471</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -200,10 +184,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_main">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>40</y>
-      <width>331</width>
-      <height>491</height>
+      <x>10</x>
+      <y>130</y>
+      <width>261</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -242,76 +226,67 @@ QSlider::handle
         </spacer>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox_11">
-         <property name="title">
-          <string>GroupBox</string>
+        <widget class="QPushButton" name="pushButton_start">
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_11">
-          <item>
-           <widget class="QPushButton" name="pushButton_start">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Start</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_settings">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Settings</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_credits">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Credits</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_quit">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Quit</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <property name="text">
+          <string>Start</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_settings">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Settings</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_credits">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Credits</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_quit">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Quit</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
         </widget>
        </item>
        <item>
@@ -347,9 +322,9 @@ QSlider::handle
    <widget class="QFrame" name="frame_settings">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>650</y>
-      <width>311</width>
+      <x>40</x>
+      <y>470</y>
+      <width>261</width>
       <height>251</height>
      </rect>
     </property>
@@ -469,7 +444,7 @@ QSlider::handle
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>300</x>
       <y>20</y>
       <width>531</width>
       <height>491</height>
@@ -527,13 +502,16 @@ QSlider::handle
         </spacer>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox_4">
-         <property name="title">
-          <string/>
+        <widget class="QFrame" name="frame_menu_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_11">
               <item>
@@ -606,185 +584,161 @@ QSlider::handle
               </property>
              </widget>
             </item>
-            <item>
-             <spacer name="horizontalSpacer_43">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Level&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout">
-              <item>
-               <widget class="QPushButton" name="pushButton_level_arrow">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Level</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton_level_arrow">
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/images/buttons/arrow_left.png);
-	background: rgba(255, 255, 255, 1);
 }
 
 QPushButton:hover
 {
 	border-image: url(:/xkill/images/buttons/arrow_left_selected.png);
 }</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="iconSize">
-                 <size>
-                  <width>16</width>
-                  <height>16</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QGroupBox" name="groupBox_12">
-                <property name="styleSheet">
-                 <string notr="true">/* GROUP_BOX*/
-QGroupBox
-{
-	border: 0px  solid rgba(0, 0, 0, 100);
-	background: rgba(255, 255, 255, 52);
-}</string>
-                </property>
-                <property name="title">
-                 <string/>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_13">
-                 <item>
-                  <widget class="QLabel" name="label_3">
-                   <property name="minimumSize">
-                    <size>
-                     <width>300</width>
-                     <height>150</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>300</width>
-                     <height>150</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap resource="xkill.qrc">:/xkill/images/icons/levels/arena1.png</pixmap>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_13">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="xkill.qrc">:/xkill/images/icons/levels/arena1.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/images/buttons/arrow_right.png);
-	background: rgba(255, 255, 255, 1);
 }
 
 QPushButton:hover
 {
 	border-image: url(:/xkill/images/buttons/arrow_right_selected.png);
 }</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="iconSize">
-                 <size>
-                  <width>16</width>
-                  <height>16</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_17">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_startgame">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Start</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_customize">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Customize</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>16</width>
-              <height>16</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-         </layout>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_17">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_startgame">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_customize">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Customize</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
         </widget>
        </item>
        <item>
@@ -1338,10 +1292,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1280</x>
+      <x>830</x>
       <y>50</y>
       <width>591</width>
-      <height>341</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1395,9 +1349,9 @@ QPushButton:hover
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-540</y>
+          <y>0</y>
           <width>483</width>
-          <height>961</height>
+          <height>982</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -1417,7 +1371,7 @@ QPushButton:hover
          <item>
           <widget class="QLabel" name="label_43">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Heartache by the cycles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1812,23 +1766,7 @@ QPushButton:hover
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="comboBox_input">
-         <item>
-          <property name="text">
-           <string>AAA</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>BBB</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>CCC</string>
-          </property>
-         </item>
-        </widget>
+        <widget class="QComboBox" name="comboBox_input"/>
        </item>
        <item>
         <widget class="QLabel" name="label_10">
@@ -2110,9 +2048,9 @@ QPushButton:hover
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-483</y>
+          <y>-682</y>
           <width>483</width>
-          <height>2213</height>
+          <height>2252</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_19">
@@ -2145,7 +2083,7 @@ QPushButton:hover
          <item>
           <widget class="QLabel" name="label_48">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;Weapons&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Weapons&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -2681,7 +2619,7 @@ QPushButton:hover
          <item>
           <widget class="QLabel" name="label_91">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;Ammunition&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Ammunition&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -3457,7 +3395,7 @@ QPushButton:hover
          <item>
           <widget class="QLabel" name="label_94">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;Hacks&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hacks&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -3705,7 +3643,7 @@ QPushButton:hover
          <item>
           <widget class="QLabel" name="label_178">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;Mutators&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Mutators&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -3945,8 +3883,8 @@ QPushButton:hover
      </item>
     </layout>
    </widget>
-   <zorder>label_background</zorder>
    <zorder>frame_main</zorder>
+   <zorder>label_background</zorder>
    <zorder>frame_settings</zorder>
    <zorder>frame_start</zorder>
    <zorder>frame_audio</zorder>
@@ -3956,7 +3894,6 @@ QPushButton:hover
    <zorder>frame_credits</zorder>
    <zorder>frame_input</zorder>
    <zorder>frame_customize</zorder>
-   <zorder>pushButton_start</zorder>
   </widget>
  </widget>
  <resources>
