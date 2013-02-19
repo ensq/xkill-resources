@@ -6,7 +6,8 @@
 #		1 VERTEX_TYPE_POS_NORM_TEX,
 #		2 VERTEX_TYPE_POS_NORM_SKINNED,
 #		3 VERTEX_TYPE_POS_NORM_TEX_SKINNED,
-#		4 VERTEX_TYPE_POS_NORM_TEX_TAN_SKINNED
+#		4 VERTEX_TYPE_POS_NORM_TEX_TAN_SKINNED,
+#		5 VERTEX_TYPE_POS_NORM_TEX_TAN
 
 
 ######################################
@@ -26,6 +27,7 @@ h default xkill-models/
 #m 1 healthpack.obj 1 1
 #m 2 Projectile.obj 1 1
 m 2 rifle.obj 1 1
+m 2 ammosingle.obj 1 1
 m 3 healthpack.obj 1 1
 m 4 ammosingle.obj 1 1
 m 5 ammoscatter.obj 1 1
