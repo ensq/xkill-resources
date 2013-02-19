@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1632</width>
-    <height>1311</height>
+    <width>1910</width>
+    <height>2032</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,19 +30,17 @@ QLabel, QCheckBox, QRadioButton
 {
 	background-color: rgba(255, 255, 255, 0);
 	/*font-family: 'Arcade Rounded';*/
-	/*font-family: 'Zephyrean Gust BRK';*/
-	color: #222;
-	color: rgba(255, 255, 255, 255);
-	font-size:20px;
-}
-/* SPECIAL_CASE_LABELS */
- #label_ammo, #label_hacks, #label_mutators, #label_weapons
-{
+	font-family: '[z] Arista Light';
 	font-weight: bold;
-	font-size: 30px;
-	color: rgba(255, 255, 255, 100);
-	border: 2px;
+	color: #222;
+	color: rgba(255, 255, 255, 230);
+	font-size:22px;
 }
+QLabel
+{
+	font-size:30px;
+}
+
 
 /* SCROLL_AREA*/
 QScrollArea
@@ -211,9 +209,9 @@ QSlider::handle
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>550</y>
-      <width>231</width>
-      <height>531</height>
+      <y>10</y>
+      <width>191</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -357,10 +355,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_settings">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>430</x>
       <y>10</y>
-      <width>191</width>
-      <height>531</height>
+      <width>181</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -488,10 +486,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>10</y>
-      <width>231</width>
-      <height>531</height>
+      <x>200</x>
+      <y>590</y>
+      <width>241</width>
+      <height>481</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -641,7 +639,7 @@ QSlider::handle
             <item>
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Level&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>Level</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -652,10 +650,16 @@ QSlider::handle
              <layout class="QHBoxLayout" name="horizontalLayout">
               <item>
                <widget class="QPushButton" name="pushButton_level_arrow">
+                <property name="minimumSize">
+                 <size>
+                  <width>80</width>
+                  <height>80</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
-                  <width>40</width>
-                  <height>40</height>
+                  <width>80</width>
+                  <height>80</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -689,6 +693,7 @@ QGroupBox
 {
 	border: 0px  solid rgba(0, 0, 0, 100);
 	background: rgba(255, 255, 255, 52);
+	padding: 5px;
 }</string>
                 </property>
                 <property name="title">
@@ -725,10 +730,16 @@ QGroupBox
               </item>
               <item>
                <widget class="QPushButton" name="pushButton_13">
+                <property name="minimumSize">
+                 <size>
+                  <width>80</width>
+                  <height>80</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
-                  <width>40</width>
-                  <height>40</height>
+                  <width>80</width>
+                  <height>80</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -855,10 +866,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_audio">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>550</y>
+      <x>210</x>
+      <y>270</y>
       <width>191</width>
-      <height>531</height>
+      <height>291</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1227,10 +1238,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_video">
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>640</x>
       <y>10</y>
-      <width>201</width>
-      <height>531</height>
+      <width>161</width>
+      <height>261</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1279,7 +1290,7 @@ QPushButton:hover
             <item>
              <widget class="QLabel" name="label_15">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;No settings yet :)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>No settings yet :)</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -1375,14 +1386,28 @@ QPushButton:hover
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1430</x>
-      <y>550</y>
-      <width>211</width>
-      <height>541</height>
+      <x>1810</x>
+      <y>100</y>
+      <width>251</width>
+      <height>621</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">/* LABEL*/
+QLabel
+{
+	font-size: 20px;
+	font-family: 'Sans-serif';
+}
+
+#label_cred_prog, #label_cred_art, #label_cred_3d, #label_cred_sound,
+#label_cred_music, #label_cred_leveld
+{
+	font-size: 15px;
+	color: rgba(255, 255, 255, 100);
+	font-family: '[z] Arista Light';
+	font-family: 'Arcade Rounded';
+}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -1427,7 +1452,7 @@ QPushButton:hover
           <x>0</x>
           <y>0</y>
           <width>483</width>
-          <height>985</height>
+          <height>926</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -1466,9 +1491,26 @@ QPushButton:hover
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_39">
               <item>
-               <widget class="QLabel" name="label_43">
+               <widget class="QLabel" name="label_46">
+                <property name="styleSheet">
+                 <string notr="true">/* LABEL*/
+QLabel
+{
+	font-family: 'Arcade Interlaced';
+}</string>
+                </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_undertitle">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1492,9 +1534,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_23">
+               <widget class="QLabel" name="label_cred_prog">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Programming&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>Programming</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1585,9 +1627,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_33">
+               <widget class="QLabel" name="label_cred_art">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Art&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>Art</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1628,9 +1670,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_27">
+               <widget class="QLabel" name="label_cred_3d">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;3D&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>3D</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1681,9 +1723,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_39">
+               <widget class="QLabel" name="label_cred_sound">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Sound&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>Sound</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1714,9 +1756,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_42">
+               <widget class="QLabel" name="label_cred_music">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Music&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>Music</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1747,9 +1789,9 @@ QPushButton:hover
                </spacer>
               </item>
               <item>
-               <widget class="QLabel" name="label_38">
+               <widget class="QLabel" name="label_cred_leveld">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;&quot;&gt;Level Design&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>Level Design</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1772,31 +1814,11 @@ QPushButton:hover
              <zorder>horizontalSpacer_23</zorder>
              <zorder>label_34</zorder>
              <zorder>label_28</zorder>
-             <zorder>horizontalSpacer_31</zorder>
-             <zorder>horizontalSpacer_42</zorder>
-             <zorder>frame_video</zorder>
-             <zorder>label_25</zorder>
-             <zorder>label_32</zorder>
-             <zorder>label_37</zorder>
-             <zorder>label_26</zorder>
-             <zorder>label_27</zorder>
-             <zorder>label_23</zorder>
-             <zorder>label_36</zorder>
-             <zorder>label_33</zorder>
-             <zorder>label_24</zorder>
-             <zorder>label_43</zorder>
-             <zorder>label_30</zorder>
-             <zorder>label_31</zorder>
-             <zorder>label_35</zorder>
-             <zorder>label_29</zorder>
-             <zorder>horizontalSpacer_23</zorder>
-             <zorder>label_34</zorder>
-             <zorder>label_28</zorder>
-             <zorder>label_38</zorder>
+             <zorder>label_cred_leveld</zorder>
              <zorder>horizontalSpacer_31</zorder>
              <zorder>label_5</zorder>
              <zorder>horizontalSpacer_42</zorder>
-             <zorder>label_42</zorder>
+             <zorder>label_cred_music</zorder>
              <zorder>label_25</zorder>
              <zorder>label_41</zorder>
              <zorder>horizontalSpacer_34</zorder>
@@ -1804,17 +1826,18 @@ QPushButton:hover
              <zorder>label_37</zorder>
              <zorder>label_40</zorder>
              <zorder>label_26</zorder>
-             <zorder>label_27</zorder>
-             <zorder>label_39</zorder>
-             <zorder>label_23</zorder>
+             <zorder>label_cred_3d</zorder>
+             <zorder>label_cred_sound</zorder>
+             <zorder>label_cred_prog</zorder>
              <zorder>label_36</zorder>
-             <zorder>label_33</zorder>
+             <zorder>label_cred_art</zorder>
              <zorder>horizontalSpacer_33</zorder>
              <zorder>label_24</zorder>
-             <zorder>label_43</zorder>
+             <zorder>label_undertitle</zorder>
              <zorder>label_30</zorder>
              <zorder>label_31</zorder>
              <zorder>horizontalSpacer_32</zorder>
+             <zorder>label_46</zorder>
             </widget>
            </item>
            <item>
@@ -1867,10 +1890,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_input">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>580</y>
-      <width>211</width>
-      <height>521</height>
+      <x>420</x>
+      <y>270</y>
+      <width>181</width>
+      <height>291</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1925,7 +1948,7 @@ QPushButton:hover
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_input">
+           <widget class="QComboBox" name="comboBox_Input">
             <item>
              <property name="text">
               <string>AAA</string>
@@ -1954,7 +1977,7 @@ QPushButton:hover
            </widget>
           </item>
           <item>
-           <widget class="QTableView" name="tableView_input">
+           <widget class="QTableView" name="tableView_Input">
             <property name="showDropIndicator" stdset="0">
              <bool>false</bool>
             </property>
@@ -2039,7 +2062,7 @@ QPushButton:hover
            </layout>
           </item>
           <item>
-           <widget class="QSlider" name="horizontalSlider_input">
+           <widget class="QSlider" name="horizontalSlider_Input">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -2061,14 +2084,14 @@ QPushButton:hover
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_3">
+           <widget class="QCheckBox" name="checkBox_Input_Inverted">
             <property name="text">
              <string>Inverted</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_4">
+           <widget class="QCheckBox" name="checkBox_Input_Rumble">
             <property name="text">
              <string>Rumble</string>
             </property>
@@ -2093,7 +2116,7 @@ QPushButton:hover
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_startgame_2">
+             <widget class="QPushButton" name="pushButton_Input">
               <property name="styleSheet">
                <string notr="true"/>
               </property>
@@ -2159,14 +2182,26 @@ QPushButton:hover
    <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>1430</x>
+      <x>1040</x>
       <y>10</y>
-      <width>191</width>
-      <height>531</height>
+      <width>741</width>
+      <height>871</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">/* SPECIAL_CASE_LABELS */
+QLabel
+{
+	color: rgba(255, 255, 255, 255);
+	font-size: 22px;
+}
+ #label_ammo, #label_hacks, #label_mutators, #label_weapons, #label_gameSettings
+{
+	font-weight: bold;
+	font-size: 35px;
+	color: rgba(255, 255, 255, 100);
+	border: 2px;
+}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -2192,7 +2227,7 @@ QPushButton:hover
       <widget class="QScrollArea" name="scrollArea_3">
        <property name="minimumSize">
         <size>
-         <width>500</width>
+         <width>700</width>
          <height>0</height>
         </size>
        </property>
@@ -2202,6 +2237,9 @@ QPushButton:hover
 	 background: rgba(0, 0, 0, 0);
  }</string>
        </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
        <property name="widgetResizable">
         <bool>true</bool>
        </property>
@@ -2209,9 +2247,9 @@ QPushButton:hover
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-11</y>
-          <width>483</width>
-          <height>2352</height>
+          <y>0</y>
+          <width>683</width>
+          <height>2624</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2262,6 +2300,370 @@ QGroupBox
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_47">
               <item>
+               <widget class="QLabel" name="label_gameSettings">
+                <property name="text">
+                 <string>Game</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="styleSheet">
+                 <string notr="true">/* GROUP_BOX*/
+QGroupBox
+{
+	border: 5px  solid rgba(100, 100, 100, 255);
+	background: rgba(255, 255, 255, 0);
+}</string>
+                </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_49">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_52">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_36">
+                     <item>
+                      <spacer name="horizontalSpacer_83">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_90">
+                       <property name="text">
+                        <string>Cycle limit</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_91">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_84">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_cycleLimit">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>128</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>16</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>32</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>16</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_51">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_35">
+                     <item>
+                      <spacer name="horizontalSpacer_81">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_84">
+                       <property name="text">
+                        <string>Time limit</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_87">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_106">
+                       <property name="text">
+                        <string>min</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_82">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_timeLimit">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>128</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>16</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>16</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_53">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_37">
+                     <item>
+                      <spacer name="horizontalSpacer_85">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_94">
+                       <property name="text">
+                        <string>Respawn time</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_97">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_107">
+                       <property name="text">
+                        <string>s</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_86">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_respawnTime">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>32</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>8</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>2</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>8</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_99">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>462</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_100">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>422</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
                <widget class="QLabel" name="label_weapons">
                 <property name="text">
                  <string>Weapons</string>
@@ -2288,7 +2690,14 @@ QGroupBox
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_20">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_8">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Auto">
+                     <property name="text">
+                      <string>Single</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="radioButton_Weapon_Single">
                      <property name="text">
                       <string>Semi</string>
                      </property>
@@ -2298,16 +2707,9 @@ QGroupBox
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_9">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Semi">
                      <property name="text">
                       <string>Auto</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_10">
-                     <property name="text">
-                      <string>Single</string>
                      </property>
                     </widget>
                    </item>
@@ -2333,7 +2735,7 @@ QGroupBox
                  <item>
                   <layout class="QGridLayout" name="gridLayout">
                    <item row="1" column="2">
-                    <widget class="QCheckBox" name="checkBox_8">
+                    <widget class="QCheckBox" name="checkBox_Weapon_Explosive">
                      <property name="text">
                       <string>Explosive</string>
                      </property>
@@ -2343,7 +2745,7 @@ QGroupBox
                     </widget>
                    </item>
                    <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_6">
+                    <widget class="QCheckBox" name="checkBox_Weapon_Bullet">
                      <property name="text">
                       <string>Bullet</string>
                      </property>
@@ -2353,7 +2755,7 @@ QGroupBox
                     </widget>
                    </item>
                    <item row="1" column="1">
-                    <widget class="QCheckBox" name="checkBox_7">
+                    <widget class="QCheckBox" name="checkBox_Weapon_Scatter">
                      <property name="text">
                       <string>Scatter</string>
                      </property>
@@ -2440,21 +2842,12 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_5">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="maximum">
-                      <number>100</number>
-                     </property>
-                     <property name="pageStep">
+                    <widget class="QSlider" name="horizontalSlider_Weapon_ClipSize">
+                     <property name="minimum">
                       <number>1</number>
                      </property>
-                     <property name="value">
-                      <number>50</number>
+                     <property name="maximum">
+                      <number>500</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
@@ -2522,113 +2915,92 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_6">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
+                    <widget class="QSlider" name="horizontalSlider_Weapon_ReloadTime">
                      <property name="maximum">
-                      <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
+                      <number>1000</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
                    </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_22">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                    <layout class="QHBoxLayout" name="horizontalLayout_25">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_25">
-                       <item>
-                        <spacer name="horizontalSpacer_63">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_82">
-                         <property name="text">
-                          <string>Rate of fire</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_83">
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>50</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_64">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QSlider" name="horizontalSlider_7">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="pageStep">
-                        <number>1</number>
-                       </property>
-                       <property name="value">
-                        <number>50</number>
-                       </property>
+                      <spacer name="horizontalSpacer_63">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
                        </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_82">
+                       <property name="text">
+                        <string>Rate of fire</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
                       </widget>
                      </item>
+                     <item>
+                      <widget class="QLabel" name="label_83">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_64">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
                     </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Weapon_RateOfFire">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
                    </item>
                   </layout>
                  </item>
                  <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_23">
+                  <layout class="QVBoxLayout" name="verticalLayout_19">
                    <item>
                     <layout class="QHBoxLayout" name="horizontalLayout_26">
                      <item>
@@ -2686,108 +3058,90 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_8">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="maximum">
-                      <number>100</number>
-                     </property>
-                     <property name="pageStep">
+                    <widget class="QSlider" name="horizontalSlider_Weapon_DamageModifier">
+                     <property name="minimum">
                       <number>1</number>
                      </property>
-                     <property name="value">
-                      <number>50</number>
+                     <property name="maximum">
+                      <number>1000</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
                    </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_23">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_24">
+                    <layout class="QHBoxLayout" name="horizontalLayout_27">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_27">
-                       <item>
-                        <spacer name="horizontalSpacer_67">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_88">
-                         <property name="text">
-                          <string>Explosion sphere modifier</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_89">
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>50</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_68">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QSlider" name="horizontalSlider_9">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="pageStep">
-                        <number>1</number>
-                       </property>
-                       <property name="value">
-                        <number>50</number>
-                       </property>
+                      <spacer name="horizontalSpacer_67">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
                        </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_88">
+                       <property name="text">
+                        <string>Explosion sphere modifier</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
                       </widget>
                      </item>
+                     <item>
+                      <widget class="QLabel" name="label_89">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_68">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
                     </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Weapon_ExplosionSphereModifier">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>1000</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -2831,19 +3185,6 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_138">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>462</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QGroupBox" name="groupBox_5">
                 <property name="styleSheet">
                  <string notr="true">/* GROUP_BOX*/
@@ -2860,7 +3201,7 @@ QGroupBox
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_28">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_11">
+                    <widget class="QRadioButton" name="radioButton_Ammo_Bullet">
                      <property name="text">
                       <string>Bullet</string>
                      </property>
@@ -2870,14 +3211,14 @@ QGroupBox
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_12">
+                    <widget class="QRadioButton" name="radioButton_Ammo_Scatter">
                      <property name="text">
                       <string>Scatter</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_13">
+                    <widget class="QRadioButton" name="radioButton_Ammo_Explosive">
                      <property name="text">
                       <string>Explosive</string>
                      </property>
@@ -2902,88 +3243,6 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_31">
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_32">
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_29">
-                     <item>
-                      <spacer name="horizontalSpacer_60">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>40</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_92">
-                       <property name="text">
-                        <string>Speed</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_93">
-                       <property name="maximumSize">
-                        <size>
-                         <width>40</width>
-                         <height>16777215</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>50</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <spacer name="horizontalSpacer_70">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>40</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <widget class="QSlider" name="horizontalSlider_10">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="maximum">
-                      <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
-                     </property>
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_33">
                    <item>
@@ -3043,108 +3302,233 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_11">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_Damage">
+                     <property name="minimum">
+                      <number>1</number>
                      </property>
                      <property name="maximum">
                       <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
                    </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_32">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_34">
+                    <layout class="QHBoxLayout" name="horizontalLayout_29">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_31">
-                       <item>
-                        <spacer name="horizontalSpacer_73">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_98">
-                         <property name="text">
-                          <string>No. projectiles</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_99">
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>50</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_74">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QSlider" name="horizontalSlider_12">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="pageStep">
-                        <number>1</number>
-                       </property>
-                       <property name="value">
-                        <number>50</number>
-                       </property>
+                      <spacer name="horizontalSpacer_60">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
                        </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_92">
+                       <property name="text">
+                        <string>Speed</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
                       </widget>
                      </item>
+                     <item>
+                      <widget class="QLabel" name="label_93">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_70">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
                     </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_Speed">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_34">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_31">
+                     <item>
+                      <spacer name="horizontalSpacer_73">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_98">
+                       <property name="text">
+                        <string>No. projectiles</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_99">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_74">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_NrOfProjectiles">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_36">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_33">
+                     <item>
+                      <spacer name="horizontalSpacer_77">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_104">
+                       <property name="text">
+                        <string>Velocity variation</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_105">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_78">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_VelocitVariation">
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -3207,108 +3591,14 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_13">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_Spread">
                      <property name="maximum">
-                      <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
+                      <number>157</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
-                   </item>
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_36">
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_33">
-                       <item>
-                        <spacer name="horizontalSpacer_77">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_104">
-                         <property name="text">
-                          <string>Velocity variation</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_105">
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>50</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_78">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QSlider" name="horizontalSlider_14">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="pageStep">
-                        <number>1</number>
-                       </property>
-                       <property name="value">
-                        <number>50</number>
-                       </property>
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
                    </item>
                   </layout>
                  </item>
@@ -3329,7 +3619,7 @@ QGroupBox
                </spacer>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_9">
+               <widget class="QCheckBox" name="checkBox_Ammo_Explosive">
                 <property name="text">
                  <string>Explosive</string>
                 </property>
@@ -3399,6 +3689,22 @@ QGroupBox
                       </widget>
                      </item>
                      <item>
+                      <widget class="QLabel" name="label_117">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>s</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
                       <spacer name="horizontalSpacer_88">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
@@ -3414,108 +3720,90 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_19">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_ExplosionDuration">
+                     <property name="minimum">
+                      <number>1</number>
                      </property>
                      <property name="maximum">
                       <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
                    </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_42">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_42">
+                    <layout class="QHBoxLayout" name="horizontalLayout_39">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_39">
-                       <item>
-                        <spacer name="horizontalSpacer_89">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_113">
-                         <property name="text">
-                          <string>Inital radius</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_114">
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>50</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_90">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QSlider" name="horizontalSlider_20">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="pageStep">
-                        <number>1</number>
-                       </property>
-                       <property name="value">
-                        <number>50</number>
-                       </property>
+                      <spacer name="horizontalSpacer_89">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
                        </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_113">
+                       <property name="text">
+                        <string>Inital radius</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
                       </widget>
                      </item>
+                     <item>
+                      <widget class="QLabel" name="label_114">
+                       <property name="maximumSize">
+                        <size>
+                         <width>40</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_90">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
                     </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_ExplosionInitialRadius">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -3578,29 +3866,17 @@ QGroupBox
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_21">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_ExplosionFinalRadius">
+                     <property name="minimum">
+                      <number>1</number>
                      </property>
                      <property name="maximum">
                       <number>100</number>
-                     </property>
-                     <property name="pageStep">
-                      <number>1</number>
-                     </property>
-                     <property name="value">
-                      <number>50</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
                     </widget>
-                   </item>
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_44"/>
                    </item>
                   </layout>
                  </item>
@@ -4177,12 +4453,12 @@ QGroupBox
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>582</x>
-     <y>115</y>
+     <x>945</x>
+     <y>108</y>
     </hint>
     <hint type="destinationlabel">
-     <x>635</x>
-     <y>91</y>
+     <x>1132</x>
+     <y>81</y>
     </hint>
    </hints>
   </connection>
@@ -4193,12 +4469,12 @@ QGroupBox
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1119</x>
-     <y>637</y>
+     <x>641</x>
+     <y>764</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1103</x>
-     <y>610</y>
+     <x>617</x>
+     <y>735</y>
     </hint>
    </hints>
   </connection>
@@ -4209,12 +4485,12 @@ QGroupBox
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1064</x>
-     <y>698</y>
+     <x>641</x>
+     <y>834</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1089</x>
-     <y>671</y>
+     <x>617</x>
+     <y>805</y>
     </hint>
    </hints>
   </connection>
@@ -4225,12 +4501,60 @@ QGroupBox
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>976</x>
-     <y>759</y>
+     <x>641</x>
+     <y>904</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1094</x>
-     <y>732</y>
+     <x>617</x>
+     <y>875</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_timeLimit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_87</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1518</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1561</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_cycleLimit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_91</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1451</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1588</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_respawnTime</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_97</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1375</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1606</x>
+     <y>264</y>
     </hint>
    </hints>
   </connection>
