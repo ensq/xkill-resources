@@ -295,9 +295,9 @@ alternate-background-color: black;
                           </layout>
                          </item>
                          <item>
-                          <widget class="QSlider" name="horizontalSlider_4">
+                          <widget class="QSlider" name="horizontalSlider_timeLimit">
                            <property name="enabled">
-                            <bool>false</bool>
+                            <bool>true</bool>
                            </property>
                            <property name="toolTip">
                             <string/>
@@ -350,9 +350,9 @@ alternate-background-color: black;
                           </layout>
                          </item>
                          <item>
-                          <widget class="QSlider" name="horizontalSlider_6">
+                          <widget class="QSlider" name="horizontalSlider_cycleLimit">
                            <property name="enabled">
-                            <bool>false</bool>
+                            <bool>true</bool>
                            </property>
                            <property name="toolTip">
                             <string/>
@@ -405,9 +405,9 @@ alternate-background-color: black;
                           </layout>
                          </item>
                          <item>
-                          <widget class="QSlider" name="horizontalSlider_7">
+                          <widget class="QSlider" name="horizontalSlider_respawnTime">
                            <property name="enabled">
-                            <bool>false</bool>
+                            <bool>true</bool>
                            </property>
                            <property name="toolTip">
                             <string/>
@@ -559,7 +559,7 @@ alternate-background-color: black;
                    </size>
                   </property>
                   <property name="currentIndex">
-                   <number>0</number>
+                   <number>2</number>
                   </property>
                   <widget class="QWidget" name="Weapon">
                    <property name="autoFillBackground">
@@ -1605,218 +1605,6 @@ alternate-background-color: black;
                     </item>
                    </layout>
                   </widget>
-                  <widget class="QWidget" name="Mutators">
-                   <attribute name="title">
-                    <string>Mutators</string>
-                   </attribute>
-                   <layout class="QHBoxLayout" name="horizontalLayout">
-                    <item>
-                     <widget class="QGroupBox" name="groupBox_17">
-                      <property name="enabled">
-                       <bool>false</bool>
-                      </property>
-                      <property name="title">
-                       <string>Physics</string>
-                      </property>
-                      <property name="flat">
-                       <bool>false</bool>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_31">
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_16">
-                         <property name="text">
-                          <string>None</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_17">
-                         <property name="text">
-                          <string>Gravity shift</string>
-                         </property>
-                         <property name="checked">
-                          <bool>false</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_61">
-                         <property name="text">
-                          <string>Low gravity</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_18">
-                         <property name="text">
-                          <string>Zero gravity</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="verticalSpacer_10">
-                         <property name="orientation">
-                          <enum>Qt::Vertical</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>20</width>
-                           <height>40</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QGroupBox" name="groupBox_10">
-                      <property name="enabled">
-                       <bool>false</bool>
-                      </property>
-                      <property name="title">
-                       <string>Time</string>
-                      </property>
-                      <property name="flat">
-                       <bool>false</bool>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_7">
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_5">
-                         <property name="text">
-                          <string>None</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_56">
-                         <property name="text">
-                          <string>Matrix</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QRadioButton" name="radioButton_54">
-                         <property name="text">
-                          <string>Bullet hell</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="verticalSpacer">
-                         <property name="orientation">
-                          <enum>Qt::Vertical</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>20</width>
-                           <height>40</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QGroupBox" name="groupBox_16">
-                      <property name="enabled">
-                       <bool>false</bool>
-                      </property>
-                      <property name="title">
-                       <string>Scheduler </string>
-                      </property>
-                      <property name="flat">
-                       <bool>false</bool>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_27">
-                       <item>
-                        <widget class="QCheckBox" name="checkBox_14">
-                         <property name="enabled">
-                          <bool>false</bool>
-                         </property>
-                         <property name="text">
-                          <string>Null-Process</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QCheckBox" name="checkBox_17">
-                         <property name="text">
-                          <string>Door race</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QCheckBox" name="checkBox_18">
-                         <property name="text">
-                          <string>Sudden death</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QCheckBox" name="checkBox_15">
-                         <property name="text">
-                          <string>World corruption</string>
-                         </property>
-                         <property name="checked">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QCheckBox" name="checkBox_16">
-                         <property name="text">
-                          <string>Flood</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="verticalSpacer_16">
-                         <property name="orientation">
-                          <enum>Qt::Vertical</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>20</width>
-                           <height>40</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <spacer name="horizontalSpacer_11">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>40</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                   </layout>
-                  </widget>
                  </widget>
                 </item>
                </layout>
@@ -1902,23 +1690,16 @@ alternate-background-color: black;
                          </item>
                         </widget>
                        </item>
-                       <item>
-                        <spacer name="horizontalSpacer_5">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
                       </layout>
                      </item>
                      <item>
                       <widget class="QLabel" name="label_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>400</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="text">
                         <string/>
                        </property>
@@ -1926,55 +1707,7 @@ alternate-background-color: black;
                         <pixmap resource="xkill.qrc">:/xkill/images/arena1.png</pixmap>
                        </property>
                        <property name="scaledContents">
-                        <bool>false</bool>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QTextBrowser" name="textBrowser_LevelInfo">
-                       <property name="enabled">
                         <bool>true</bool>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true"/>
-                       </property>
-                       <property name="verticalScrollBarPolicy">
-                        <enum>Qt::ScrollBarAlwaysOff</enum>
-                       </property>
-                       <property name="horizontalScrollBarPolicy">
-                        <enum>Qt::ScrollBarAlwaysOff</enum>
-                       </property>
-                       <property name="html">
-                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Arinurian streams &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;It is the end. They have come down through the gloaming from the stars. Now all is over, and beyond the Arinurian streams we shall dwell blissfully in Teloe.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Cykranosh&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;The great luminous triple ring still over-arched the zenith, but a strangely small and chilly sun had now intersected the ring and was declining toward the west of Cykranosh. The forest along the way was still a high wall of sharp metallic foliage; but other roads and paths and byways were now branching off from the one that the monster followed.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Remilliod&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;The overall colour was a skullish grey, offset by scabs of rust and a few desultory chips of powder-blue near the equatorial zones.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Wintermute&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;The sky above the port was the color of television, tuned to a dead channel.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Celephais&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Endlessly down the horsemen floated, their chargers pawing the aether as if galloping over golden sands; and then the luminous vapours spread apart to reveal a greater brightness, the brightness of the city Celephaïs, and the sea coast beyond, and the snowy peak overlooking the sea, and the gaily painted galleys that sail out of the harbour toward distant regions where the sea meets the sky.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Hyperboria&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Between the years when the oceans drank Atlantis and the gleaming cities, there was an Age undreamed of, when shining kingdoms lay spread across the world like blue mantles beneath the stars.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;City of Pillars&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;When I drew nigh the nameless city I knew it was accursed. I was traveling in a parched and terrible valley under the moon, and afar I saw it protruding uncannily above the sands as parts of a corpse may protrude from an ill-made grave.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Unkown Kadath&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;At length, sick with longing for those glittering sunset streets and cryptical hill lanes among ancient tiled roofs, nor able sleeping or waking to drive them from his mind, Carter resolved to go with bold entreaty whither no man had gone before, and dare the icy deserts through the dark to where unknown Kadath, veiled in cloud and crowned with unimagined stars, holds secret and nocturnal the onyx castle of the Great Ones.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                       </property>
-                       <property name="textInteractionFlags">
-                        <set>Qt::NoTextInteraction</set>
                        </property>
                       </widget>
                      </item>
@@ -1992,90 +1725,6 @@ p, li { white-space: pre-wrap; }
                       </spacer>
                      </item>
                     </layout>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QGroupBox" name="groupBox_19">
-                  <property name="enabled">
-                   <bool>false</bool>
-                  </property>
-                  <property name="title">
-                   <string>Game Mode</string>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_30">
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_6">
-                     <property name="text">
-                      <string>Scheduling</string>
-                     </property>
-                     <property name="checked">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_7">
-                     <property name="text">
-                      <string>Deathmatch</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_59">
-                     <property name="text">
-                      <string>Team Deathmatch</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_8">
-                     <property name="text">
-                      <string>Capture the Credit Card</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_11">
-                     <property name="text">
-                      <string>Trojan Horse</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_10">
-                     <property name="text">
-                      <string>Spyware vs Virus vs Antivirus</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_12">
-                     <property name="text">
-                      <string>Starvation</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QRadioButton" name="radioButton_9">
-                     <property name="text">
-                      <string>Rootkit Mode</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <spacer name="verticalSpacer_14">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
                    </item>
                   </layout>
                  </widget>
@@ -2168,7 +1817,7 @@ p, li { white-space: pre-wrap; }
              <enum>QTabWidget::North</enum>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="Input">
              <attribute name="title">
@@ -2293,142 +1942,92 @@ p, li { white-space: pre-wrap; }
              <attribute name="title">
               <string>Sound</string>
              </attribute>
-             <widget class="QGroupBox" name="groupBox_12">
-              <property name="geometry">
-               <rect>
-                <x>11</x>
-                <y>11</y>
-                <width>489</width>
-                <height>61</height>
-               </rect>
-              </property>
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="title">
-               <string/>
-              </property>
-              <widget class="QWidget" name="layoutWidget">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>20</y>
-                 <width>461</width>
-                 <height>30</height>
-                </rect>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_22">
-                <item>
-                 <widget class="QCheckBox" name="checkBox_Sound_Mute">
-                  <property name="text">
-                   <string>Mute sound</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_4">
-                  <property name="text">
-                   <string>Volume</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QSlider" name="horizontalSlider_Sound_Volume">
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="maximum">
-                   <number>100</number>
-                  </property>
-                  <property name="sliderPosition">
-                   <number>100</number>
-                  </property>
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QSpinBox" name="spinBox_2">
-                  <property name="readOnly">
-                   <bool>true</bool>
-                  </property>
-                  <property name="buttonSymbols">
-                   <enum>QAbstractSpinBox::NoButtons</enum>
-                  </property>
-                  <property name="maximum">
-                   <number>100</number>
-                  </property>
-                  <property name="value">
-                   <number>100</number>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </widget>
-             <widget class="QGroupBox" name="groupBox_13">
-              <property name="geometry">
-               <rect>
-                <x>11</x>
-                <y>79</y>
-                <width>491</width>
-                <height>231</height>
-               </rect>
-              </property>
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="title">
-               <string/>
-              </property>
-              <widget class="QWidget" name="layoutWidget">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>10</y>
-                 <width>471</width>
-                 <height>211</height>
-                </rect>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_31">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_13">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QGroupBox" name="groupBox_12">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>461</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_22">
                   <item>
-                   <widget class="QLabel" name="label_5">
+                   <widget class="QCheckBox" name="checkBox_Sound_Mute">
                     <property name="text">
-                     <string>Fmod sounds</string>
+                     <string>Mute sound</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QListView" name="listView_Sound_Fmod"/>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_36">
-                  <item>
-                   <widget class="QLabel" name="label_6">
+                   <widget class="QLabel" name="label_4">
                     <property name="text">
-                     <string>In-Game events</string>
+                     <string>Volume</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QListView" name="listView_Sound_InGame"/>
+                   <widget class="QSlider" name="horizontalSlider_Sound_Volume">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="sliderPosition">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="spinBox_2">
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                    <property name="buttonSymbols">
+                     <enum>QAbstractSpinBox::NoButtons</enum>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="value">
+                     <number>100</number>
+                    </property>
+                   </widget>
                   </item>
                  </layout>
-                </item>
-               </layout>
-              </widget>
-             </widget>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>139</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
             </widget>
            </widget>
           </item>
@@ -2513,7 +2112,7 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_4</sender>
+   <sender>horizontalSlider_timeLimit</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_10</receiver>
    <slot>setNum(int)</slot>
@@ -2523,29 +2122,29 @@ p, li { white-space: pre-wrap; }
      <y>184</y>
     </hint>
     <hint type="destinationlabel">
-     <x>364</x>
-     <y>153</y>
+     <x>380</x>
+     <y>168</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_7</sender>
+   <sender>horizontalSlider_respawnTime</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_19</receiver>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>146</x>
-     <y>286</y>
+     <x>176</x>
+     <y>319</y>
     </hint>
     <hint type="destinationlabel">
-     <x>364</x>
-     <y>255</y>
+     <x>380</x>
+     <y>282</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_6</sender>
+   <sender>horizontalSlider_cycleLimit</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_14</receiver>
    <slot>setNum(int)</slot>
@@ -2555,88 +2154,8 @@ p, li { white-space: pre-wrap; }
      <y>235</y>
     </hint>
     <hint type="destinationlabel">
-     <x>364</x>
-     <y>204</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_Ammo_Speed</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>spinBox_5</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>406</x>
-     <y>118</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>441</x>
-     <y>119</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_Ammo_NrOfProjectiles</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>spinBox_7</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>406</x>
-     <y>168</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>441</x>
-     <y>171</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_Weapon_RateOfFire</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>spinBox_10</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>389</x>
-     <y>256</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>440</x>
-     <y>228</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_Ammo_Damage</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>spinBox_6</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>406</x>
-     <y>143</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>441</x>
-     <y>145</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_Weapon_ClipSize</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>spinBox_9</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>387</x>
-     <y>175</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>440</x>
-     <y>176</y>
+     <x>380</x>
+     <y>225</y>
     </hint>
    </hints>
   </connection>
@@ -2647,12 +2166,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>148</x>
-     <y>334</y>
+     <x>128</x>
+     <y>82</y>
     </hint>
     <hint type="destinationlabel">
-     <x>519</x>
-     <y>332</y>
+     <x>128</x>
+     <y>82</y>
     </hint>
    </hints>
   </connection>
@@ -2663,12 +2182,92 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>519</x>
-     <y>332</y>
+     <x>128</x>
+     <y>82</y>
     </hint>
     <hint type="destinationlabel">
-     <x>148</x>
-     <y>334</y>
+     <x>128</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Weapon_RateOfFire</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_10</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Ammo_NrOfProjectiles</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_7</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Ammo_Damage</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_6</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Ammo_Speed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_5</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Weapon_ClipSize</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_9</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>118</y>
     </hint>
    </hints>
   </connection>
@@ -2679,12 +2278,12 @@ p, li { white-space: pre-wrap; }
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>453</x>
-     <y>104</y>
+     <x>138</x>
+     <y>102</y>
     </hint>
     <hint type="destinationlabel">
-     <x>494</x>
-     <y>110</y>
+     <x>138</x>
+     <y>102</y>
     </hint>
    </hints>
   </connection>
