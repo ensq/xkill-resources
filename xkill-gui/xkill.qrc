@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>fonts/arista_light.ttf</file>
     <file>images/buttons/radiobutton_checked.png</file>
     <file>fonts/arcade_interlaced.ttf</file>
     <file>fonts/arcade_rounded.ttf</file>

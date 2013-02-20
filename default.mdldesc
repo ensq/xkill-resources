@@ -33,9 +33,9 @@ m 4 ammosingle.obj 1 1
 m 5 ammoscatter.obj 1 1
 m 6 ammoexplosive.obj 1 1
 m 7 process.obj 1 1
-m 8 projectileexplosive.obj 1 1
-m 9 projectilescatter.obj 1 1
-m 10 projectilesingle.obj 1 1
+m 8 projectileexplosive.fbx 1 1
+m 9 projectilescatter.fbx 1 5
+m 10 projectilesingle.fbx 1 1
 
 m 11 xkill_process.fbx 1 1
 m 12 humanoid.fbx 1 1
