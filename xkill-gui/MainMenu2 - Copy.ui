@@ -26,11 +26,11 @@ QWidget
 /* dark*/ 
 QFrame
 {
-	 background: rgba(10, 10, 0, 100);
+	 background: rgba(20, 20, 0, 100);
  }
 QGroupBox
 {
-	background: rgba(0, 0, 0, 150);
+	background: rgba(20, 20, 0, 150);
 }
 /* light*/ 
 QLabel, QCheckBox, QRadioButton, QPushButton
@@ -2313,11 +2313,6 @@ QLabel
 	font-size: 35px;
 	color: rgba(240, 240, 230, 100);
 	border: 2px;
-}
-
-QPushButton
-{
-	font-size:30px;
 }</string>
     </property>
     <property name="frameShape">
@@ -2364,9 +2359,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-645</y>
+          <y>0</y>
           <width>683</width>
-          <height>2714</height>
+          <height>2448</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2404,8 +2399,13 @@ QPushButton
               <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
+	/*border: 3px  solid rgba(10, 10, 0, 50);*/
+
+	background: rgba(10, 10, 0, 150);
+	background: rgba(10, 10, 0, 150);
 	border-radius: 10px;
 	padding: 2px;
+	/*background: rgba(240, 240, 230, 100);*/
 }</string>
              </property>
              <property name="title">
@@ -3214,13 +3214,6 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_Weapon_Reset">
-                <property name="text">
-                 <string>Reset</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <spacer name="horizontalSpacer_69">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
@@ -3926,13 +3919,6 @@ QGroupBox
                   </layout>
                  </item>
                 </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_Ammo_Reset">
-                <property name="text">
-                 <string>Reset</string>
-                </property>
                </widget>
               </item>
               <item>
