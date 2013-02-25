@@ -40,5 +40,9 @@ t 19 projectileScatterNormal.dds
 
 t 20 explosion.dds
 t 21 explosionNormal.dds
+t 22 jetpack.dds
+t 23 jetpackNormal.dds
+t 24 speedhack.dds
+t 25 speedhackNormal.dds
 
 t 101 cross_hair.dds
