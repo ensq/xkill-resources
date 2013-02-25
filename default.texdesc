@@ -38,4 +38,7 @@ t 17 projectileExplosive.dds
 t 18 projectileScatter.dds
 t 19 projectileScatterNormal.dds
 
+t 20 laser.dds
+t 21 laserNormal.dds
+
 t 101 cross_hair.dds
