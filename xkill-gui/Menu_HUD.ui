@@ -10,6 +10,12 @@
     <height>1546</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>100</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -42,7 +48,7 @@ QLabel
 	font-size: 15px;
 }
 
-#label_health, #label_clipAmmo
+#label_health, #label_ammo
 {
 	font-size: 60px;
 	font-weight: normal;
@@ -83,9 +89,9 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_center">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>840</y>
-     <width>151</width>
+     <x>840</x>
+     <y>850</y>
+     <width>291</width>
      <height>131</height>
     </rect>
    </property>
@@ -98,28 +104,6 @@ QProgressBar::chunk
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout_9">
-      <item>
-       <widget class="QProgressBar" name="progressBar_3">
-        <property name="maximumSize">
-         <size>
-          <width>10</width>
-          <height>50</height>
-         </size>
-        </property>
-        <property name="value">
-         <number>24</number>
-        </property>
-        <property name="textVisible">
-         <bool>false</bool>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="invertedAppearance">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
       <item>
        <spacer name="horizontalSpacer_19">
         <property name="orientation">
@@ -199,28 +183,6 @@ QProgressBar::chunk
         </property>
        </spacer>
       </item>
-      <item>
-       <widget class="QProgressBar" name="progressBar_4">
-        <property name="maximumSize">
-         <size>
-          <width>10</width>
-          <height>50</height>
-         </size>
-        </property>
-        <property name="value">
-         <number>24</number>
-        </property>
-        <property name="textVisible">
-         <bool>false</bool>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="invertedAppearance">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
      </layout>
     </item>
    </layout>
@@ -229,8 +191,8 @@ QProgressBar::chunk
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>1270</y>
-     <width>1141</width>
+     <y>1260</y>
+     <width>1401</width>
      <height>91</height>
     </rect>
    </property>
@@ -303,7 +265,7 @@ QProgressBar::chunk
           </layout>
          </item>
          <item>
-          <spacer name="horizontalSpacer_27">
+          <spacer name="horizontalSpacer_33">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -312,7 +274,7 @@ QProgressBar::chunk
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>40</width>
+             <width>5</width>
              <height>20</height>
             </size>
            </property>
@@ -320,11 +282,20 @@ QProgressBar::chunk
          </item>
          <item>
           <widget class="QLabel" name="label_health">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>81</string>
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
@@ -334,26 +305,13 @@ QProgressBar::chunk
      </widget>
     </item>
     <item>
-     <spacer name="horizontalSpacer_28">
+     <spacer name="horizontalSpacer_30">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_29">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
+        <width>1000</width>
         <height>20</height>
        </size>
       </property>
@@ -418,7 +376,7 @@ QProgressBar::chunk
           </layout>
          </item>
          <item>
-          <spacer name="horizontalSpacer_30">
+          <spacer name="horizontalSpacer_32">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -427,19 +385,28 @@ QProgressBar::chunk
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>20</width>
+             <width>5</width>
              <height>20</height>
             </size>
            </property>
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="label_clipAmmo">
+          <widget class="QLabel" name="label_ammo">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
            <property name="text">
             <string>3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
@@ -453,7 +420,7 @@ QProgressBar::chunk
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>40</width>
+             <width>5</width>
              <height>20</height>
             </size>
            </property>
@@ -489,11 +456,20 @@ QProgressBar::chunk
            </item>
            <item>
             <widget class="QLabel" name="label_totalAmmo">
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
              <property name="text">
               <string>12</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
              </property>
             </widget>
            </item>
@@ -580,11 +556,69 @@ QLabel
     </item>
    </layout>
   </widget>
+  <widget class="QProgressBar" name="progressBar_health">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>900</y>
+     <width>10</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>10</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_ammo">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>900</y>
+     <width>10</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>10</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+  </widget>
   <zorder>label_14</zorder>
   <zorder>frame_center</zorder>
   <zorder>frame_bottom</zorder>
   <zorder>label_15</zorder>
   <zorder>groupBox_5</zorder>
+  <zorder>progressBar_health</zorder>
+  <zorder>progressBar_ammo</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
