@@ -44,5 +44,12 @@ t 22 jetpack.dds
 t 23 jetpackNormal.dds
 t 24 speedhack.dds
 t 25 speedhackNormal.dds
+t 26 laser.dds
+t 27 laserNormal.dds
+
+t 28 1box.dds
+t 29 1boxNormal.dds
+t 30 2box.dds
+t 31 2boxNormal.dds
 
 t 101 cross_hair.dds
