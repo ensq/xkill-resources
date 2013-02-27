@@ -52,4 +52,7 @@ t 29 1boxNormal.dds
 t 30 2box.dds
 t 31 2boxNormal.dds
 
+t 32 projectileSingleNormal.dds
+t 33 projectileExplosiveNormal.dds
+
 t 101 cross_hair.dds
