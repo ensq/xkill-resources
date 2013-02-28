@@ -241,7 +241,7 @@ QSlider::handle
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>550</y>
+      <y>580</y>
       <width>241</width>
       <height>191</height>
      </rect>
@@ -603,10 +603,10 @@ QLabel
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>280</y>
-      <width>221</width>
-      <height>261</height>
+      <x>600</x>
+      <y>100</y>
+      <width>681</width>
+      <height>731</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -754,9 +754,9 @@ QLabel
              </spacer>
             </item>
             <item>
-             <widget class="QLabel" name="label_4">
+             <widget class="QLabel" name="label_levelNameText">
               <property name="text">
-               <string>Level</string>
+               <string>No levels found</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -766,7 +766,7 @@ QLabel
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout">
               <item>
-               <widget class="QPushButton" name="pushButton_level_arrow">
+               <widget class="QPushButton" name="pushButton_levelPrevious">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -818,7 +818,7 @@ QGroupBox
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_13">
                  <item>
-                  <widget class="QLabel" name="label_3">
+                  <widget class="QLabel" name="label_level_image">
                    <property name="minimumSize">
                     <size>
                      <width>400</width>
@@ -846,7 +846,7 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_13">
+               <widget class="QPushButton" name="pushButton_levelNext">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -1356,8 +1356,8 @@ QPushButton:hover
    <widget class="QFrame" name="frame_video">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>410</y>
+      <x>270</x>
+      <y>570</y>
       <width>251</width>
       <height>171</height>
      </rect>
@@ -1504,10 +1504,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1500</x>
+      <x>1710</x>
       <y>30</y>
-      <width>381</width>
-      <height>601</height>
+      <width>171</width>
+      <height>211</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1570,7 +1570,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>926</height>
+          <height>947</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2003,9 +2003,9 @@ QLabel
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
-      <width>411</width>
-      <height>521</height>
+      <y>280</y>
+      <width>241</width>
+      <height>281</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -2294,10 +2294,10 @@ QLabel
    <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>30</y>
-      <width>861</width>
-      <height>941</height>
+      <x>1760</x>
+      <y>270</y>
+      <width>81</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -2364,9 +2364,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-645</y>
+          <y>0</y>
           <width>683</width>
-          <height>2714</height>
+          <height>2686</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
