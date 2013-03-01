@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/decorations/death_overlay.png</file>
     <file>images/decorations/game1.png</file>
     <file>images/icons/cross_hairs/crosshair1.png</file>
     <file>fonts/digital_7_mono.ttf</file>
