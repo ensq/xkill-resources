@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/decorations/game1.png</file>
+    <file>images/icons/cross_hairs/crosshair1.png</file>
+    <file>fonts/digital_7_mono.ttf</file>
     <file>fonts/arista_light.ttf</file>
     <file>images/buttons/radiobutton_checked.png</file>
     <file>fonts/arcade_interlaced.ttf</file>

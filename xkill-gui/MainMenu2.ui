@@ -14,27 +14,118 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">/* ALL*/ 
+   <string notr="true">/* COLORS*/ 
+/* transparent*/ 
 QWidget
- {
-    background: rgba(255, 255, 255, 0);
+{
+    background: transparent;
+	font-family: '[z] Arista Light';
+	font-weight: bold;
+	font-size:22px;
+ }
+/* dark*/ 
+QFrame
+{
+	 background: rgba(10, 10, 0, 100);
+ }
+QGroupBox
+{
+	background: rgba(0, 0, 0, 150);
+}
+/* light*/ 
+QLabel, QCheckBox, QRadioButton, QPushButton
+{
+	background-color: transparent;
+}
+QPushButton::hover,  QScrollBar::handle:hover, QComboBox:hover, QLabel, QCheckBox, QRadioButton
+{
+	color: rgba(240, 240, 230, 255);
+}
+QPushButton
+{
+	color: rgba(240, 240, 230, 100);
+}
+QSlider::handle:hover
+{
+	 background: rgba(240, 240, 230, 255);
+ }
+QCheckBox::indicator:hover, QRadioButton:indicator:hover
+{   
+	border: 3px  solid rgb(240, 240, 230);
+ }
+QComboBox:hover
+{
+    border: 3px  solid rgb(240, 240, 230);
+ }
+QSlider::groove 
+{
+	background: rgba(240, 240, 230, 52);
+}
+QComboBox
+{
+	color: rgb(200,200,190);
+	border: 3px  solid rgb(200,200,190);
+	background: rgba(10, 10, 0, 50);
+}
+QSlider::handle 
+{
+     background: rgba(150, 150, 140, 255);
+}
+QAbstractItemView
+{
+	color: rgba(240, 240, 230, 255);
+     background: transparent;
+	font-family: 'Arial';
+	font-size:15px;
+}
+QAbstractItemView:section
+{
+   	color: rgba(10, 10, 0, 50);
+	background: rgba(240, 240, 230, 255);
+}
+
+QHeaderView::section
+{
+    color: rgba(10, 10, 0, 150);
+	color: rgba(240, 240, 230, 255);
+	background:  rgba(10, 10, 0, 150);
+	border: none;
+	border: 3px  solid rgb(200,200,190);
  }
 
-QFrame
- {
-	 background: rgba(0, 0, 0, 100);
+
+/* SCROLLBAR*/
+ QScrollBar::handle
+{
+	min-height: 50px;
+	min-width: 50px;
+ } 
+
+QScrollBar::add-line, QScrollBar::sub-line 
+{
+	width: 0px;
+	height: 0px;
+	background: transparent;
  }
+QScrollBar::handle
+{
+	 background: rgba(240, 240, 230, 230);
+}
+QScrollBar::handle:hover
+{
+	 background: rgba(240, 240, 230, 255);
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+     background: rgba(240, 240, 230, 50);
+}
 
 /* LABEL*/
 QLabel, QCheckBox, QRadioButton
 {
-	background-color: rgba(255, 255, 255, 0);
 	/*font-family: 'Arcade Rounded';*/
-	font-family: '[z] Arista Light';
-	font-weight: bold;
-	color: #222;
-	color: rgba(255, 255, 255, 230);
-	font-size:22px;
+	
 }
 QLabel
 {
@@ -51,50 +142,30 @@ QScrollArea
 /* GROUP_BOX*/
 QGroupBox
 {
-	/*border: 3px  solid rgba(0, 0, 0, 50);*/
-
-	background: rgba(0, 0, 0, 150);
+	/*border: 3px  solid rgba(10, 10, 0, 50);*/
 	border-radius: 10px;
 	padding: 2px;
-	/*background: rgba(255, 255, 255, 100);*/
+	/*background: rgba(240, 240, 230, 100);*/
 }
 
 /* PUSH_BUTTON*/
 QPushButton
 {
-	color: rgba(255, 255, 255, 150);
-	color: rgba(255, 255, 255, 100);	
 	font-size:50px;
 	/* border-image: url(:/xkill/buttons/button_normal.png);*/
 
 	padding: 5px 15px;
 	margin: px 5px;
 	font-family: 'Arcade Rounded';
-
-	
-	 background: rgba(0, 0, 0, 0);
-}
-QPushButton::hover
-{
-	color: rgba(255, 255, 255, 255);
-	/*background: rgba(255, 255, 255, 100);
-	background: rgba(0, 0, 0, 100);*/
 }
 
 /* COMBO_BOX*/
  QComboBox
 {
-	color: rgb(200,200,200);
-	font-size:20px;
-    border: 3px  solid rgb(200,200,200);
-	background: rgba(0, 0, 0, 50);
+	font-size:20px;  
 	padding: 6px 6px;
  }
- QComboBox:hover
-{
-	color: rgb(255,255,255);
-    border: 3px  solid rgb(255,255,255);
- }
+
 QComboBox::down-arrow
 {
 	image: url(:/xkill/images/buttons/combobox.png);
@@ -113,12 +184,6 @@ QCheckBox::indicator, QRadioButton::indicator
 	min-width: 20px;
 }
 
-QCheckBox::indicator:hover, QRadioButton:indicator:hover
-{
-   
-	border: 3px  solid rgb(255, 255, 255);
- }
-
 QRadioButton::indicator
 {
 	border-radius: 10px;
@@ -135,51 +200,18 @@ QCheckBox::indicator:checked
  }
 
 
-/* SCROLLBAR*/
- QScrollBar
- {
-	 background: rgba(0, 0, 0, 255);
- }
- QScrollBar::handle
-{
-	 background: rgba(255, 255, 255, 230);
-	
-	min-height: 50px;
-	min-width: 50px;
- }
- QScrollBar::handle:hover
-{
-	background: rgba(255, 255, 255, 255);
- }
-QScrollBar::add-line, QScrollBar::sub-line 
-{
-	width: 0px;
-	height: 0px;
-	background: rgba(0, 0, 0, 200);
- }
-
-
 
 /* SLIDER*/
  QSlider::groove 
 {
-     height: 5px;
-     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
-	background: rgba(255, 255, 255, 52);
-     margin: 2px 0;
+    height: 5px;
+    margin: 2px 0;
  }
 
 QSlider::handle 
 {
-	background: rgb(255, 255, 255);
-     background: rgba(150, 150, 150, 255);
      width: 40px;
      margin: -6px 0;
- }
-
- QSlider::handle:hover
-{
-	 background: rgba(255, 255, 255, 255);
  }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -208,10 +240,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_main">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>390</y>
-      <width>371</width>
-      <height>481</height>
+      <x>0</x>
+      <y>580</y>
+      <width>241</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -571,10 +603,10 @@ QLabel
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>560</y>
-      <width>221</width>
-      <height>221</height>
+      <x>600</x>
+      <y>100</y>
+      <width>681</width>
+      <height>731</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -722,9 +754,9 @@ QLabel
              </spacer>
             </item>
             <item>
-             <widget class="QLabel" name="label_4">
+             <widget class="QLabel" name="label_levelNameText">
               <property name="text">
-               <string>Level</string>
+               <string>No levels found</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -734,7 +766,7 @@ QLabel
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout">
               <item>
-               <widget class="QPushButton" name="pushButton_level_arrow">
+               <widget class="QPushButton" name="pushButton_levelPrevious">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -751,7 +783,7 @@ QLabel
                  <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/images/buttons/arrow_left.png);
-	background: rgba(255, 255, 255, 1);
+	background: rgba(240, 240, 230, 1);
 }
 
 QPushButton:hover
@@ -776,8 +808,8 @@ QPushButton:hover
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 0px  solid rgba(0, 0, 0, 100);
-	background: rgba(255, 255, 255, 52);
+	border: 0px  solid rgba(10, 10, 0, 100);
+	background: rgba(240, 240, 230, 52);
 	padding: 5px;
 }</string>
                 </property>
@@ -786,7 +818,7 @@ QGroupBox
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_13">
                  <item>
-                  <widget class="QLabel" name="label_3">
+                  <widget class="QLabel" name="label_level_image">
                    <property name="minimumSize">
                     <size>
                      <width>400</width>
@@ -814,7 +846,7 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_13">
+               <widget class="QPushButton" name="pushButton_levelNext">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -831,7 +863,7 @@ QGroupBox
                  <string notr="true">QPushButton
 {
 	border-image: url(:/xkill/images/buttons/arrow_right.png);
-	background: rgba(255, 255, 255, 1);
+	background: rgba(240, 240, 230, 1);
 }
 
 QPushButton:hover
@@ -951,10 +983,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_audio">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>50</y>
-      <width>431</width>
-      <height>461</height>
+      <x>270</x>
+      <y>70</y>
+      <width>161</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1324,10 +1356,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_video">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>450</y>
-      <width>281</width>
-      <height>331</height>
+      <x>270</x>
+      <y>570</y>
+      <width>251</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1472,10 +1504,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1500</x>
+      <x>1710</x>
       <y>30</y>
-      <width>381</width>
-      <height>171</height>
+      <width>171</width>
+      <height>211</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1490,7 +1522,7 @@ QLabel
 #label_cred_music, #label_cred_leveld
 {
 	font-size: 15px;
-	color: rgba(255, 255, 255, 100);
+	color: rgba(240, 240, 230, 100);
 	font-family: '[z] Arista Light';
 	font-family: 'Arcade Rounded';
 }</string>
@@ -1526,7 +1558,7 @@ QLabel
        <property name="styleSheet">
         <string notr="true">QFrame
  {
-	 background: rgba(0, 0, 0, 0);
+	 background: rgba(10, 10, 0, 0);
  }</string>
        </property>
        <property name="widgetResizable">
@@ -1538,7 +1570,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>926</height>
+          <height>947</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -1897,17 +1929,13 @@ QLabel
              </layout>
              <zorder>label_35</zorder>
              <zorder>label_29</zorder>
-             <zorder>horizontalSpacer_23</zorder>
              <zorder>label_34</zorder>
              <zorder>label_28</zorder>
              <zorder>label_cred_leveld</zorder>
-             <zorder>horizontalSpacer_31</zorder>
              <zorder>label_5</zorder>
-             <zorder>horizontalSpacer_42</zorder>
              <zorder>label_cred_music</zorder>
              <zorder>label_25</zorder>
              <zorder>label_41</zorder>
-             <zorder>horizontalSpacer_34</zorder>
              <zorder>label_32</zorder>
              <zorder>label_37</zorder>
              <zorder>label_40</zorder>
@@ -1917,12 +1945,10 @@ QLabel
              <zorder>label_cred_prog</zorder>
              <zorder>label_36</zorder>
              <zorder>label_cred_art</zorder>
-             <zorder>horizontalSpacer_33</zorder>
              <zorder>label_24</zorder>
              <zorder>label_undertitle</zorder>
              <zorder>label_30</zorder>
              <zorder>label_31</zorder>
-             <zorder>horizontalSpacer_32</zorder>
              <zorder>label_46</zorder>
             </widget>
            </item>
@@ -1976,10 +2002,10 @@ QLabel
    <widget class="QFrame" name="frame_input">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>-40</y>
-      <width>451</width>
-      <height>461</height>
+      <x>10</x>
+      <y>280</y>
+      <width>241</width>
+      <height>281</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -2068,7 +2094,7 @@ QLabel
              <bool>false</bool>
             </property>
             <property name="alternatingRowColors">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="showGrid">
              <bool>false</bool>
@@ -2268,25 +2294,30 @@ QLabel
    <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>80</y>
-      <width>771</width>
-      <height>751</height>
+      <x>1760</x>
+      <y>270</y>
+      <width>81</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">/* SPECIAL_CASE_LABELS */
 QLabel
 {
-	color: rgba(255, 255, 255, 255);
+	color: rgba(240, 240, 230, 255);
 	font-size: 22px;
 }
  #label_ammo, #label_hacks, #label_mutators, #label_weapons, #label_gameSettings
 {
 	font-weight: bold;
 	font-size: 35px;
-	color: rgba(255, 255, 255, 100);
+	color: rgba(240, 240, 230, 100);
 	border: 2px;
+}
+
+QPushButton
+{
+	font-size:30px;
 }</string>
     </property>
     <property name="frameShape">
@@ -2320,7 +2351,7 @@ QLabel
        <property name="styleSheet">
         <string notr="true">QFrame
  {
-	 background: rgba(0, 0, 0, 0);
+	 background: rgba(10, 10, 0, 0);
  }</string>
        </property>
        <property name="horizontalScrollBarPolicy">
@@ -2335,7 +2366,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2499</height>
+          <height>2686</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2373,12 +2404,8 @@ QLabel
               <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	/*border: 3px  solid rgba(0, 0, 0, 50);*/
-
-	background: rgba(0, 0, 0, 150);
 	border-radius: 10px;
 	padding: 2px;
-	/*background: rgba(255, 255, 255, 100);*/
 }</string>
              </property>
              <property name="title">
@@ -2401,8 +2428,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -2747,8 +2774,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -2792,8 +2819,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -2843,8 +2870,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -3187,6 +3214,13 @@ QGroupBox
                </widget>
               </item>
               <item>
+               <widget class="QPushButton" name="pushButton_Weapon_Reset">
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <spacer name="horizontalSpacer_69">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
@@ -3228,8 +3262,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -3276,8 +3310,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -3558,6 +3592,12 @@ QGroupBox
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
                        </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
                       </spacer>
                      </item>
                      <item>
@@ -3584,6 +3624,12 @@ QGroupBox
                       <spacer name="horizontalSpacer_76">
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
                        </property>
                       </spacer>
                      </item>
@@ -3630,8 +3676,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -3883,6 +3929,13 @@ QGroupBox
                </widget>
               </item>
               <item>
+               <widget class="QPushButton" name="pushButton_Ammo_Reset">
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <spacer name="horizontalSpacer_93">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
@@ -3934,8 +3987,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4006,8 +4059,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4088,8 +4141,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4206,8 +4259,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4268,8 +4321,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4323,8 +4376,8 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 100, 255);
-	background: rgba(255, 255, 255, 0);
+	border: 5px  solid rgba(100, 100, 85, 255);
+	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
                 <property name="title">
@@ -4439,23 +4492,6 @@ QGroupBox
      </item>
     </layout>
    </widget>
-   <zorder>label_background</zorder>
-   <zorder>frame_main</zorder>
-   <zorder>frame_settings</zorder>
-   <zorder>frame_start</zorder>
-   <zorder>frame_audio</zorder>
-   <zorder>frame_video</zorder>
-   <zorder>label_openingAnimation</zorder>
-   <zorder>frame_opening</zorder>
-   <zorder>frame_credits</zorder>
-   <zorder>frame_input</zorder>
-   <zorder>frame_customize</zorder>
-   <zorder>groupBox_22</zorder>
-   <zorder>horizontalSpacer_14</zorder>
-   <zorder>groupBox_11</zorder>
-   <zorder>groupBox_22</zorder>
-   <zorder>horizontalSpacer_15</zorder>
-   <zorder>horizontalSpacer_16</zorder>
   </widget>
  </widget>
  <resources>
