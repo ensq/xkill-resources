@@ -86,6 +86,9 @@ QProgressBar::chunk
 	border: none;
 }</string>
   </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
   <widget class="QFrame" name="frame_center">
    <property name="geometry">
     <rect>
@@ -802,7 +805,7 @@ QProgressBar::chunk
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -813,7 +816,7 @@ QProgressBar::chunk
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3"/>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -902,6 +905,20 @@ QLabel
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>1470</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scheduling in</string>
+   </property>
+  </widget>
+  <zorder>label_cycles_2</zorder>
   <zorder>label_14</zorder>
   <zorder>frame_center</zorder>
   <zorder>frame_bottom</zorder>
@@ -910,26 +927,11 @@ QLabel
   <zorder>progressBar_ammo</zorder>
   <zorder>progressBar_health</zorder>
   <zorder>label_deathOverlay</zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_priority_advantage</zorder>
-  <zorder>label_cycles</zorder>
-  <zorder>label_priority</zorder>
-  <zorder>label_priority</zorder>
-  <zorder>label_cycles</zorder>
-  <zorder>horizontalSpacer</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
   <zorder>label_mode</zorder>
   <zorder>label_priority_5</zorder>
-  <zorder>groupBox_2</zorder>
-  <zorder>verticalSpacer</zorder>
-  <zorder>groupBox</zorder>
-  <zorder>verticalSpacer_2</zorder>
-  <zorder>label_priority_advantage</zorder>
-  <zorder>label_priority_advantage</zorder>
+  <zorder>label_5</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
