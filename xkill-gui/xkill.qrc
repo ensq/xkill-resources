@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>fonts/statix.ttf</file>
     <file>fonts/angies_new_house.ttf</file>
     <file>images/decorations/death_overlay.png</file>
     <file>images/decorations/game1.png</file>
