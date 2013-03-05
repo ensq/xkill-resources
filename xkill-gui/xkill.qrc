@@ -1,11 +1,18 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/icons/cross_hairs/firing_auto.png</file>
+    <file>images/icons/cross_hairs/firing_semi.png</file>
+    <file>images/icons/cross_hairs/firing_single.png</file>
+    <file>images/icons/default.png</file>
+    <file>fonts/statix.ttf</file>
     <file>fonts/angies_new_house.ttf</file>
     <file>images/decorations/death_overlay.png</file>
     <file>images/decorations/game1.png</file>
-    <file>images/icons/cross_hairs/crosshair1.png</file>
     <file>fonts/digital_7_mono.ttf</file>
+    <file>images/icons/cross_hairs/crosshair_explosive.png</file>
+    <file>images/icons/cross_hairs/crosshair_scatter.png</file>
     <file>fonts/arista_light.ttf</file>
+    <file>images/icons/cross_hairs/crosshair_bullet.png</file>
     <file>images/buttons/radiobutton_checked.png</file>
     <file>fonts/arcade_interlaced.ttf</file>
     <file>fonts/arcade_rounded.ttf</file>
