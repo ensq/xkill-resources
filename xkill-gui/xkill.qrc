@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>fonts/computerfont.ttf</file>
+    <file>fonts/pixel_square_10.ttf</file>
+    <file>fonts/pixel_square_bold10.ttf</file>
+    <file>fonts/pxll.ttf</file>
     <file>images/icons/cross_hairs/firing_auto.png</file>
     <file>images/icons/cross_hairs/firing_semi.png</file>
     <file>images/icons/cross_hairs/firing_single.png</file>
