@@ -254,7 +254,7 @@ QProgressBar::chunk
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Priority</string>
+                <string>Priority </string>
                </property>
               </widget>
              </item>
@@ -264,7 +264,7 @@ QProgressBar::chunk
                 <string notr="true"/>
                </property>
                <property name="text">
-                <string>Cycles</string>
+                <string>Cycles </string>
                </property>
               </widget>
              </item>
@@ -694,8 +694,8 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_test">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>810</y>
+     <x>0</x>
+     <y>1010</y>
      <width>418</width>
      <height>138</height>
     </rect>
@@ -1050,41 +1050,41 @@ QLabel
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_scoreboard">
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_11">
-        <item>
-         <widget class="QLabel" name="label_score_process">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>Process</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_score_cycles">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>Cycles</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_score_priority">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>Priority</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <widget class="QLabel" name="label_score_process">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Process</string>
+        </property>
+       </widget>
       </item>
+      <item>
+       <widget class="QLabel" name="label_score_cycles">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Cycles</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_score_priority">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Priority</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_scoreboard">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_16">
         <item>
@@ -1192,83 +1192,83 @@ font-weight: bold;</string>
         </item>
        </layout>
       </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_20">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_20">
-        <item>
-         <widget class="QLabel" name="label_43">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(255, 255, 255, 100);</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_44">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>= You</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_49">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_48">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>= Highest</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
+       <widget class="QLabel" name="label_43">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
       </item>
       <item>
-       <spacer name="verticalSpacer">
+       <widget class="QLabel" name="label_44">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>= You</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_49">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_48">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>= Highest</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_11">
         <property name="orientation">
-         <enum>Qt::Vertical</enum>
+         <enum>Qt::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>40</width>
+          <height>20</height>
          </size>
         </property>
        </spacer>
       </item>
      </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>
@@ -1292,8 +1292,6 @@ font-weight: bold;</string>
    </property>
   </widget>
   <zorder>label_helper</zorder>
-  <zorder>frame_bottom</zorder>
-  <zorder>progressBar_ammo</zorder>
   <zorder>progressBar_health</zorder>
   <zorder>label_deathOverlay</zorder>
   <zorder>frame_test</zorder>
@@ -1303,6 +1301,8 @@ font-weight: bold;</string>
   <zorder>groupBox_bottomCenter</zorder>
   <zorder>frame_scoreboard</zorder>
   <zorder>label_39</zorder>
+  <zorder>frame_bottom</zorder>
+  <zorder>progressBar_ammo</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
