@@ -22,6 +22,9 @@ QWidget
 	font-family: '[z] Arista Light';
 	font-weight: bold;
 	font-size:22px;
+
+	 font-family: 'Pixel Square'; font-size:22px; font-weight: normal;
+/* font-family: 'pxll'; font-size:42px; font-weight: normal;*/ 
  }
 /* dark*/ 
 QFrame
@@ -157,6 +160,10 @@ QPushButton
 	padding: 5px 15px;
 	margin: px 5px;
 	font-family: 'Arcade Rounded';
+	font-weight: bold;
+		
+
+
 }
 
 /* COMBO_BOX*/
@@ -242,8 +249,8 @@ QSlider::handle
      <rect>
       <x>0</x>
       <y>580</y>
-      <width>241</width>
-      <height>191</height>
+      <width>581</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -472,9 +479,9 @@ QLabel
    <widget class="QFrame" name="frame_settings">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
-      <width>241</width>
+      <x>240</x>
+      <y>340</y>
+      <width>371</width>
       <height>201</height>
      </rect>
     </property>
@@ -985,8 +992,8 @@ QPushButton:hover
      <rect>
       <x>270</x>
       <y>70</y>
-      <width>161</width>
-      <height>181</height>
+      <width>301</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1570,7 +1577,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>947</height>
+          <height>926</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2294,10 +2301,10 @@ QLabel
    <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>1760</x>
-      <y>270</y>
-      <width>81</width>
-      <height>271</height>
+      <x>1330</x>
+      <y>190</y>
+      <width>621</width>
+      <height>681</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -2366,7 +2373,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2686</height>
+          <height>2612</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
