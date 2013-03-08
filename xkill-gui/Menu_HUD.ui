@@ -124,154 +124,87 @@ QProgressBar::chunk
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_12">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_25">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_xHealth">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Health</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_health">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">	font-size: 90px;
+	font-family: pxll;
+	font-weight: normal;</string>
+           </property>
+           <property name="text">
+            <string>100</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QGroupBox" name="groupBox_4">
-        <property name="styleSheet">
-         <string notr="true"/>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
         </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
         <property name="title">
          <string/>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_25">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <layout class="QHBoxLayout" name="horizontalLayout">
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_26">
-             <item>
-              <spacer name="verticalSpacer_30">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_31">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_xHealth">
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string>Health</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_32">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_33">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeType">
-              <enum>QSizePolicy::Fixed</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>5</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_health">
-             <property name="minimumSize">
-              <size>
-               <width>100</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">	font-size: 90px;
-	font-family: pxll;
-	font-weight: normal;</string>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QGroupBox" name="groupBox">
-          <property name="styleSheet">
-           <string notr="true">QGroupBox
-{
-
-	font-size: 12px;
-}</string>
-          </property>
-          <property name="title">
-           <string/>
-          </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
              <item>
               <widget class="QLabel" name="label">
                <property name="styleSheet">
-                <string notr="true"/>
+                <string notr="true">font-size: 12px;</string>
                </property>
                <property name="text">
                 <string>Priority </string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="label_2">
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string>Cycles </string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_5">
                <item>
@@ -319,83 +252,62 @@ QProgressBar::chunk
                </item>
               </layout>
              </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <widget class="QLabel" name="label_2">
+               <property name="styleSheet">
+                <string notr="true">font-size: 12px;</string>
+               </property>
+               <property name="text">
+                <string>Cycles </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
                <item>
-                <widget class="QLabel" name="label_cycles">
-                 <property name="styleSheet">
-                  <string notr="true">	font-size: 35px;
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_cycles">
+                   <property name="styleSheet">
+                    <string notr="true">	font-size: 35px;
 	font-family: pxll;
 	font-weight: normal;</string>
-                 </property>
-                 <property name="text">
-                  <string>12</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <spacer name="horizontalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
+                   </property>
+                   <property name="text">
+                    <string>12</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>
             </layout>
            </item>
           </layout>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_12">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_6">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+         </item>
+        </layout>
+       </widget>
       </item>
      </layout>
     </item>
@@ -406,94 +318,35 @@ QProgressBar::chunk
       </property>
       <property name="sizeHint" stdset="0">
        <size>
-        <width>1000</width>
+        <width>2000</width>
         <height>20</height>
        </size>
       </property>
      </spacer>
     </item>
     <item>
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="groupBox_ammo">
       <property name="title">
        <string/>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_7">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <layout class="QVBoxLayout" name="verticalLayout_10">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_29">
-           <item>
-            <spacer name="verticalSpacer_33">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <spacer name="verticalSpacer_34">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_xAmmo">
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="text">
-              <string>Ammo</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <spacer name="verticalSpacer_35">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_32">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+          <widget class="QLabel" name="label_xAmmo">
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
-           <property name="sizeType">
-            <enum>QSizePolicy::Fixed</enum>
+           <property name="text">
+            <string>Ammo</string>
            </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>5</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_ammo">
            <property name="minimumSize">
             <size>
-             <width>60</width>
+             <width>100</width>
              <height>0</height>
             </size>
            </property>
@@ -503,29 +356,17 @@ QProgressBar::chunk
 	font-weight: normal;</string>
            </property>
            <property name="text">
-            <string>20</string>
+            <string>100</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
-         <item>
-          <spacer name="horizontalSpacer_31">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeType">
-            <enum>QSizePolicy::Fixed</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>5</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_30">
            <item>
@@ -694,10 +535,10 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_test">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>1020</y>
-     <width>771</width>
-     <height>281</height>
+     <x>250</x>
+     <y>1150</y>
+     <width>741</width>
+     <height>491</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -767,6 +608,12 @@ QLabel
          </item>
          <item>
           <widget class="QLabel" name="label_score_cycles_2">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -777,6 +624,12 @@ QLabel
          </item>
          <item>
           <widget class="QLabel" name="label_score_priority_2">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -797,7 +650,7 @@ QLabel
               <string notr="true"/>
              </property>
              <property name="text">
-              <string>Fortran</string>
+              <string>0</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -806,6 +659,12 @@ QLabel
            </item>
            <item>
             <widget class="QLabel" name="label_36">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -816,6 +675,12 @@ QLabel
            </item>
            <item>
             <widget class="QLabel" name="label_37">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
              </property>
@@ -834,12 +699,18 @@ QLabel
               <string notr="true">background-color: rgba(255, 255, 255, 100);font-weight: bold;</string>
              </property>
              <property name="text">
-              <string>Fortran</string>
+              <string>10100000000000000000000000000000</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QLabel" name="label_40">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgba(0, 255, 0, 100);
 font-weight: bold;</string>
@@ -851,6 +722,12 @@ font-weight: bold;</string>
            </item>
            <item>
             <widget class="QLabel" name="label_41">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgba(255, 255, 255, 100);
 font-weight: bold;</string>
@@ -876,6 +753,12 @@ font-weight: bold;</string>
            </item>
            <item>
             <widget class="QLabel" name="label_45">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -886,6 +769,12 @@ font-weight: bold;</string>
            </item>
            <item>
             <widget class="QLabel" name="label_46">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -1129,10 +1018,10 @@ QLabel
   <widget class="QFrame" name="frame_scoreboard">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>400</y>
-     <width>571</width>
-     <height>551</height>
+     <x>150</x>
+     <y>610</y>
+     <width>651</width>
+     <height>561</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1202,6 +1091,12 @@ QLabel
          </item>
          <item>
           <widget class="QLabel" name="label_score_cycles">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -1212,6 +1107,12 @@ QLabel
          </item>
          <item>
           <widget class="QLabel" name="label_score_priority">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -1306,37 +1207,126 @@ QLabel
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label_39">
+  <widget class="QGroupBox" name="groupBox_weaponInfo2">
    <property name="geometry">
     <rect>
-     <x>940</x>
-     <y>1190</y>
-     <width>553</width>
-     <height>18</height>
+     <x>1600</x>
+     <y>170</y>
+     <width>51</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    <string notr="true">
+QGroupBox
+{
+	background: rgba(0, 0, 0, 100);
+}</string>
    </property>
-   <property name="text">
+   <property name="title">
     <string/>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">background: rgba(0, 255, 255, 100);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_explosive.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_bullet.png</pixmap>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_weaponInfo">
+   <property name="geometry">
+    <rect>
+     <x>1760</x>
+     <y>200</y>
+     <width>51</width>
+     <height>131</height>
+    </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">
+QGroupBox
+{
+	background: rgba(0, 0, 0, 100);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_13">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_weaponInfo">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(0, 255, 255, 100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(0, 255, 255, 100);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <zorder>label_helper</zorder>
+  <zorder>label_aim</zorder>
+  <zorder>groupBox_bottomCenter</zorder>
+  <zorder>frame_scoreboard</zorder>
+  <zorder>frame_bottom</zorder>
+  <zorder>progressBar_ammo</zorder>
+  <zorder>groupBox_weaponInfo2</zorder>
   <zorder>progressBar_health</zorder>
   <zorder>label_deathOverlay</zorder>
   <zorder>frame_test</zorder>
   <zorder>frame_top</zorder>
   <zorder>label_firingMode</zorder>
-  <zorder>label_aim</zorder>
-  <zorder>groupBox_bottomCenter</zorder>
-  <zorder>frame_scoreboard</zorder>
-  <zorder>label_39</zorder>
-  <zorder>frame_bottom</zorder>
-  <zorder>progressBar_ammo</zorder>
+  <zorder>groupBox_weaponInfo</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
