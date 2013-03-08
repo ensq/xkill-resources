@@ -26,7 +26,7 @@ t 7 xkill_arena_middle.dds
 t 8 xkill_arena_top.dds
 
 t 9 char.dds
-#t 10 projectile.dds
+t 10 processNormal.dds
 
 t 11 ammoexplosive.dds
 t 12 ammoscatter.dds
@@ -54,5 +54,10 @@ t 31 2boxNormal.dds
 
 t 32 projectileSingleNormal.dds
 t 33 projectileExplosiveNormal.dds
+t 34 ammoexplosiveNormal.dds
+t 35 ammoscatterNormal.dds
+t 36 ammosingleNormal.dds
+t 37 ammocycle.dds
+t 38 ammocycleNormal.dds
 
 t 101 cross_hair.dds
