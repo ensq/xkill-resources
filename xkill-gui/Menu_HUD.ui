@@ -1283,34 +1283,7 @@ QGroupBox
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_13">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_weaponInfo">
-      <item>
-       <widget class="QLabel" name="label_7">
-        <property name="styleSheet">
-         <string notr="true">background: rgba(0, 255, 255, 100);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_8">
-        <property name="styleSheet">
-         <string notr="true">background: rgba(0, 255, 255, 100);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <layout class="QVBoxLayout" name="verticalLayout_weaponInfo"/>
     </item>
    </layout>
   </widget>
