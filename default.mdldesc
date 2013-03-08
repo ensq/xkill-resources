@@ -27,7 +27,7 @@ h default xkill-models/
 #m 1 healthpack.obj 1 1
 #m 2 Projectile.obj 1 1
 m 2 rifle.obj 1 1
-m 3 healthpack.obj 1 1
+m 3 healthpack.fbx 1 5
 m 4 ammosingle.fbx 1 5
 m 5 ammoscatter.fbx 1 5
 m 6 ammoexplosive.fbx 1 5
