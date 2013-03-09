@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1878</width>
-    <height>2032</height>
+    <width>1704</width>
+    <height>1715</height>
    </rect>
   </property>
   <property name="font">
@@ -110,8 +110,8 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_bottom">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>630</y>
+     <x>260</x>
+     <y>570</y>
      <width>1141</width>
      <height>91</height>
     </rect>
@@ -441,8 +441,8 @@ QProgressBar::chunk
   <widget class="QLabel" name="label_helper">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>330</y>
+     <x>260</x>
+     <y>100</y>
      <width>1141</width>
      <height>671</height>
     </rect>
@@ -516,10 +516,10 @@ QProgressBar::chunk
   <widget class="QLabel" name="label_deathOverlay">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>350</y>
-     <width>281</width>
-     <height>111</height>
+     <x>20</x>
+     <y>10</y>
+     <width>101</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="text">
@@ -535,10 +535,10 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_test">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>1150</y>
-     <width>741</width>
-     <height>491</height>
+     <x>10</x>
+     <y>930</y>
+     <width>371</width>
+     <height>461</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -871,8 +871,8 @@ font-weight: bold;</string>
   <widget class="QFrame" name="frame_top">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>420</y>
+     <x>250</x>
+     <y>360</y>
      <width>1101</width>
      <height>81</height>
     </rect>
@@ -1018,9 +1018,9 @@ QLabel
   <widget class="QFrame" name="frame_scoreboard">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>610</y>
-     <width>651</width>
+     <x>20</x>
+     <y>130</y>
+     <width>101</width>
      <height>561</height>
     </rect>
    </property>
@@ -1210,17 +1210,17 @@ QLabel
   <widget class="QGroupBox" name="groupBox_weaponInfo2">
    <property name="geometry">
     <rect>
-     <x>1600</x>
-     <y>170</y>
-     <width>51</width>
-     <height>131</height>
+     <x>1340</x>
+     <y>110</y>
+     <width>50</width>
+     <height>126</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">
 QGroupBox
 {
-	background: rgba(0, 0, 0, 100);
+	background: rgba(0, 0, 0, 50);
 }</string>
    </property>
    <property name="title">
@@ -1228,15 +1228,12 @@ QGroupBox
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_8">
     <item>
-     <widget class="QLabel" name="label_6">
-      <property name="styleSheet">
-       <string notr="true">background: rgba(0, 255, 255, 100);</string>
-      </property>
+     <widget class="QLabel" name="label_10">
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_scatter.png</pixmap>
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_explosive.png</pixmap>
       </property>
      </widget>
     </item>
@@ -1246,7 +1243,7 @@ QGroupBox
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_explosive.png</pixmap>
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_scatter.png</pixmap>
       </property>
      </widget>
     </item>
@@ -1256,7 +1253,7 @@ QGroupBox
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_bullet.png</pixmap>
+       <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_bullet.png</pixmap>
       </property>
      </widget>
     </item>
@@ -1265,9 +1262,9 @@ QGroupBox
   <widget class="QGroupBox" name="groupBox_weaponInfo">
    <property name="geometry">
     <rect>
-     <x>1760</x>
-     <y>200</y>
-     <width>51</width>
+     <x>1520</x>
+     <y>270</y>
+     <width>50</width>
      <height>131</height>
     </rect>
    </property>
@@ -1275,7 +1272,7 @@ QGroupBox
     <string notr="true">
 QGroupBox
 {
-	background: rgba(0, 0, 0, 100);
+	background: rgba(0, 0, 0, 50);
 }</string>
    </property>
    <property name="title">
@@ -1284,6 +1281,65 @@ QGroupBox
    <layout class="QVBoxLayout" name="verticalLayout_13">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_weaponInfo"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_weaponInfo_subHud">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>110</y>
+     <width>128</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QGroupBox
+{
+	background: rgba(0, 0, 0, 50);
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_14">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_weaponInfo_subHud">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">background: rgba(255, 255, 255, 150);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_bullet.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_scatter.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_explosive.png</pixmap>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -1300,6 +1356,7 @@ QGroupBox
   <zorder>frame_top</zorder>
   <zorder>label_firingMode</zorder>
   <zorder>groupBox_weaponInfo</zorder>
+  <zorder>groupBox_weaponInfo_subHud</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
