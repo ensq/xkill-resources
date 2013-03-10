@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1910</width>
+    <width>2290</width>
     <height>2032</height>
    </rect>
   </property>
@@ -19,12 +19,8 @@
 QWidget
 {
     background: transparent;
-	font-family: '[z] Arista Light';
-	font-weight: bold;
-	font-size:22px;
 
-	 font-family: 'Pixel Square'; font-size:22px; font-weight: normal;
-/* font-family: 'pxll'; font-size:42px; font-weight: normal;*/ 
+	font-family: 'King Richard';   font-weight: normal; font-size: 16px;  padding: 2px 0px;
  }
 /* dark*/ 
 QFrame
@@ -33,7 +29,7 @@ QFrame
  }
 QGroupBox
 {
-	background: rgba(0, 0, 0, 150);
+	background: rgba(0, 0, 0, 250);
 }
 /* light*/ 
 QLabel, QCheckBox, QRadioButton, QPushButton
@@ -133,6 +129,7 @@ QLabel, QCheckBox, QRadioButton
 QLabel
 {
 	font-size:30px;
+	 padding: 0px 0px;
 }
 
 
@@ -145,8 +142,9 @@ QScrollArea
 /* GROUP_BOX*/
 QGroupBox
 {
-	/*border: 3px  solid rgba(10, 10, 0, 50);*/
-	border-radius: 10px;
+	/*border: 3px  solid rgba(10, 10, 0, 50);
+	*/
+	
 	padding: 2px;
 	/*background: rgba(240, 240, 230, 100);*/
 }
@@ -162,8 +160,22 @@ QPushButton
 	font-family: 'Arcade Rounded';
 	font-weight: bold;
 		
+	padding: 0px 0px; margin: 0px 0px;
+	font-family: 'Bebas Neue';  font-weight: normal; font-size: 60px;
+	font-family: 'Kenyan Coffee Rg';  font-weight: normal; font-size: 50px; padding-top: -35px; text-transform: uppercase;
+}
 
+QPushButton
+{
+	color: rgba(240, 240, 230, 100);
 
+}
+
+QPushButton:hover
+{
+	color: rgba(240, 240, 230, 230);
+	color: rgba(240, 240, 230, 255);
+	background: rgba(240, 240, 230, 80);
 }
 
 /* COMBO_BOX*/
@@ -250,10 +262,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_main">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>500</y>
-      <width>131</width>
-      <height>251</height>
+      <x>170</x>
+      <y>310</y>
+      <width>161</width>
+      <height>311</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -335,6 +347,9 @@ QLabel
               </item>
               <item>
                <widget class="QLabel" name="label_undertitle_2">
+                <property name="styleSheet">
+                 <string notr="true">font-family: 'Pixel Square'; font-size:22px; font-weight: normal;</string>
+                </property>
                 <property name="text">
                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
@@ -482,10 +497,10 @@ QLabel
    <widget class="QFrame" name="frame_settings">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>130</width>
-      <height>190</height>
+      <x>170</x>
+      <y>100</y>
+      <width>161</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -529,6 +544,19 @@ QLabel
           <string/>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <spacer name="horizontalSpacer_41">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>300</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item>
            <widget class="QPushButton" name="pushButton_video">
             <property name="styleSheet">
@@ -577,6 +605,19 @@ QLabel
             </property>
            </widget>
           </item>
+          <item>
+           <spacer name="horizontalSpacer_40">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </widget>
        </item>
@@ -613,10 +654,10 @@ QLabel
    <widget class="QFrame" name="frame_start">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>500</y>
-      <width>131</width>
-      <height>251</height>
+      <x>350</x>
+      <y>100</y>
+      <width>371</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -993,10 +1034,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_audio">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>100</y>
-      <width>130</width>
-      <height>190</height>
+      <x>350</x>
+      <y>310</y>
+      <width>371</width>
+      <height>311</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1366,10 +1407,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_video">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>300</y>
-      <width>130</width>
-      <height>190</height>
+      <x>10</x>
+      <y>100</y>
+      <width>131</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1418,7 +1459,7 @@ QPushButton:hover
             <item>
              <widget class="QLabel" name="label_15">
               <property name="text">
-               <string>No settings yet :)</string>
+               <string>No settings yet</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -1514,10 +1555,10 @@ QPushButton:hover
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1740</x>
-      <y>30</y>
-      <width>101</width>
-      <height>211</height>
+      <x>880</x>
+      <y>70</y>
+      <width>621</width>
+      <height>931</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1526,16 +1567,33 @@ QLabel
 {
 	font-size: 20px;
 	font-family: 'Sans-serif';
+
+
+
+	font-family: 'Caviar Dreams';
+	font-family: 'Champagne &amp; Limousines';
+	font-family: 'King Richard';
+
+
+	background-color: rgba(240, 240, 230, 100);
 }
 
 #label_cred_prog, #label_cred_art, #label_cred_3d, #label_cred_sound,
 #label_cred_music, #label_cred_leveld
 {
-	font-size: 15px;
-	color: rgba(240, 240, 230, 100);
-	font-family: '[z] Arista Light';
-	font-family: 'Arcade Rounded';
-}</string>
+	margin-top: 40px;
+	padding: -2px 2px;
+	padding-top: 1px;
+	font-family: 'Bebas Neue'; font-size: 22px; text-transform: uppercase; font-weight: normal;
+}
+
+QLabel
+{
+	background-color: rgba(0, 0, 230, 100);
+}
+
+
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -1580,7 +1638,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>926</height>
+          <height>1135</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -1614,6 +1672,12 @@ QLabel
            </item>
            <item>
             <widget class="QGroupBox" name="groupBox_17">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="title">
               <string/>
              </property>
@@ -1637,6 +1701,9 @@ QLabel
               </item>
               <item>
                <widget class="QLabel" name="label_undertitle">
+                <property name="styleSheet">
+                 <string notr="true">font-family: 'Pixel Square'; font-size:22px; font-weight: normal;</string>
+                </property>
                 <property name="text">
                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
@@ -1646,23 +1713,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_42">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>400</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_prog">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>Programming</string>
                 </property>
@@ -1742,20 +1797,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_23">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_art">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>Art</string>
                 </property>
@@ -1785,20 +1831,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_31">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_3d">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>3D</string>
                 </property>
@@ -1838,20 +1875,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_33">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_sound">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>Sound</string>
                 </property>
@@ -1871,20 +1899,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_34">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_music">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>Music</string>
                 </property>
@@ -1904,20 +1923,11 @@ QLabel
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_32">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_leveld">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);</string>
+                </property>
                 <property name="text">
                  <string>Level Design</string>
                 </property>
@@ -1936,30 +1946,56 @@ QLabel
                 </property>
                </widget>
               </item>
+              <item>
+               <spacer name="horizontalSpacer_23">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_31">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
              </layout>
              <zorder>label_35</zorder>
              <zorder>label_29</zorder>
              <zorder>label_34</zorder>
              <zorder>label_28</zorder>
-             <zorder>label_cred_leveld</zorder>
              <zorder>label_5</zorder>
-             <zorder>label_cred_music</zorder>
              <zorder>label_25</zorder>
              <zorder>label_41</zorder>
              <zorder>label_32</zorder>
              <zorder>label_37</zorder>
              <zorder>label_40</zorder>
              <zorder>label_26</zorder>
-             <zorder>label_cred_3d</zorder>
-             <zorder>label_cred_sound</zorder>
-             <zorder>label_cred_prog</zorder>
              <zorder>label_36</zorder>
-             <zorder>label_cred_art</zorder>
              <zorder>label_24</zorder>
              <zorder>label_undertitle</zorder>
              <zorder>label_30</zorder>
              <zorder>label_31</zorder>
              <zorder>label_46</zorder>
+             <zorder>label_cred_leveld</zorder>
+             <zorder>label_cred_prog</zorder>
+             <zorder>label_cred_art</zorder>
+             <zorder>label_cred_3d</zorder>
+             <zorder>label_cred_sound</zorder>
+             <zorder>label_cred_music</zorder>
             </widget>
            </item>
            <item>
@@ -2013,9 +2049,9 @@ QLabel
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
-      <width>130</width>
-      <height>190</height>
+      <y>310</y>
+      <width>131</width>
+      <height>311</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -2225,19 +2261,6 @@ QLabel
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_17">
             <item>
-             <spacer name="horizontalSpacer_40">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
              <widget class="QPushButton" name="pushButton_Input">
               <property name="styleSheet">
                <string notr="true"/>
@@ -2252,19 +2275,6 @@ QLabel
                </size>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_41">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
            </layout>
           </item>
@@ -2304,10 +2314,10 @@ QLabel
    <widget class="QFrame" name="frame_customize">
     <property name="geometry">
      <rect>
-      <x>1600</x>
-      <y>30</y>
-      <width>131</width>
-      <height>211</height>
+      <x>1540</x>
+      <y>70</y>
+      <width>751</width>
+      <height>931</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -2315,20 +2325,32 @@ QLabel
 QLabel
 {
 	color: rgba(240, 240, 230, 255);
-	font-size: 22px;
+	font-size: 18px;
+	font-weight: bold;
 }
  #label_ammo, #label_hacks, #label_mutators, #label_weapons, #label_gameSettings
 {
-	font-weight: bold;
-	font-size: 35px;
-	color: rgba(240, 240, 230, 100);
-	border: 2px;
+
+	
+
+	color: rgba(10, 10, 10, 240);
+	margin-top: 40px;
+	padding: -2px 2px;
+	padding-top: 1px;
+	font-family: 'Bebas Neue'; font-size: 22px; text-transform: uppercase; font-weight: normal;
 }
+
 
 QPushButton
 {
 	font-size:30px;
-}</string>
+}
+
+QPushButton
+{
+ padding-top: -20px
+}
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -2376,7 +2398,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2436</height>
+          <height>2913</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2410,13 +2432,14 @@ QPushButton
            </item>
            <item>
             <widget class="QGroupBox" name="groupBox_18">
+             <property name="maximumSize">
+              <size>
+               <width>400</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
-              <string notr="true">/* GROUP_BOX*/
-QGroupBox
-{
-	border-radius: 10px;
-	padding: 2px;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="title">
               <string/>
@@ -2424,6 +2447,9 @@ QGroupBox
              <layout class="QVBoxLayout" name="verticalLayout_47">
               <item>
                <widget class="QLabel" name="label_gameSettings">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);</string>
+                </property>
                 <property name="text">
                  <string>Game</string>
                 </property>
@@ -2438,7 +2464,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -2446,6 +2472,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_49">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_6">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Restrictions</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_52">
                    <item>
@@ -2743,33 +2783,10 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_99">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>462</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_100">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>422</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_weapons">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);</string>
+                </property>
                 <property name="text">
                  <string>Weapons</string>
                 </property>
@@ -2784,7 +2801,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -2792,6 +2809,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_40">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_2">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Firing mode</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_20">
                    <item>
@@ -2829,7 +2860,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -2837,6 +2868,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_3">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Allowed ammo</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout">
                    <item row="1" column="2">
@@ -2880,7 +2925,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -2888,6 +2933,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_4">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Properties</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_20">
                    <item>
@@ -3224,40 +3283,48 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_Weapon_Reset">
-                <property name="text">
-                 <string>Reset</string>
+               <widget class="QGroupBox" name="groupBox_20">
+                <property name="styleSheet">
+                 <string notr="true">/* GROUP_BOX*/
+QGroupBox
+{
+	border: 5px  solid rgba(100, 100, 85, 0);
+	background: rgba(240, 240, 230, 0);
+}</string>
                 </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_59">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_5">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Actions</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Weapon_Reset">
+                   <property name="text">
+                    <string>Reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_69">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>462</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_94">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>422</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QLabel" name="label_ammo">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);</string>
+                </property>
                 <property name="text">
                  <string>Ammunition</string>
                 </property>
@@ -3272,7 +3339,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -3280,6 +3347,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_29">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_7">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Ammunition</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_28">
                    <item>
@@ -3320,7 +3401,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -3328,6 +3409,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_31">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_9">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Properties</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_33">
                    <item>
@@ -3661,32 +3756,12 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_97">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>427</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QCheckBox" name="checkBox_Ammo_Explosive">
-                <property name="text">
-                 <string>Explosive</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QGroupBox" name="groupBox_6">
                 <property name="styleSheet">
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -3700,6 +3775,27 @@ QGroupBox
                  <bool>false</bool>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_30">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_10">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Explosive</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBox_Ammo_Explosive">
+                   <property name="text">
+                    <string> Enable</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_41">
                    <item>
@@ -3939,52 +4035,50 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_Ammo_Reset">
-                <property name="text">
-                 <string>Reset</string>
+               <widget class="QGroupBox" name="groupBox_24">
+                <property name="styleSheet">
+                 <string notr="true">/* GROUP_BOX*/
+QGroupBox
+{
+	border: 5px  solid rgba(100, 100, 85, 0);
+	background: rgba(240, 240, 230, 0);
+}</string>
                 </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_60">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_17">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Actions</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Ammo_Reset">
+                   <property name="text">
+                    <string>Reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_93">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>462</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_95">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
               <item>
                <widget class="QLabel" name="label_hacks">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);</string>
+                </property>
                 <property name="text">
                  <string>Hacks</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_69">
-                <property name="text">
-                 <string>Offensive</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -3997,7 +4091,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4005,6 +4099,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_45">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_11">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Offensive</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_2">
                    <item row="2" column="1">
@@ -4050,17 +4158,6 @@ QGroupBox
                   </layout>
                  </item>
                 </layout>
-                <zorder></zorder>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_118">
-                <property name="text">
-                 <string>Defensive</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
                </widget>
               </item>
               <item>
@@ -4069,7 +4166,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4077,6 +4174,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_46">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_12">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Defensive</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_3">
                    <item row="2" column="1">
@@ -4132,17 +4243,6 @@ QGroupBox
                   </layout>
                  </item>
                 </layout>
-                <zorder></zorder>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_119">
-                <property name="text">
-                 <string>Support</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
                </widget>
               </item>
               <item>
@@ -4151,7 +4251,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4159,6 +4259,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_48">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_13">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Support</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_4">
                    <item row="3" column="0">
@@ -4214,49 +4328,15 @@ QGroupBox
                   </layout>
                  </item>
                 </layout>
-                <zorder></zorder>
                </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_49">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_50">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
               <item>
                <widget class="QLabel" name="label_mutators">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);</string>
+                </property>
                 <property name="text">
                  <string>Mutators</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_179">
-                <property name="text">
-                 <string>Physics</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -4269,7 +4349,7 @@ QGroupBox
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4277,6 +4357,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_77">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_14">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Physics</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_13">
                    <item row="1" column="0">
@@ -4316,22 +4410,12 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_181">
-                <property name="text">
-                 <string>Time</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QGroupBox" name="groupBox_23">
                 <property name="styleSheet">
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4339,6 +4423,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_79">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_15">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Time</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_15">
                    <item row="1" column="0">
@@ -4371,22 +4469,12 @@ QGroupBox
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_182">
-                <property name="text">
-                 <string>Scheduler </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QGroupBox" name="groupBox_25">
                 <property name="styleSheet">
                  <string notr="true">/* GROUP_BOX*/
 QGroupBox
 {
-	border: 5px  solid rgba(100, 100, 85, 255);
+	border: 5px  solid rgba(100, 100, 85, 0);
 	background: rgba(240, 240, 230, 0);
 }</string>
                 </property>
@@ -4394,6 +4482,20 @@ QGroupBox
                  <string/>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_81">
+                 <item>
+                  <widget class="QLabel" name="label_weapons_16">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Support</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                  <item>
                   <layout class="QGridLayout" name="gridLayout_17">
                    <item row="2" column="1">
@@ -4448,8 +4550,33 @@ QGroupBox
                    </item>
                   </layout>
                  </item>
+                 <item>
+                  <spacer name="horizontalSpacer_51">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_52">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
                 </layout>
-                <zorder></zorder>
                </widget>
               </item>
              </layout>
