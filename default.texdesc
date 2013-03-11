@@ -57,8 +57,11 @@ t 33 projectileExplosiveNormal.dds
 t 34 ammoexplosiveNormal.dds
 t 35 ammoscatterNormal.dds
 t 36 ammosingleNormal.dds
-t 37 ammocycle.dds
-t 38 ammocycleNormal.dds
+t 37 cyclehack.dds
+t 38 cyclehackNormal.dds
+t 39 healthpackNormal.dds
+t 40 randomhackNormal.dds
+t 41 randomhack.dds
 
 t 39 guard1_body.dds
 t 40 guard1_face.dds

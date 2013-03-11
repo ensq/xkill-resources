@@ -1,7 +1,9 @@
 <RCC>
   <qresource prefix="/xkill">
-    <file>fonts/computerfont.ttf</file>
+    <file>fonts/kenyan_coffee.ttf</file>
     <file>fonts/pixel_square_10.ttf</file>
+    <file>fonts/bebas_neue.otf</file>
+    <file>fonts/king_richard.ttf</file>
     <file>fonts/pixel_square_bold10.ttf</file>
     <file>fonts/pxll.ttf</file>
     <file>images/icons/cross_hairs/firing_auto.png</file>
@@ -22,13 +24,6 @@
     <file>fonts/arcade_rounded.ttf</file>
     <file>images/buttons/combobox.png</file>
     <file>images/icons/misc/movie.png</file>
-    <file>arrow.png</file>
-    <file>checkboxoff.png</file>
-    <file>checkboxon.png</file>
-    <file>radiooff.png</file>
-    <file>radioon.png</file>
-    <file>white.png</file>
-    <file>mainmenu.png</file>
     <file>images/animations/menu_opening.gif</file>
     <file>images/buttons/arrow_left.png</file>
     <file>images/buttons/arrow_left_selected.png</file>
