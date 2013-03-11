@@ -29,7 +29,7 @@ QFrame
  }
 QGroupBox
 {
-	background: rgba(0, 0, 0, 250);
+	background: rgba(0, 0, 0, 150);
 }
 /* light*/ 
 QLabel, QCheckBox, QRadioButton, QPushButton
@@ -240,10 +240,10 @@ QSlider::handle
    <widget class="QLabel" name="label_background">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>71</width>
-      <height>41</height>
+      <x>330</x>
+      <y>300</y>
+      <width>601</width>
+      <height>621</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1036,8 +1036,8 @@ QPushButton:hover
      <rect>
       <x>350</x>
       <y>310</y>
-      <width>371</width>
-      <height>311</height>
+      <width>501</width>
+      <height>571</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -1638,7 +1638,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>1135</height>
+          <height>1126</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2398,7 +2398,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2913</height>
+          <height>3018</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
