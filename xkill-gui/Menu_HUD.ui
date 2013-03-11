@@ -900,11 +900,6 @@ font-weight: bold;</string>
      <pixmap resource="xkill.qrc">:/xkill/images/icons/weapons/a_explosive.png</pixmap>
     </property>
    </widget>
-   <zorder>groupBox_5</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>progressBar_ammo_2</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label_hitOverlay</zorder>
   </widget>
   <widget class="QFrame" name="frame_top">
    <property name="geometry">
@@ -1180,7 +1175,7 @@ QLabel
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>20/30 Cycles</string>
+          <string>Infinite Cycles</string>
          </property>
         </widget>
        </item>
@@ -1196,7 +1191,7 @@ QLabel
           <string notr="true"/>
          </property>
          <property name="value">
-          <number>24</number>
+          <number>0</number>
          </property>
          <property name="textVisible">
           <bool>false</bool>
@@ -1209,7 +1204,7 @@ QLabel
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>20/30 Time</string>
+          <string>Infinite Time</string>
          </property>
         </widget>
        </item>
@@ -1222,7 +1217,7 @@ QLabel
           </size>
          </property>
          <property name="value">
-          <number>24</number>
+          <number>0</number>
          </property>
          <property name="textVisible">
           <bool>false</bool>
@@ -1410,7 +1405,7 @@ QGroupBox
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/crosshair_bullet.png</pixmap>
+    <pixmap resource="xkill.qrc">:/xkill/images/icons/cross_hairs/hitFeedback.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
