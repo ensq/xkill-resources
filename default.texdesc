@@ -63,9 +63,9 @@ t 39 healthpackNormal.dds
 t 40 randomhackNormal.dds
 t 41 randomhack.dds
 
-t 39 guard1_body.dds
-t 40 guard1_face.dds
-t 41 guard1_helmet.dds
-t 42 iron_grill.dds
+t 42 guard1_body.dds
+t 43 guard1_face.dds
+t 44 guard1_helmet.dds
+t 45 iron_grill.dds
 
 t 101 cross_hair.dds
