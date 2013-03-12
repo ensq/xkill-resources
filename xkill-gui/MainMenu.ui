@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2290</width>
+    <width>2327</width>
     <height>2032</height>
    </rect>
   </property>
@@ -2396,7 +2396,7 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-1266</y>
+          <y>-154</y>
           <width>683</width>
           <height>3216</height>
          </rect>
@@ -2844,7 +2844,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLabel" name="label_execution_frequency">
+                      <widget class="QLabel" name="label_executionFrequency">
                        <property name="text">
                         <string>50</string>
                        </property>
@@ -2937,7 +2937,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <item>
                       <widget class="QLabel" name="label_741">
                        <property name="text">
-                        <string>Cycle to priority ratio</string>
+                        <string>Priority to cycle rate</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2945,9 +2945,19 @@ background-color: rgba(240, 240, 230, 50);</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLabel" name="label_cycle_to_priority_ratio">
+                      <widget class="QLabel" name="label_priorityToCycleRate">
                        <property name="text">
                         <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_1084">
+                       <property name="text">
+                        <string>s</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2970,7 +2980,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QSlider" name="horizontalSlider_cycleToPriorityRatio">
+                    <widget class="QSlider" name="horizontalSlider_priorityToCycleRate">
                      <property name="enabled">
                       <bool>true</bool>
                      </property>
@@ -4925,12 +4935,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>358</y>
+     <x>1923</x>
+     <y>204</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1923</x>
-     <y>320</y>
+     <x>1944</x>
+     <y>166</y>
     </hint>
    </hints>
   </connection>
@@ -4941,12 +4951,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>289</y>
+     <x>1923</x>
+     <y>135</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1945</x>
-     <y>251</y>
+     <x>1966</x>
+     <y>97</y>
     </hint>
    </hints>
   </connection>
@@ -4957,12 +4967,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>427</y>
+     <x>1923</x>
+     <y>273</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1956</x>
-     <y>389</y>
+     <x>1977</x>
+     <y>235</y>
     </hint>
    </hints>
   </connection>
@@ -4995,6 +5005,38 @@ background-color: rgba(240, 240, 230, 50);</string>
     <hint type="destinationlabel">
      <x>103</x>
      <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_executionFrequency</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_executionFrequency</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1876</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2001</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_priorityToCycleRate</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_priorityToCycleRate</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1995</x>
+     <y>462</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1997</x>
+     <y>425</y>
     </hint>
    </hints>
   </connection>
