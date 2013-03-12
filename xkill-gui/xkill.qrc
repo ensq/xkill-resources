@@ -1,6 +1,8 @@
 <RCC>
   <qresource prefix="/xkill">
     <file>fonts/kenyan_coffee.ttf</file>
+    <file>images/icons/cross_hairs/hitFeedback.png</file>
+    <file>images/icons/cross_hairs/hitFeedback2.png</file>
     <file>fonts/pixel_square_10.ttf</file>
     <file>fonts/bebas_neue.otf</file>
     <file>fonts/king_richard.ttf</file>
