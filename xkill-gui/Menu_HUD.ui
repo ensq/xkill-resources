@@ -102,6 +102,23 @@ QProgressBar::chunk
 {
 	background-color: rgba(200, 200, 200, 255);
 	border: none;
+}
+
+QProgressBar
+{
+	border: 2px solid rgba(200, 200, 200, 255);
+	background: transparent;
+
+	background-color: rgba(0, 0, 0, 100);
+	padding: 2px;
+
+	border: none;
+}
+
+QProgressBar::chunk 
+{
+	background-color: rgba(255, 255, 255, 75);
+	border: none;
 }</string>
   </property>
   <property name="locale">
@@ -216,21 +233,6 @@ QProgressBar::chunk
                  </property>
                  <property name="text">
                   <string>12</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_priority_advantage">
-                 <property name="styleSheet">
-                  <string notr="true">	font-size: 22px;
-	font-family: pxll;
-	font-weight: normal;</string>
-                 </property>
-                 <property name="text">
-                  <string>+12</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
@@ -442,7 +444,7 @@ QProgressBar::chunk
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>100</y>
+     <y>130</y>
      <width>1141</width>
      <height>671</height>
     </rect>
@@ -536,7 +538,7 @@ QProgressBar::chunk
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>680</y>
+     <y>1110</y>
      <width>1211</width>
      <height>461</height>
     </rect>
@@ -1191,7 +1193,7 @@ QLabel
           <string notr="true"/>
          </property>
          <property name="value">
-          <number>0</number>
+          <number>100</number>
          </property>
          <property name="textVisible">
           <bool>false</bool>
@@ -1217,7 +1219,7 @@ QLabel
           </size>
          </property>
          <property name="value">
-          <number>0</number>
+          <number>100</number>
          </property>
          <property name="textVisible">
           <bool>false</bool>
@@ -1364,7 +1366,7 @@ QGroupBox
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="xkill.qrc">:/xkill/images/decorations/death_overlay.png</pixmap>
+    <pixmap resource="xkill.qrc">:/xkill/images/decorations/hit_overlay.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
