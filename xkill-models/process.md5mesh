@@ -25,7 +25,7 @@ joints {
 }
 
 mesh {
-	shader "phong1SG"
+	shader "process.dds"
 
 	numverts 4462
 	vert 0 ( 0.871109 0.100880 ) 0 2
