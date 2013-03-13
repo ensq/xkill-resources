@@ -1638,7 +1638,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>1135</height>
+          <height>1133</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2398,7 +2398,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>3253</height>
+          <height>3350</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -3159,14 +3159,14 @@ background-color: rgba(240, 240, 230, 50);</string>
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_20">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Auto">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Single">
                      <property name="text">
                       <string>Single</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Single">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Semi">
                      <property name="text">
                       <string>Semi</string>
                      </property>
@@ -3176,7 +3176,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Semi">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Auto">
                      <property name="text">
                       <string>Auto</string>
                      </property>
