@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2290</width>
+    <width>2327</width>
     <height>2032</height>
    </rect>
   </property>
@@ -1638,7 +1638,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>1126</height>
+          <height>1133</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2396,9 +2396,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-1274</y>
           <width>683</width>
-          <height>3018</height>
+          <height>3413</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2485,7 +2485,7 @@ QGroupBox
 background-color: rgba(240, 240, 230, 50);</string>
                    </property>
                    <property name="text">
-                    <string>Restrictions</string>
+                    <string>Settings</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -2780,6 +2780,333 @@ background-color: rgba(240, 240, 230, 50);</string>
                      </property>
                      <property name="tickInterval">
                       <number>8</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_26">
+                <property name="styleSheet">
+                 <string notr="true">/* GROUP_BOX*/
+QGroupBox
+{
+	border: 5px  solid rgba(100, 100, 85, 0);
+	background: rgba(240, 240, 230, 0);
+}</string>
+                </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_50">
+                 <item>
+                  <widget class="QLabel" name="label_scheduler">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                   </property>
+                   <property name="text">
+                    <string>Scheduler</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_54">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_41">
+                     <item>
+                      <spacer name="horizontalSpacer_93">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_740">
+                       <property name="text">
+                        <string>Next execution after</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_executionFrequency">
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_1083">
+                       <property name="text">
+                        <string>s</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_94">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_executionFrequency">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>128</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>16</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>32</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>16</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_55">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_42">
+                     <item>
+                      <spacer name="horizontalSpacer_95">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_741">
+                       <property name="text">
+                        <string>Priority to cycle rate</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_priorityToCycleRate">
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_96">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_priorityToCycleRate">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>128</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>16</number>
+                     </property>
+                     <property name="value">
+                      <number>99</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>99</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>16</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_56">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_43">
+                     <item>
+                      <spacer name="horizontalSpacer_97">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_742">
+                       <property name="text">
+                        <string>Null process duration</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_nullProcessDuration">
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_1085">
+                       <property name="text">
+                        <string>s</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_98">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_nullProcessDuration">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>128</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>16</number>
+                     </property>
+                     <property name="sliderPosition">
+                      <number>32</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="invertedAppearance">
+                      <bool>false</bool>
+                     </property>
+                     <property name="invertedControls">
+                      <bool>false</bool>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksBelow</enum>
+                     </property>
+                     <property name="tickInterval">
+                      <number>16</number>
                      </property>
                     </widget>
                    </item>
@@ -3430,6 +3757,140 @@ background-color: rgba(240, 240, 230, 50);</string>
                   </widget>
                  </item>
                  <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_57">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_34">
+                     <item>
+                      <spacer name="horizontalSpacer_79">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_96">
+                       <property name="text">
+                        <string>Initial ammunition</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_Ammo_Initial">
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_80">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_Initial">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>1000</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_58">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_44">
+                     <item>
+                      <spacer name="horizontalSpacer_99">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_97">
+                       <property name="text">
+                        <string>Maximum ammunition</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_Ammo_Maximum">
+                       <property name="text">
+                        <string>50</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_100">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Ammo_Maximum">
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>1000</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
                   <layout class="QVBoxLayout" name="verticalLayout_33">
                    <item>
                     <layout class="QHBoxLayout" name="horizontalLayout_30">
@@ -3583,7 +4044,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <item>
                       <widget class="QLabel" name="label_98">
                        <property name="text">
-                        <string>No. projectiles</string>
+                        <string>Projectiles per shot</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3749,7 +4210,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <item>
                     <widget class="QSlider" name="horizontalSlider_Ammo_Spread">
                      <property name="maximum">
-                      <number>157</number>
+                      <number>90</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
@@ -3884,6 +4345,9 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="maximum">
                       <number>100</number>
                      </property>
+                     <property name="pageStep">
+                      <number>13</number>
+                     </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
@@ -3911,7 +4375,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <item>
                       <widget class="QLabel" name="label_113">
                        <property name="text">
-                        <string>Inital radius</string>
+                        <string>Initial radius</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -4304,7 +4768,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <item row="1" column="0">
                     <widget class="QCheckBox" name="checkBox_22">
                      <property name="text">
-                      <string>Noclip </string>
+                      <string>noclip </string>
                      </property>
                      <property name="checked">
                       <bool>true</bool>
@@ -4527,7 +4991,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <item row="1" column="0">
                     <widget class="QCheckBox" name="checkBox_69">
                      <property name="text">
-                      <string>Null-Process</string>
+                      <string>Null process</string>
                      </property>
                      <property name="checked">
                       <bool>true</bool>
@@ -4696,12 +5160,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>358</y>
+     <x>1923</x>
+     <y>-916</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1923</x>
-     <y>320</y>
+     <x>1944</x>
+     <y>-954</y>
     </hint>
    </hints>
   </connection>
@@ -4712,12 +5176,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>289</y>
+     <x>1923</x>
+     <y>-985</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1945</x>
-     <y>251</y>
+     <x>1966</x>
+     <y>-1023</y>
     </hint>
    </hints>
   </connection>
@@ -4728,12 +5192,12 @@ background-color: rgba(240, 240, 230, 50);</string>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1736</x>
-     <y>427</y>
+     <x>1923</x>
+     <y>-847</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1956</x>
-     <y>389</y>
+     <x>1977</x>
+     <y>-885</y>
     </hint>
    </hints>
   </connection>
@@ -4766,6 +5230,54 @@ background-color: rgba(240, 240, 230, 50);</string>
     <hint type="destinationlabel">
      <x>103</x>
      <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_executionFrequency</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_executionFrequency</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1876</x>
+     <y>-730</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2001</x>
+     <y>-760</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_priorityToCycleRate</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_priorityToCycleRate</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1995</x>
+     <y>-658</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2004</x>
+     <y>-695</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_nullProcessDuration</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_nullProcessDuration</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1952</x>
+     <y>-604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1994</x>
+     <y>-626</y>
     </hint>
    </hints>
   </connection>
