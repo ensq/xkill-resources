@@ -2396,9 +2396,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-1274</y>
+          <y>0</y>
           <width>683</width>
-          <height>3413</height>
+          <height>3350</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -3159,14 +3159,14 @@ background-color: rgba(240, 240, 230, 50);</string>
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_20">
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Auto">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Single">
                      <property name="text">
                       <string>Single</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Single">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Semi">
                      <property name="text">
                       <string>Semi</string>
                      </property>
@@ -3176,7 +3176,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QRadioButton" name="radioButton_Weapon_Semi">
+                    <widget class="QRadioButton" name="radioButton_Weapon_Auto">
                      <property name="text">
                       <string>Auto</string>
                      </property>
@@ -5098,6 +5098,31 @@ background-color: rgba(240, 240, 230, 50);</string>
       </spacer>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_debugMessageTemplate">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: rgba(255, 255, 255, 220);
+/*	font-family: 'Pixel Square';*/ font-weight: bold;	
+
+	font-family: 'Arial';
+
+	background-color: rgba(0, 0, 0, 50); padding: 2px 10px; font-size: 15px;
+	margin: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string>Total: 100 (ms)</string>
+    </property>
    </widget>
   </widget>
  </widget>
