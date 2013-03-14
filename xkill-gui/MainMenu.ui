@@ -44,10 +44,7 @@ QPushButton
 {
 	color: rgba(240, 240, 230, 100);
 }
-QSlider::handle:hover
-{
-	 background: rgba(240, 240, 230, 255);
- }
+
 QCheckBox::indicator:hover, QRadioButton:indicator:hover
 {   
 	border: 3px  solid rgb(240, 240, 230);
@@ -56,20 +53,14 @@ QComboBox:hover
 {
     border: 3px  solid rgb(240, 240, 230);
  }
-QSlider::groove 
-{
-	background: rgba(240, 240, 230, 52);
-}
+
 QComboBox
 {
 	color: rgb(200,200,190);
 	border: 3px  solid rgb(200,200,190);
 	background: rgba(10, 10, 0, 50);
 }
-QSlider::handle 
-{
-     background: rgba(150, 150, 140, 255);
-}
+
 QAbstractItemView
 {
 	color: rgba(240, 240, 230, 255);
@@ -181,7 +172,7 @@ QPushButton:hover
 	
 	
 	border: none;
-	color: rgba(50, 50, 50, 240);
+	color: rgba(10, 10, 10, 240);
 	background-color: rgba(240, 240, 230, 220);
 }
 
@@ -228,16 +219,31 @@ QCheckBox::indicator:checked
 
 
 /* SLIDER*/
+
  QSlider::groove 
 {
-    height: 5px;
-    margin: 2px 0;
+    height: 10px;
+	padding: 0px 0;
  }
 
 QSlider::handle 
 {
      width: 40px;
-     margin: -6px 0;
+     margin: 0px 0;
+ }
+QSlider::handle 
+{
+     background: rgba(150, 150, 140, 255);
+	background: rgba(240, 240, 230, 100);
+}
+QSlider::groove 
+{
+	background: rgba(240, 240, 230, 52);
+}
+QSlider::handle:hover
+{
+	 background: rgba(240, 240, 230, 255);
+	background: rgba(240, 240, 230, 200);
  }</string>
   </property>
   <property name="locale">
@@ -247,10 +253,10 @@ QSlider::handle
    <widget class="QLabel" name="label_background">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>680</y>
-      <width>601</width>
-      <height>621</height>
+      <x>90</x>
+      <y>570</y>
+      <width>671</width>
+      <height>681</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -269,10 +275,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_main">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>100</x>
       <y>310</y>
-      <width>461</width>
-      <height>551</height>
+      <width>531</width>
+      <height>911</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -783,6 +789,16 @@ QLabel
                 <width>0</width>
                 <height>20</height>
                </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"> QSlider::groove 
+{
+    height: 20px;
+ }
+QSlider::handle 
+{
+     width: 80px;
+ }</string>
               </property>
               <property name="minimum">
                <number>1</number>
@@ -1643,7 +1659,7 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-215</y>
           <width>683</width>
           <height>1198</height>
          </rect>
