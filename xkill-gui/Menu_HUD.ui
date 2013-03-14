@@ -1447,7 +1447,7 @@ QGroupBox
     <bool>false</bool>
    </property>
    <property name="invertedAppearance">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_scheduling_background">
