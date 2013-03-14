@@ -1,9 +1,13 @@
-newmtl None
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd rifle_1.dds
-Ni 1.00
-Ks 0.80 0.80 0.80
-Ns 0.00
+# Blender MTL File: 'rifle_3.blend'
+# Material Count: 1
+newmtl Material_rifle.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd rifle.dds
+
+
