@@ -44,10 +44,7 @@ QPushButton
 {
 	color: rgba(240, 240, 230, 100);
 }
-QSlider::handle:hover
-{
-	 background: rgba(240, 240, 230, 255);
- }
+
 QCheckBox::indicator:hover, QRadioButton:indicator:hover
 {   
 	border: 3px  solid rgb(240, 240, 230);
@@ -56,20 +53,14 @@ QComboBox:hover
 {
     border: 3px  solid rgb(240, 240, 230);
  }
-QSlider::groove 
-{
-	background: rgba(240, 240, 230, 52);
-}
+
 QComboBox
 {
 	color: rgb(200,200,190);
 	border: 3px  solid rgb(200,200,190);
 	background: rgba(10, 10, 0, 50);
 }
-QSlider::handle 
-{
-     background: rgba(150, 150, 140, 255);
-}
+
 QAbstractItemView
 {
 	color: rgba(240, 240, 230, 255);
@@ -108,7 +99,7 @@ QScrollBar::add-line, QScrollBar::sub-line
  }
 QScrollBar::handle
 {
-	 background: rgba(240, 240, 230, 230);
+	 background: rgba(240, 240, 230, 150);
 }
 QScrollBar::handle:hover
 {
@@ -169,6 +160,7 @@ QPushButton
 {
 	color: rgba(240, 240, 230, 100);
 
+	
 }
 
 QPushButton:hover
@@ -176,6 +168,12 @@ QPushButton:hover
 	color: rgba(240, 240, 230, 230);
 	color: rgba(240, 240, 230, 255);
 	background: rgba(240, 240, 230, 80);
+
+	
+	
+	border: none;
+	color: rgba(10, 10, 10, 240);
+	background-color: rgba(240, 240, 230, 220);
 }
 
 /* COMBO_BOX*/
@@ -221,16 +219,31 @@ QCheckBox::indicator:checked
 
 
 /* SLIDER*/
+
  QSlider::groove 
 {
-    height: 5px;
-    margin: 2px 0;
+    height: 10px;
+	padding: 0px 0;
  }
 
 QSlider::handle 
 {
      width: 40px;
-     margin: -6px 0;
+     margin: 0px 0;
+ }
+QSlider::handle 
+{
+     background: rgba(150, 150, 140, 255);
+	background: rgba(240, 240, 230, 100);
+}
+QSlider::groove 
+{
+	background: rgba(240, 240, 230, 52);
+}
+QSlider::handle:hover
+{
+	 background: rgba(240, 240, 230, 255);
+	background: rgba(240, 240, 230, 200);
  }</string>
   </property>
   <property name="locale">
@@ -240,10 +253,10 @@ QSlider::handle
    <widget class="QLabel" name="label_background">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>300</y>
-      <width>601</width>
-      <height>621</height>
+      <x>90</x>
+      <y>570</y>
+      <width>671</width>
+      <height>681</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -262,10 +275,10 @@ QSlider::handle
    <widget class="QFrame" name="frame_main">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>100</x>
       <y>310</y>
-      <width>161</width>
-      <height>311</height>
+      <width>531</width>
+      <height>911</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -655,9 +668,9 @@ QLabel
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>100</y>
-      <width>371</width>
-      <height>191</height>
+      <y>-50</y>
+      <width>631</width>
+      <height>561</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -776,6 +789,16 @@ QLabel
                 <width>0</width>
                 <height>20</height>
                </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"> QSlider::groove 
+{
+    height: 13px;
+ }
+QSlider::handle 
+{
+     width: 80px;
+ }</string>
               </property>
               <property name="minimum">
                <number>1</number>
@@ -1034,8 +1057,8 @@ QPushButton:hover
    <widget class="QFrame" name="frame_audio">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>310</y>
+      <x>490</x>
+      <y>450</y>
       <width>501</width>
       <height>571</height>
      </rect>
@@ -1557,8 +1580,8 @@ QPushButton:hover
      <rect>
       <x>1140</x>
       <y>110</y>
-      <width>741</width>
-      <height>1401</height>
+      <width>891</width>
+      <height>1011</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1637,8 +1660,8 @@ QLabel
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>696</width>
-          <height>1373</height>
+          <width>683</width>
+          <height>1198</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2065,8 +2088,8 @@ color: rgab(10, 10, 10, 240);</string>
      <rect>
       <x>10</x>
       <y>310</y>
-      <width>131</width>
-      <height>311</height>
+      <width>141</width>
+      <height>291</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -5139,21 +5162,6 @@ background-color: rgba(240, 240, 230, 50);</string>
      <string>Total: 100 (ms)</string>
     </property>
    </widget>
-   <zorder>label_background</zorder>
-   <zorder>frame_main</zorder>
-   <zorder>frame_settings</zorder>
-   <zorder>frame_start</zorder>
-   <zorder>frame_audio</zorder>
-   <zorder>frame_video</zorder>
-   <zorder>label_openingAnimation</zorder>
-   <zorder>frame_opening</zorder>
-   <zorder>frame_credits</zorder>
-   <zorder>frame_input</zorder>
-   <zorder>frame_customize</zorder>
-   <zorder>label_debugMessageTemplate</zorder>
-   <zorder>horizontalSpacer_47</zorder>
-   <zorder>horizontalSpacer_47</zorder>
-   <zorder>horizontalSpacer_47</zorder>
   </widget>
  </widget>
  <resources>
