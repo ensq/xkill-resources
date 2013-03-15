@@ -153,7 +153,7 @@ QProgressBar::chunk
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_12">
     <item>
-     <widget class="QGroupBox" name="groupBox_4">
+     <widget class="QGroupBox" name="groupBox_health">
       <property name="styleSheet">
        <string notr="true"/>
       </property>
@@ -1413,7 +1413,7 @@ QGroupBox
     <rect>
      <x>620</x>
      <y>780</y>
-     <width>371</width>
+     <width>381</width>
      <height>10</height>
     </rect>
    </property>
@@ -1438,7 +1438,7 @@ QGroupBox
     <rect>
      <x>610</x>
      <y>730</y>
-     <width>391</width>
+     <width>411</width>
      <height>71</height>
     </rect>
    </property>
@@ -1491,7 +1491,7 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
     <rect>
      <x>620</x>
      <y>750</y>
-     <width>371</width>
+     <width>381</width>
      <height>20</height>
     </rect>
    </property>
