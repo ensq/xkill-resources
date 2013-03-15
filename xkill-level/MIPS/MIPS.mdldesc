@@ -10507,7 +10507,7 @@ c EXP 0 3 -20
 
 #rooftop center
 c SIN 3.5 13 0.3
-c SHA -0.5 13 0.3
+c SHA -0.5 13 2.0
 c EXP -4.5 13 0.3
 
 #rooftop hidden spaces
