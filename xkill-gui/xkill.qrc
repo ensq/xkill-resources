@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/icons/misc/indicator.png</file>
     <file>images/decorations/hit_overlay.png</file>
     <file>fonts/kenyan_coffee.ttf</file>
     <file>images/icons/cross_hairs/hitFeedback.png</file>
