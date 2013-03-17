@@ -1,10 +1,15 @@
 <RCC>
   <qresource prefix="/xkill">
     <file>images/icons/misc/indicator.png</file>
+    <file>images/icons/hacks/hack_cyclesteal.png</file>
+    <file>images/icons/hacks/hack_jet.png</file>
+    <file>images/icons/hacks/hack_power.png</file>
+    <file>images/icons/hacks/hack_speed.png</file>
+    <file>images/icons/hacks/state_executing.png</file>
+    <file>images/icons/hacks/state_running.png</file>
     <file>images/decorations/hit_overlay.png</file>
     <file>fonts/kenyan_coffee.ttf</file>
     <file>images/icons/cross_hairs/hitFeedback.png</file>
-    <file>images/icons/cross_hairs/hitFeedback2.png</file>
     <file>fonts/pixel_square_10.ttf</file>
     <file>fonts/bebas_neue.otf</file>
     <file>fonts/king_richard.ttf</file>
