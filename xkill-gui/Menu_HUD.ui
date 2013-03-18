@@ -212,6 +212,35 @@ QProgressBar::chunk
      </spacer>
     </item>
     <item>
+     <widget class="QProgressBar" name="progressBar_ammo">
+      <property name="maximumSize">
+       <size>
+        <width>10</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar::chunk 
+{
+	background-color: rgba(255, 255, 255, 200);
+	border: none;
+}</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QGroupBox" name="groupBox_ammo">
       <property name="title">
        <string/>
@@ -342,34 +371,6 @@ QProgressBar::chunk
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QProgressBar" name="progressBar_ammo">
-   <property name="geometry">
-    <rect>
-     <x>1140</x>
-     <y>680</y>
-     <width>10</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>10</width>
-     <height>50</height>
-    </size>
-   </property>
-   <property name="value">
-    <number>24</number>
-   </property>
-   <property name="textVisible">
-    <bool>false</bool>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-   <property name="invertedAppearance">
-    <bool>false</bool>
-   </property>
-  </widget>
   <widget class="QProgressBar" name="progressBar_health">
    <property name="geometry">
     <rect>
@@ -384,6 +385,13 @@ QProgressBar::chunk
      <width>10</width>
      <height>50</height>
     </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar::chunk 
+{
+	background-color: rgba(255, 255, 255, 120);
+	border: none;
+}</string>
    </property>
    <property name="value">
     <number>24</number>
@@ -1228,12 +1236,29 @@ background-color: rgb(0, 0, 0, 100);</string>
     <bool>false</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="label_reloadFeedback">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>260</y>
+     <width>401</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left: 			10px solid rgba(255, 255, 255, 200);
+border-right:	10px solid rgba(255, 255, 255, 200);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>label_helper</zorder>
   <zorder>label_scheduling_background</zorder>
   <zorder>label_aim</zorder>
   <zorder>frame_scoreboard</zorder>
   <zorder>frame_bottom</zorder>
-  <zorder>progressBar_ammo</zorder>
   <zorder>groupBox_weaponInfo2</zorder>
   <zorder>progressBar_health</zorder>
   <zorder>label_deathOverlay</zorder>
@@ -1251,6 +1276,8 @@ background-color: rgb(0, 0, 0, 100);</string>
   <zorder>label_priority_advantage</zorder>
   <zorder>label_priority_advantage_2</zorder>
   <zorder>label_hudMessageTemplate</zorder>
+  <zorder>label_reloadFeedback</zorder>
+  <zorder>progressBar_ammo</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
