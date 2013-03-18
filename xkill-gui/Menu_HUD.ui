@@ -837,7 +837,7 @@ QLabel
           <string notr="true">font-family: 'Imagine Font';  font-size: 14px; padding: 5px; font-weight: bold;</string>
          </property>
          <property name="text">
-          <string>Infinite Cycles</string>
+          <string>No cycle limit</string>
          </property>
         </widget>
        </item>
@@ -866,7 +866,7 @@ QLabel
           <string notr="true">font-family: 'Imagine Font';  font-size: 14px; padding: 5px; font-weight: bold;</string>
          </property>
          <property name="text">
-          <string>Infinite Time</string>
+          <string>No time limit</string>
          </property>
         </widget>
        </item>
