@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/xkill">
-    <file>images/icons/misc/indicator.png</file>
+    <file>fonts/imagine_font.ttf</file>
     <file>images/icons/hacks/hack_cyclesteal.png</file>
     <file>images/icons/hacks/hack_jet.png</file>
     <file>images/icons/hacks/hack_power.png</file>

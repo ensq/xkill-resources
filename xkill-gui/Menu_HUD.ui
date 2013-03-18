@@ -55,7 +55,7 @@ font-family: 'Statix';
 
 
 	
-	
+	font-family: 'Imagine Font';
 }
 
 #label_xHealth, #label_xAmmo
@@ -89,7 +89,7 @@ QGroupBox
 	border: none;
 	border-radius: 0px;
 	padding: 0px;
-	background: rgba(0, 0, 0, 50);
+	background: rgba(0, 0, 0, 75);
 }
 
 QProgressBar
@@ -182,8 +182,7 @@ QProgressBar::chunk
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">	font-size: 90px;
-	font-family: pxll;
+            <string notr="true">	font-size: 45px;
 	font-weight: normal;</string>
            </property>
            <property name="text">
@@ -193,115 +192,6 @@ QProgressBar::chunk
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="groupBox_scoreInfo">
-      <property name="title">
-       <string/>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_11">
-           <item>
-            <widget class="QLabel" name="label">
-             <property name="styleSheet">
-              <string notr="true">font-size: 12px;</string>
-             </property>
-             <property name="text">
-              <string>Priority </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <item>
-              <widget class="QLabel" name="label_priority">
-               <property name="styleSheet">
-                <string notr="true">	font-size: 35px;
-	font-family: pxll;
-	font-weight: normal;</string>
-               </property>
-               <property name="text">
-                <string>12</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_10">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_12">
-           <item>
-            <widget class="QLabel" name="label_2">
-             <property name="styleSheet">
-              <string notr="true">font-size: 12px;</string>
-             </property>
-             <property name="text">
-              <string>Cycles </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="label_cycles">
-                 <property name="styleSheet">
-                  <string notr="true">	font-size: 35px;
-	font-family: pxll;
-	font-weight: normal;</string>
-                 </property>
-                 <property name="text">
-                  <string>12</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <spacer name="horizontalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </item>
-          </layout>
          </item>
         </layout>
        </item>
@@ -348,8 +238,7 @@ QProgressBar::chunk
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">	font-size: 90px;
-	font-family: pxll;
+            <string notr="true">	font-size: 45px;
 	font-weight: normal;</string>
            </property>
            <property name="text">
@@ -401,8 +290,7 @@ QProgressBar::chunk
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">	font-size: 35px;
-	font-family: pxll;
+              <string notr="true">	font-size: 20px;
 	font-weight: normal;</string>
              </property>
              <property name="text">
@@ -438,8 +326,8 @@ QProgressBar::chunk
   <widget class="QLabel" name="label_helper">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>70</y>
+     <x>300</x>
+     <y>110</y>
      <width>1141</width>
      <height>671</height>
     </rect>
@@ -532,8 +420,8 @@ QProgressBar::chunk
   <widget class="QFrame" name="frame_test">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>340</y>
+     <x>730</x>
+     <y>790</y>
      <width>231</width>
      <height>241</height>
     </rect>
@@ -576,8 +464,8 @@ QLabel
      <rect>
       <x>130</x>
       <y>170</y>
-      <width>32</width>
-      <height>32</height>
+      <width>46</width>
+      <height>34</height>
      </rect>
     </property>
     <property name="text">
@@ -612,8 +500,8 @@ background-color: rgb(0, 0, 0, 50);</string>
      <rect>
       <x>50</x>
       <y>170</y>
-      <width>32</width>
-      <height>32</height>
+      <width>46</width>
+      <height>34</height>
      </rect>
     </property>
     <property name="text">
@@ -820,65 +708,6 @@ background-color: rgb(0, 0, 0, 50);</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox_bottomCenter">
-   <property name="geometry">
-    <rect>
-     <x>1060</x>
-     <y>550</y>
-     <width>221</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox
-{
-	
-	background: rgba(0, 0, 0, 50);
-}
-QLabel
-{
-	font-size: 40px;
-	
-	/*font-family: 'Angie\'s New House';*/
-	font-family: pxll;
-
-	font-weight: normal;
-	
-}
-</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_8">
-    <item>
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>Scheduling in</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_schedulingTimer">
-      <property name="minimumSize">
-       <size>
-        <width>70</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>00:12</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QFrame" name="frame_scoreboard">
    <property name="geometry">
     <rect>
@@ -891,7 +720,7 @@ QLabel
    <property name="styleSheet">
     <string notr="true">QGroupBox
 {
-	background: rgba(0, 0, 0, 100);
+	background: rgba(0, 0, 0, 120);
 }
 
 QLabel
@@ -900,6 +729,7 @@ QLabel
 	padding: 1px 7px;
 	font-weight: normal; font-family: 'Pixel Square';
 	qproperty-alignment: AlignCenter;
+	font-family: 'Arial Black';
 }
 
 
@@ -908,7 +738,8 @@ QLabel
 	background-color: rgba(0, 0, 0, 0);
 
 	font-family: 'pxll';  font-weight: normal; font-size: 35px;
-
+	font-family: 'Imagine Font';  font-size: 12px;
+	
 	/*
 
 */
@@ -1003,7 +834,7 @@ QLabel
        <item>
         <widget class="QLabel" name="label_cycleRatio">
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">font-family: 'Imagine Font';  font-size: 14px; padding: 5px; font-weight: bold;</string>
          </property>
          <property name="text">
           <string>Infinite Cycles</string>
@@ -1032,7 +863,7 @@ QLabel
        <item>
         <widget class="QLabel" name="label_timeRatio">
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">font-family: 'Imagine Font';  font-size: 14px; padding: 5px; font-weight: bold;</string>
          </property>
          <property name="text">
           <string>Infinite Time</string>
@@ -1230,7 +1061,7 @@ QGroupBox
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>770</y>
+     <y>680</y>
      <width>381</width>
      <height>10</height>
     </rect>
@@ -1255,13 +1086,13 @@ QGroupBox
    <property name="geometry">
     <rect>
      <x>600</x>
-     <y>760</y>
+     <y>670</y>
      <width>411</width>
      <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0, 50);</string>
+    <string notr="true">background-color: rgb(0, 0, 0, 75);</string>
    </property>
    <property name="text">
     <string/>
@@ -1271,7 +1102,7 @@ QGroupBox
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>800</y>
+     <y>710</y>
      <width>20</width>
      <height>10</height>
     </rect>
@@ -1287,7 +1118,7 @@ QGroupBox
    <property name="geometry">
     <rect>
      <x>770</x>
-     <y>790</y>
+     <y>700</y>
      <width>20</width>
      <height>20</height>
     </rect>
@@ -1308,7 +1139,7 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>790</y>
+     <y>700</y>
      <width>381</width>
      <height>20</height>
     </rect>
@@ -1323,17 +1154,19 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
   <widget class="QLabel" name="label_priority_advantage">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>810</y>
-     <width>16</width>
-     <height>16</height>
+     <x>770</x>
+     <y>720</y>
+     <width>21</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">	font-size: 22px;
 	font-family: pxll;
 	font-weight: normal;
-</string>
+
+border-top: 4px solid  rgb(255, 255, 255, 100);
+background-color: rgb(0, 0, 0, 100);</string>
    </property>
    <property name="text">
     <string>0</string>
@@ -1345,11 +1178,17 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
   <widget class="QLabel" name="label_priority_advantage_2">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>870</y>
-     <width>16</width>
-     <height>16</height>
+     <x>790</x>
+     <y>700</y>
+     <width>5</width>
+     <height>20</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>5</width>
+     <height>24</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">	font-size: 22px;
@@ -1358,16 +1197,40 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
 </string>
    </property>
    <property name="text">
-    <string>0</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/xkill/images/icons/misc/indicator.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="label_hudMessageTemplate">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>520</y>
+     <width>308</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0, 100); padding: 0px 10px; font-family: 'Arial Black'; font-size: 16px;</string>
+   </property>
+   <property name="text">
+    <string>Press &lt;span style=&quot;color:#40b32b;&quot;&gt;jump&lt;/span&gt; to use jethack</string>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+  </widget>
   <zorder>label_helper</zorder>
   <zorder>label_scheduling_background</zorder>
   <zorder>label_aim</zorder>
-  <zorder>groupBox_bottomCenter</zorder>
   <zorder>frame_scoreboard</zorder>
   <zorder>frame_bottom</zorder>
   <zorder>progressBar_ammo</zorder>
@@ -1387,6 +1250,7 @@ border:1px solid rgba(0, 0, 0, 40); border-top: 1px solid rgba(255, 255, 255, 40
   <zorder>label_7</zorder>
   <zorder>label_priority_advantage</zorder>
   <zorder>label_priority_advantage_2</zorder>
+  <zorder>label_hudMessageTemplate</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
