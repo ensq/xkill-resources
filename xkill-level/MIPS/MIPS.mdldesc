@@ -10479,6 +10479,13 @@ c HEL -19.5 -3 -16.5
 
 c POW 0 25 0
 
+
+#tower inside
+c JET -20 11 -23
+c POW  20 11 -23
+c POW -20 11  23
+c JET  20 11  23
+
 #c HEL -12.5 4 -12.5
 #c HEL -12.5 4 12.5
 #c HEL 12.5 4 -12.5
