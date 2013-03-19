@@ -374,22 +374,22 @@ QProgressBar::chunk
   <widget class="QProgressBar" name="progressBar_health">
    <property name="geometry">
     <rect>
-     <x>1010</x>
-     <y>680</y>
-     <width>10</width>
-     <height>50</height>
+     <x>710</x>
+     <y>400</y>
+     <width>15</width>
+     <height>75</height>
     </rect>
    </property>
    <property name="maximumSize">
     <size>
-     <width>10</width>
-     <height>50</height>
+     <width>15</width>
+     <height>75</height>
     </size>
    </property>
    <property name="styleSheet">
     <string notr="true">QProgressBar::chunk 
 {
-	background-color: rgba(255, 255, 255, 120);
+	background-color: rgba(255, 0, 0, 120);
 	border: none;
 }</string>
    </property>
@@ -1239,7 +1239,7 @@ background-color: rgb(0, 0, 0, 100);</string>
   <widget class="QLabel" name="label_reloadFeedback">
    <property name="geometry">
     <rect>
-     <x>670</x>
+     <x>810</x>
      <y>260</y>
      <width>401</width>
      <height>331</height>
@@ -1277,7 +1277,6 @@ border-right:	10px solid rgba(255, 255, 255, 200);
   <zorder>label_priority_advantage_2</zorder>
   <zorder>label_hudMessageTemplate</zorder>
   <zorder>label_reloadFeedback</zorder>
-  <zorder>progressBar_ammo</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
