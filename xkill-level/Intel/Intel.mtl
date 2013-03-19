@@ -1,15 +1,6 @@
 # Blender MTL File: 'xkill2.blend'
-# Material Count: 4
-newmtl default
-Ns 0
-Ka 0.017386 0.017386 0.017386
-Kd 0.8 0.8 0.8
-Ks 0.8 0.8 0.8
-d 1
-illum 2
-
-
-newmtl Material_Bottom
+# Material Count: 3
+newmtl Material_Bottom_bottom
 Ns 96.078431
 Ka 0.017386 0.017386 0.017386
 Kd 0.640000 0.640000 0.640000
@@ -20,7 +11,7 @@ illum 2
 map_Kd xkill_arena_bottom.dds
 
 
-newmtl Material_Middle
+newmtl Material_Middle_untitled
 Ns 96.078431
 Ka 0.017386 0.017386 0.017386
 Kd 0.640000 0.640000 0.640000
@@ -31,7 +22,7 @@ illum 2
 map_Kd xkill_arena_middle.dds
 
 
-newmtl Material_Top
+newmtl Material_Top_top
 Ns 96.078431
 Ka 0.017386 0.017386 0.017386
 Kd 0.640000 0.640000 0.640000
