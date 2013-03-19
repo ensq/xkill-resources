@@ -210,7 +210,6 @@ w 133 17.5 5.5 5.675 0 -0.382683 0 0.92388
 #SPAWN POINTS#
 ##############
 #s X Y Z Radius
-#s 0 7 0 1
 
 #ground below and inbetween pillars
 s 18.5 4 2.5 1
@@ -228,7 +227,7 @@ s 18 7 12.5 1
 #######
 #HACKS#
 #######
-#c TYPE X Y Z
+c TYPE X Y Z
 c HEL -12.5 4 -12.5
 c HEL1 -12.5 4 12.5
 c HEL2 12.5 4 -12.5
@@ -242,7 +241,7 @@ c POW -20 9 -14.7
 ######
 #AMMO#
 ######
-#a TYPE X Y Z
+a TYPE X Y Z
 c EXP -1 3 0
 c SHA -3 2 -12.5
 c SHA1 -3 2 12.5
