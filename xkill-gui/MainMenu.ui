@@ -1767,7 +1767,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>1213</height>
+          <height>1205</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2553,9 +2553,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-475</y>
+          <y>-240</y>
           <width>683</width>
-          <height>2508</height>
+          <height>2462</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -3588,7 +3588,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <item>
                       <widget class="QLabel" name="label_82">
                        <property name="text">
-                        <string>Rate of fire</string>
+                        <string>Cooldown between shots</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3626,7 +3626,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                       <number>0</number>
                      </property>
                      <property name="maximum">
-                      <number>100</number>
+                      <number>1000</number>
                      </property>
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
@@ -4800,19 +4800,6 @@ background-color: rgba(240, 240, 230, 50);</string>
      <string>Total: 100 (ms)</string>
     </property>
    </widget>
-   <zorder>label_background</zorder>
-   <zorder>frame_main</zorder>
-   <zorder>frame_settings</zorder>
-   <zorder>frame_start</zorder>
-   <zorder>frame_audio</zorder>
-   <zorder>frame_video</zorder>
-   <zorder>label_openingAnimation</zorder>
-   <zorder>frame_opening</zorder>
-   <zorder>frame_credits</zorder>
-   <zorder>frame_input</zorder>
-   <zorder>frame_customize</zorder>
-   <zorder>label_debugMessageTemplate</zorder>
-   <zorder>pushButton_applyShaders</zorder>
   </widget>
  </widget>
  <resources>
