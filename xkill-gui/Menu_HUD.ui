@@ -762,7 +762,7 @@ QLabel
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <spacer name="verticalSpacer_3">
+     <spacer name="verticalSpacer_scoreboard">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -775,7 +775,7 @@ QLabel
      </spacer>
     </item>
     <item>
-     <widget class="QGroupBox" name="groupBox_3">
+     <widget class="QGroupBox" name="groupBox_scoreboard">
       <property name="title">
        <string/>
       </property>
@@ -1257,7 +1257,6 @@ border-right:	10px solid rgba(255, 255, 255, 200);
   <zorder>label_helper</zorder>
   <zorder>label_scheduling_background</zorder>
   <zorder>label_aim</zorder>
-  <zorder>frame_scoreboard</zorder>
   <zorder>frame_bottom</zorder>
   <zorder>groupBox_weaponInfo2</zorder>
   <zorder>progressBar_health</zorder>
@@ -1277,6 +1276,7 @@ border-right:	10px solid rgba(255, 255, 255, 200);
   <zorder>label_priority_advantage_2</zorder>
   <zorder>label_hudMessageTemplate</zorder>
   <zorder>label_reloadFeedback</zorder>
+  <zorder>frame_scoreboard</zorder>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
