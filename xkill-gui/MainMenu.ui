@@ -1716,7 +1716,7 @@ font-size: 20px;</string>
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1260</x>
+      <x>790</x>
       <y>30</y>
       <width>771</width>
       <height>971</height>
@@ -1799,7 +1799,7 @@ QLabel
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>1205</height>
+          <height>1213</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2578,9 +2578,9 @@ QPushButton
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-1335</y>
+          <y>-521</y>
           <width>683</width>
-          <height>2462</height>
+          <height>2508</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -3345,12 +3345,20 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="text">
                       <string>Single</string>
                      </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/w_single.png</normaloff>:/xkill/images/icons/weapons/w_single.png</iconset>
+                     </property>
                     </widget>
                    </item>
                    <item>
                     <widget class="QRadioButton" name="radioButton_Weapon_Semi">
                      <property name="text">
                       <string>Semi</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/w_semi.png</normaloff>:/xkill/images/icons/weapons/w_semi.png</iconset>
                      </property>
                      <property name="checked">
                       <bool>true</bool>
@@ -3361,6 +3369,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                     <widget class="QRadioButton" name="radioButton_Weapon_Auto">
                      <property name="text">
                       <string>Auto</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/w_auto.png</normaloff>:/xkill/images/icons/weapons/w_auto.png</iconset>
                      </property>
                     </widget>
                    </item>
@@ -3404,6 +3416,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="text">
                       <string>Explosive</string>
                      </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_explosive.png</normaloff>:/xkill/images/icons/weapons/a_explosive.png</iconset>
+                     </property>
                      <property name="checked">
                       <bool>true</bool>
                      </property>
@@ -3414,6 +3430,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="text">
                       <string>Bullet</string>
                      </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_bullet.png</normaloff>:/xkill/images/icons/weapons/a_bullet.png</iconset>
+                     </property>
                      <property name="checked">
                       <bool>true</bool>
                      </property>
@@ -3423,6 +3443,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                     <widget class="QCheckBox" name="checkBox_Weapon_Scatter">
                      <property name="text">
                       <string>Scatter</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_scatter.png</normaloff>:/xkill/images/icons/weapons/a_scatter.png</iconset>
                      </property>
                      <property name="checked">
                       <bool>true</bool>
@@ -3883,6 +3907,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="text">
                       <string>Bullet</string>
                      </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_bullet.png</normaloff>:/xkill/images/icons/weapons/a_bullet.png</iconset>
+                     </property>
                      <property name="checked">
                       <bool>false</bool>
                      </property>
@@ -3893,6 +3921,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                      <property name="text">
                       <string>Scatter</string>
                      </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_scatter.png</normaloff>:/xkill/images/icons/weapons/a_scatter.png</iconset>
+                     </property>
                      <property name="checked">
                       <bool>true</bool>
                      </property>
@@ -3902,6 +3934,10 @@ background-color: rgba(240, 240, 230, 50);</string>
                     <widget class="QRadioButton" name="radioButton_Ammo_Explosive">
                      <property name="text">
                       <string>Explosive</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="xkill.qrc">
+                       <normaloff>:/xkill/images/icons/weapons/a_explosive.png</normaloff>:/xkill/images/icons/weapons/a_explosive.png</iconset>
                      </property>
                     </widget>
                    </item>
