@@ -4957,9 +4957,9 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-2054</y>
+          <y>0</y>
           <width>683</width>
-          <height>3003</height>
+          <height>3122</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_46">
@@ -5248,7 +5248,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;XKILL has three arenas available for play:&lt;/p&gt;&lt;p&gt;*SPARC: small close-quarters arena. Weapon tips: ammunition type: scatter. Firing mode: auto.&lt;/p&gt;&lt;p&gt;*MIPS: boxy fort with well-lit open-space rooftop towers and dark close-quarter interiors.&lt;/p&gt;&lt;p&gt;*Intel: wide circular arena with large open spaces. Weapon tips: ammunition type: bullet. Firing mode: single.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;XKILL has three arenas available for play:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SPARC&lt;br/&gt;&lt;/span&gt;Small close-quarters arena.&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Weapon tips&lt;/span&gt;&lt;br/&gt;Ammunition type: &lt;span style=&quot; font-weight:600;&quot;&gt;scatter&lt;/span&gt;&lt;br/&gt;Firing mode: &lt;span style=&quot; font-weight:600;&quot;&gt;auto&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;MIPS&lt;/span&gt;&lt;br/&gt;Boxy fort with well-lit open-space rooftop towers and dark close-quarter interiors.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Intel&lt;/span&gt;&lt;br/&gt;Wide circular arena with large open spaces.&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Weapon tips&lt;/span&gt;&lt;br/&gt;Ammunition type: &lt;span style=&quot; font-weight:600;&quot;&gt;bullet&lt;/span&gt;&lt;br/&gt;Firing mode: &lt;span style=&quot; font-weight:600;&quot;&gt;single&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5748,29 +5748,6 @@ The last surviving process will be given a priority reward, the process will res
      <bool>true</bool>
     </property>
    </widget>
-   <zorder>label_background</zorder>
-   <zorder>frame_main</zorder>
-   <zorder>frame_settings</zorder>
-   <zorder>frame_start</zorder>
-   <zorder>frame_audio</zorder>
-   <zorder>frame_video</zorder>
-   <zorder>label_openingAnimation</zorder>
-   <zorder>frame_opening</zorder>
-   <zorder>frame_credits</zorder>
-   <zorder>frame_input</zorder>
-   <zorder>frame_customize</zorder>
-   <zorder>label_debugMessageTemplate</zorder>
-   <zorder>frame_howto</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_27</zorder>
-   <zorder>label_4</zorder>
-   <zorder>horizontalSpacer_25</zorder>
-   <zorder>horizontalSpacer_34</zorder>
-   <zorder>label_weapons_15</zorder>
-   <zorder>label_56</zorder>
-   <zorder>label_57</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_48</zorder>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
