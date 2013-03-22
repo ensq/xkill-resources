@@ -1732,10 +1732,10 @@ font-size: 20px;</string>
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>790</x>
+      <x>1020</x>
       <y>30</y>
-      <width>771</width>
-      <height>971</height>
+      <width>781</width>
+      <height>1211</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1813,9 +1813,9 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-756</y>
           <width>683</width>
-          <height>1206</height>
+          <height>2132</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -1899,7 +1899,11 @@ QLabel
                <widget class="QLabel" name="label_cred_prog">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Programming</string>
@@ -1973,7 +1977,10 @@ color: rgab(10, 10, 10, 240);</string>
                <widget class="QLabel" name="label_cred_art">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Art</string>
@@ -2007,7 +2014,11 @@ color: rgab(10, 10, 10, 240);</string>
                <widget class="QLabel" name="label_cred_3d">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>3D</string>
@@ -2051,7 +2062,11 @@ color: rgab(10, 10, 10, 240);</string>
                <widget class="QLabel" name="label_cred_sound">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Sound</string>
@@ -2072,34 +2087,14 @@ color: rgab(10, 10, 10, 240);</string>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_cred_music">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
-                </property>
-                <property name="text">
-                 <string>Music</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_41">
-                <property name="text">
-                 <string>Johan Mauritzon</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QLabel" name="label_cred_leveld">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Level Design</string>
@@ -2123,7 +2118,11 @@ color: rgab(10, 10, 10, 240);</string>
                <widget class="QLabel" name="label_cred_thanksto">
                 <property name="styleSheet">
                  <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Thanks to</string>
@@ -2144,6 +2143,26 @@ color: rgab(10, 10, 10, 240);</string>
                </widget>
               </item>
               <item>
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>Johan Mauritzon</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_66">
+                <property name="text">
+                 <string>Jimmy Johnsson</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
                <spacer name="horizontalSpacer_23">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
@@ -2157,7 +2176,259 @@ color: rgab(10, 10, 10, 240);</string>
                </spacer>
               </item>
               <item>
-               <spacer name="horizontalSpacer_31">
+               <spacer name="horizontalSpacer_48">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_56">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_55">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_69">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;MUSIC&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;This game contains a selection of music from the game&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; EVE Online&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, The music is licensed under &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Creative Commons Attribution 3.0 Unported&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. &lt;br/&gt;&lt;br/&gt;All credits is attributed to &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;CCPGames&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. The music was acquired from &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SoundCloud&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;.&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_53">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_67">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AUDIO ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;FMOD Sound System by Firelight Technologies&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_50">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_46">
+                <item>
+                 <widget class="QLabel" name="label_68">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;GUI&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Qt 4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_65">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;PHYSICS ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;Bullet Physics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_54">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_69">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_70">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;This software contains Autodesk® FBX® code developed by Autodesk, Inc. Copyright 2008 Autodesk, Inc.  All rights, reserved. Such code is provided &amp;quot;as is&amp;quot; and Autodesk, Inc. disclaims any and all warranties, whether express or implied, including without limitation the implied warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights.  In no event shall Autodesk, Inc. be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of such code.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_49">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="maximumSize">
+                   <size>
+                    <width>175</width>
+                    <height>75</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/bullet_logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_14">
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/qt-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_45">
+                <item>
+                 <widget class="QLabel" name="label_17">
+                  <property name="maximumSize">
+                   <size>
+                    <width>175</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fmod-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fbx-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_34">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
@@ -2176,7 +2447,6 @@ color: rgab(10, 10, 10, 240);</string>
              <zorder>label_28</zorder>
              <zorder>label_5</zorder>
              <zorder>label_25</zorder>
-             <zorder>label_41</zorder>
              <zorder>label_37</zorder>
              <zorder>label_40</zorder>
              <zorder>label_26</zorder>
@@ -2191,9 +2461,25 @@ color: rgab(10, 10, 10, 240);</string>
              <zorder>label_cred_art</zorder>
              <zorder>label_cred_3d</zorder>
              <zorder>label_cred_sound</zorder>
-             <zorder>label_cred_music</zorder>
              <zorder>label_cred_thanksto</zorder>
              <zorder>label_32</zorder>
+             <zorder>horizontalSpacer_34</zorder>
+             <zorder>horizontalSpacer_48</zorder>
+             <zorder>label_41</zorder>
+             <zorder>label_66</zorder>
+             <zorder></zorder>
+             <zorder></zorder>
+             <zorder>label_67</zorder>
+             <zorder></zorder>
+             <zorder>horizontalSpacer_49</zorder>
+             <zorder>horizontalSpacer_50</zorder>
+             <zorder>horizontalSpacer_53</zorder>
+             <zorder>horizontalSpacer_54</zorder>
+             <zorder>label_70</zorder>
+             <zorder>label_69</zorder>
+             <zorder>horizontalSpacer_55</zorder>
+             <zorder>horizontalSpacer_56</zorder>
+             <zorder>horizontalSpacer_69</zorder>
             </widget>
            </item>
            <item>
@@ -4880,10 +5166,10 @@ background-color: rgba(240, 240, 230, 50);</string>
    <widget class="QFrame" name="frame_howto">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>1050</y>
-      <width>771</width>
-      <height>971</height>
+      <x>360</x>
+      <y>430</y>
+      <width>751</width>
+      <height>1471</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -4957,9 +5243,9 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-55</y>
           <width>683</width>
-          <height>3122</height>
+          <height>3149</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_46">
@@ -5015,8 +5301,8 @@ QLabel
               <item>
                <widget class="QLabel" name="label_in_1">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">	color: rgba(240, 240, 230, 150);
+	background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>XKILL Backstory</string>
@@ -5042,8 +5328,8 @@ color: rgab(10, 10, 10, 240);</string>
               <item>
                <widget class="QLabel" name="label_in_2">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Basics</string>
@@ -5056,7 +5342,7 @@ color: rgab(10, 10, 10, 240);</string>
               <item>
                <widget class="QLabel" name="label_33">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You are playing as one the processes inside a single-core processor.&lt;/p&gt;&lt;p&gt;Priority is awarded to a process when it terminates another process.&lt;/p&gt;&lt;p&gt;The goal of XKILL is to have as many cycles as possible.&lt;/p&gt;&lt;p&gt;Cycles can be retrieved in two ways:&lt;/p&gt;&lt;p&gt;*By being executed (refer to &amp;quot;Execution&amp;quot;)&lt;/p&gt;&lt;p&gt;*By cycle-stealing (refer to &amp;quot;Cyclehack&amp;quot;)&lt;/p&gt;&lt;p&gt;The game will end when one process reaches the cycle limit, or when the time limit is up.&lt;/p&gt;&lt;p&gt;The cycle limit, time limit and a bunch of other settings can be set in the &amp;quot;customize&amp;quot; menu before starting a match.&lt;/p&gt;&lt;p&gt;The winner of a match is the process having the most cycles.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You are playing as one the processes inside a single-core processor. &lt;/p&gt;&lt;p&gt;Priority is awarded to a process when it terminates another process. The goal of XKILL is to have as many cycles as possible.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Cycles can be retrieved in two ways:&lt;/p&gt;&lt;p&gt;By being &lt;span style=&quot; font-style:italic;&quot;&gt;executed&lt;/span&gt; (refer to &amp;quot;Execution&amp;quot;)&lt;br/&gt;By &lt;span style=&quot; font-style:italic;&quot;&gt;cycle-stealing&lt;/span&gt; (refer to &amp;quot;Cyclehack&amp;quot;)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;The game will end when one process reaches the cycle limit, or when the time limit is up.&lt;/p&gt;&lt;p&gt;The cycle limit, time limit and a bunch of other settings can be set in the &amp;quot;customize&amp;quot; menu before starting a match.&lt;/p&gt;&lt;p&gt;The winner of a match is the process having the most cycles.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5069,8 +5355,8 @@ color: rgab(10, 10, 10, 240);</string>
               <item>
                <widget class="QLabel" name="label_in_3">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Execution</string>
@@ -5111,8 +5397,8 @@ The last surviving process will be given a priority reward, the process will res
               <item>
                <widget class="QLabel" name="label_in_4">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Null process</string>
@@ -5143,8 +5429,8 @@ The last surviving process will be given a priority reward, the process will res
               <item>
                <widget class="QLabel" name="label_in_5">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Weapon system</string>
@@ -5162,7 +5448,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There exists three ammunition types: bullet, scatter and explosive.&lt;/p&gt;&lt;p&gt;These ammunition types can be fired with three different firing modes: single, semi and auto.&lt;/p&gt;&lt;p&gt;The weapon can have one ammuniton type and one firing mode active.&lt;/p&gt;&lt;p&gt;The active ammunition type and firing mode can be changed anytime during a match.&lt;/p&gt;&lt;p&gt;When changing active ammunition type or firing mode the crosshair will change appearance to represent your selection.&lt;/p&gt;&lt;p&gt;The small dots near the crosshair denotes the active firing mode.&lt;/p&gt;&lt;p&gt;The number of dots also represent the power of the firing mode, where fewer dots represent higher power.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There exists three ammunition types: bullet, scatter and explosive.&lt;/p&gt;&lt;p&gt;These ammunition types can be fired with three different firing modes: single, semi and auto.&lt;/p&gt;&lt;p&gt;The weapon can have one ammuniton type and one firing mode active.&lt;/p&gt;&lt;p&gt;The active ammunition type and firing mode can be changed anytime during a match.&lt;/p&gt;&lt;p&gt;When changing active ammunition type or firing mode the crosshair will change appearance to represent your selection.&lt;/p&gt;&lt;p&gt;The small dots near the crosshair denotes the active firing mode.&lt;/p&gt;&lt;p&gt;The number of dots also represent the power of the firing mode, where fewer dots represent higher power.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5180,7 +5466,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*1 dot = single&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;1 dot = &lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;single&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5198,7 +5484,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*2 dots = semi&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;2 dots = &lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;semi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5216,7 +5502,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*3 dots = auto&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;3 dots = &lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;auto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5229,8 +5515,8 @@ The last surviving process will be given a priority reward, the process will res
               <item>
                <widget class="QLabel" name="label_in_6">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Arenas</string>
@@ -5261,8 +5547,8 @@ The last surviving process will be given a priority reward, the process will res
               <item>
                <widget class="QLabel" name="label_in_7">
                 <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);</string>
+                 <string notr="true">color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
                 </property>
                 <property name="text">
                  <string>Hacks</string>
@@ -5762,12 +6048,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>684</x>
-     <y>160</y>
+     <x>544</x>
+     <y>11</y>
     </hint>
     <hint type="destinationlabel">
-     <x>598</x>
-     <y>133</y>
+     <x>514</x>
+     <y>-16</y>
     </hint>
    </hints>
   </connection>
@@ -5778,12 +6064,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>687</x>
-     <y>610</y>
+     <x>130</x>
+     <y>746</y>
     </hint>
     <hint type="destinationlabel">
-     <x>659</x>
-     <y>565</y>
+     <x>108</x>
+     <y>741</y>
     </hint>
    </hints>
   </connection>
@@ -5794,12 +6080,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2077</x>
-     <y>328</y>
+     <x>2370</x>
+     <y>387</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1944</x>
-     <y>299</y>
+     <x>2387</x>
+     <y>349</y>
     </hint>
    </hints>
   </connection>
@@ -5810,12 +6096,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2077</x>
-     <y>259</y>
+     <x>2370</x>
+     <y>318</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1966</x>
-     <y>230</y>
+     <x>2406</x>
+     <y>280</y>
     </hint>
    </hints>
   </connection>
@@ -5826,12 +6112,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2077</x>
-     <y>397</y>
+     <x>2370</x>
+     <y>456</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1977</x>
-     <y>368</y>
+     <x>2410</x>
+     <y>418</y>
     </hint>
    </hints>
   </connection>
@@ -5842,12 +6128,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>772</x>
-     <y>530</y>
+     <x>130</x>
+     <y>732</y>
     </hint>
     <hint type="destinationlabel">
-     <x>651</x>
-     <y>487</y>
+     <x>108</x>
+     <y>727</y>
     </hint>
    </hints>
   </connection>
@@ -5858,12 +6144,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>111</x>
-     <y>485</y>
+     <x>91</x>
+     <y>392</y>
     </hint>
     <hint type="destinationlabel">
-     <x>103</x>
-     <y>458</y>
+     <x>83</x>
+     <y>366</y>
     </hint>
    </hints>
   </connection>
@@ -5874,12 +6160,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2063</x>
-     <y>526</y>
+     <x>2356</x>
+     <y>585</y>
     </hint>
     <hint type="destinationlabel">
-     <x>2006</x>
-     <y>497</y>
+     <x>2434</x>
+     <y>547</y>
     </hint>
    </hints>
   </connection>
@@ -5890,12 +6176,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2077</x>
-     <y>595</y>
+     <x>2370</x>
+     <y>654</y>
     </hint>
     <hint type="destinationlabel">
-     <x>2011</x>
-     <y>566</y>
+     <x>2443</x>
+     <y>616</y>
     </hint>
    </hints>
   </connection>
@@ -5906,12 +6192,12 @@ The last surviving process will be given a priority reward, the process will res
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>2077</x>
-     <y>664</y>
+     <x>2370</x>
+     <y>723</y>
     </hint>
     <hint type="destinationlabel">
-     <x>2009</x>
-     <y>635</y>
+     <x>2439</x>
+     <y>685</y>
     </hint>
    </hints>
   </connection>

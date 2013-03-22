@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/credits/fbx-logo.png</file>
+    <file>images/credits/bullet_logo.png</file>
+    <file>images/credits/fmod-logo.png</file>
+    <file>images/credits/qt-logo.png</file>
     <file>images/wiki/arena1.png</file>
     <file>fonts/imagine_font.ttf</file>
     <file>images/icons/hacks/hack_cyclesteal.png</file>
