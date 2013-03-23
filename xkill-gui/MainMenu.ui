@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>2327</width>
-    <height>2032</height>
+    <height>2438</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1729,806 +1729,6 @@ font-size: 20px;</string>
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_credits">
-    <property name="geometry">
-     <rect>
-      <x>1020</x>
-      <y>30</y>
-      <width>781</width>
-      <height>1211</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">/* LABEL*/
-QLabel
-{
-	font-size: 20px;
-	font-family: 'Sans-serif';
-
-
-
-	font-family: 'Caviar Dreams';
-	font-family: 'Champagne &amp; Limousines';
-	font-family: 'King Richard';
-
-
-	background-color: rgba(240, 240, 230, 100);
-}
-
-#label_cred_prog, #label_cred_art, #label_cred_3d, #label_cred_sound,
-#label_cred_music, #label_cred_leveld, #label_cred_thanksto
-{
-	margin-top: 40px;
-	padding: -2px 2px;
-	padding-top: 1px;
-	font-family: 'Bebas Neue'; font-size: 22px; text-transform: uppercase; font-weight: normal;
-}
-
-QLabel
-{
-	background-color: rgba(0, 0, 230, 100);
-}
-
-
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_15">
-     <item>
-      <spacer name="horizontalSpacer_35">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QScrollArea" name="scrollArea">
-       <property name="minimumSize">
-        <size>
-         <width>700</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QFrame
- {
-	 background: rgba(10, 10, 0, 0);
- }</string>
-       </property>
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="scrollAreaWidgetContents">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>-756</y>
-          <width>683</width>
-          <height>2132</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_17">
-         <item>
-          <spacer name="verticalSpacer_16">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
-           <item>
-            <spacer name="horizontalSpacer_36">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QGroupBox" name="groupBox_17">
-             <property name="minimumSize">
-              <size>
-               <width>400</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>400</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="title">
-              <string/>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_39">
-              <item>
-               <widget class="QLabel" name="label_46">
-                <property name="styleSheet">
-                 <string notr="true">/* LABEL*/
-QLabel
-{
-	font-family: 'Arcade Interlaced';
-}</string>
-                </property>
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_undertitle">
-                <property name="styleSheet">
-                 <string notr="true">font-family: 'Pixel Square'; font-size:22px; font-weight: normal;</string>
-                </property>
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_prog">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>Programming</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_24">
-                <property name="text">
-                 <string>Mattias Andersson</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_26">
-                <property name="text">
-                 <string>David Grelsson </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_25">
-                <property name="text">
-                 <string>Nils Forsman </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_28">
-                <property name="text">
-                 <string>Henrik Nell </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_29">
-                <property name="text">
-                 <string> Eric Nilsson </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_30">
-                <property name="text">
-                 <string>Viktor Sidén</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_art">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>Art</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_34">
-                <property name="text">
-                 <string>Oliver Blomgren</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_31">
-                <property name="text">
-                 <string>Adam Åberg</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_3d">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>3D</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_36">
-                <property name="text">
-                 <string>David Grelsson </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_37">
-                <property name="text">
-                 <string>Nils Forsman </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_35">
-                <property name="text">
-                 <string>Daniel Oldberg </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_sound">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>Sound</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_40">
-                <property name="text">
-                 <string>Jesper Palm</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_leveld">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>Level Design</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_5">
-                <property name="text">
-                 <string>Olle Karlsson</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_cred_thanksto">
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgba(240, 240, 230, 220);
-color: rgab(10, 10, 10, 240);
-
-
-color: rgba(240, 240, 230, 150);
-background-color: rgba(240, 240, 230, 50);</string>
-                </property>
-                <property name="text">
-                 <string>Thanks to</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_32">
-                <property name="text">
-                 <string>Jon Widén</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_41">
-                <property name="text">
-                 <string>Johan Mauritzon</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_66">
-                <property name="text">
-                 <string>Jimmy Johnsson</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_23">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_48">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_56">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_55">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_69">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;MUSIC&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;This game contains a selection of music from the game&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; EVE Online&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, The music is licensed under &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Creative Commons Attribution 3.0 Unported&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. &lt;br/&gt;&lt;br/&gt;All credits is attributed to &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;CCPGames&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. The music was acquired from &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SoundCloud&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;.&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_53">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_67">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AUDIO ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;FMOD Sound System by Firelight Technologies&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_50">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_46">
-                <item>
-                 <widget class="QLabel" name="label_68">
-                  <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;GUI&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Qt 4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_65">
-                  <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;PHYSICS ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;Bullet Physics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_54">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_69">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_70">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;This software contains Autodesk® FBX® code developed by Autodesk, Inc. Copyright 2008 Autodesk, Inc.  All rights, reserved. Such code is provided &amp;quot;as is&amp;quot; and Autodesk, Inc. disclaims any and all warranties, whether express or implied, including without limitation the implied warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights.  In no event shall Autodesk, Inc. be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of such code.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_49">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_22">
-                <item>
-                 <widget class="QLabel" name="label_15">
-                  <property name="maximumSize">
-                   <size>
-                    <width>175</width>
-                    <height>75</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">
-</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/bullet_logo.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_14">
-                  <property name="maximumSize">
-                   <size>
-                    <width>100</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/qt-logo.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_45">
-                <item>
-                 <widget class="QLabel" name="label_17">
-                  <property name="maximumSize">
-                   <size>
-                    <width>175</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fmod-logo.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_18">
-                  <property name="maximumSize">
-                   <size>
-                    <width>50</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fbx-logo.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_34">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
-             <zorder>label_35</zorder>
-             <zorder>label_29</zorder>
-             <zorder>label_34</zorder>
-             <zorder>label_28</zorder>
-             <zorder>label_5</zorder>
-             <zorder>label_25</zorder>
-             <zorder>label_37</zorder>
-             <zorder>label_40</zorder>
-             <zorder>label_26</zorder>
-             <zorder>label_36</zorder>
-             <zorder>label_24</zorder>
-             <zorder>label_undertitle</zorder>
-             <zorder>label_30</zorder>
-             <zorder>label_31</zorder>
-             <zorder>label_46</zorder>
-             <zorder>label_cred_leveld</zorder>
-             <zorder>label_cred_prog</zorder>
-             <zorder>label_cred_art</zorder>
-             <zorder>label_cred_3d</zorder>
-             <zorder>label_cred_sound</zorder>
-             <zorder>label_cred_thanksto</zorder>
-             <zorder>label_32</zorder>
-             <zorder>horizontalSpacer_34</zorder>
-             <zorder>horizontalSpacer_48</zorder>
-             <zorder>label_41</zorder>
-             <zorder>label_66</zorder>
-             <zorder></zorder>
-             <zorder></zorder>
-             <zorder>label_67</zorder>
-             <zorder></zorder>
-             <zorder>horizontalSpacer_49</zorder>
-             <zorder>horizontalSpacer_50</zorder>
-             <zorder>horizontalSpacer_53</zorder>
-             <zorder>horizontalSpacer_54</zorder>
-             <zorder>label_70</zorder>
-             <zorder>label_69</zorder>
-             <zorder>horizontalSpacer_55</zorder>
-             <zorder>horizontalSpacer_56</zorder>
-             <zorder>horizontalSpacer_69</zorder>
-            </widget>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_30">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_15">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_37">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-    </layout>
-   </widget>
    <widget class="QFrame" name="frame_input">
     <property name="geometry">
      <rect>
@@ -2882,7 +2082,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2505</height>
+          <height>2274</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -5243,7 +4443,7 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-55</y>
+          <y>0</y>
           <width>683</width>
           <height>3149</height>
          </rect>
@@ -6034,11 +5234,798 @@ The last surviving process will be given a priority reward, the process will res
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QFrame" name="frame_credits">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>50</y>
+      <width>781</width>
+      <height>1211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* LABEL*/
+QLabel
+{
+	font-size: 20px;
+	font-family: 'Sans-serif';
+
+
+
+	font-family: 'Caviar Dreams';
+	font-family: 'Champagne &amp; Limousines';
+	font-family: 'King Richard';
+
+
+	background-color: rgba(240, 240, 230, 100);
+}
+
+#label_cred_prog, #label_cred_art, #label_cred_3d, #label_cred_sound,
+#label_cred_music, #label_cred_leveld, #label_cred_thanksto
+{
+	margin-top: 40px;
+	padding: -2px 2px;
+	padding-top: 1px;
+	font-family: 'Bebas Neue'; font-size: 22px; text-transform: uppercase; font-weight: normal;
+}
+
+QLabel
+{
+	background-color: rgba(0, 0, 230, 100);
+}
+
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_15">
+     <item>
+      <spacer name="horizontalSpacer_35">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="minimumSize">
+        <size>
+         <width>700</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame
+ {
+	 background: rgba(10, 10, 0, 0);
+ }</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>683</width>
+          <height>2132</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_17">
+         <item>
+          <spacer name="verticalSpacer_16">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer_36">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_17">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>400</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_39">
+              <item>
+               <widget class="QLabel" name="label_46">
+                <property name="styleSheet">
+                 <string notr="true">/* LABEL*/
+QLabel
+{
+	font-family: 'Arcade Interlaced';
+}</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;XKILL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_undertitle">
+                <property name="styleSheet">
+                 <string notr="true">font-family: 'Pixel Square'; font-size:22px; font-weight: normal;</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Heartaches by the Cycle&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2013&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_prog">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>Programming</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>Mattias Andersson</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>David Grelsson </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>Nils Forsman </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>Henrik Nell </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string> Eric Nilsson </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string>Viktor Sidén</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_art">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>Art</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_34">
+                <property name="text">
+                 <string>Oliver Blomgren</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_31">
+                <property name="text">
+                 <string>Adam Åberg</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_3d">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>3D</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_36">
+                <property name="text">
+                 <string>David Grelsson </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_37">
+                <property name="text">
+                 <string>Nils Forsman </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_35">
+                <property name="text">
+                 <string>Daniel Oldberg </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_sound">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>Sound</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string>Jesper Palm</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_leveld">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>Level Design</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Olle Karlsson</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_cred_thanksto">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(240, 240, 230, 220);
+color: rgab(10, 10, 10, 240);
+
+
+color: rgba(240, 240, 230, 150);
+background-color: rgba(240, 240, 230, 50);</string>
+                </property>
+                <property name="text">
+                 <string>Thanks to</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>Jon Widén</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>Johan Mauritzon</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_66">
+                <property name="text">
+                 <string>Jimmy Johnsson</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_23">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_48">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_56">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_55">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_69">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;MUSIC&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;This game contains a selection of music from the game&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; EVE Online&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, The music is licensed under &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Creative Commons Attribution 3.0 Unported&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. &lt;br/&gt;&lt;br/&gt;All credits is attributed to &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;CCPGames&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;. The music was acquired from &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SoundCloud&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;.&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_53">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_67">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AUDIO ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;FMOD Sound System by Firelight Technologies&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_50">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_46">
+                <item>
+                 <widget class="QLabel" name="label_68">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;GUI&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Qt 4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_65">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;PHYSICS ENGINE&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;Bullet Physics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_54">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_69">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_70">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;This software contains Autodesk® FBX® code developed by Autodesk, Inc. Copyright 2008 Autodesk, Inc.  All rights, reserved. Such code is provided &amp;quot;as is&amp;quot; and Autodesk, Inc. disclaims any and all warranties, whether express or implied, including without limitation the implied warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights.  In no event shall Autodesk, Inc. be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of such code.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_49">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="maximumSize">
+                   <size>
+                    <width>175</width>
+                    <height>75</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/bullet_logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_14">
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/qt-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_45">
+                <item>
+                 <widget class="QLabel" name="label_17">
+                  <property name="maximumSize">
+                   <size>
+                    <width>175</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fmod-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fbx-logo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_34">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+             <zorder>label_35</zorder>
+             <zorder>label_29</zorder>
+             <zorder>label_34</zorder>
+             <zorder>label_28</zorder>
+             <zorder>label_5</zorder>
+             <zorder>label_25</zorder>
+             <zorder>label_37</zorder>
+             <zorder>label_40</zorder>
+             <zorder>label_26</zorder>
+             <zorder>label_36</zorder>
+             <zorder>label_24</zorder>
+             <zorder>label_undertitle</zorder>
+             <zorder>label_30</zorder>
+             <zorder>label_31</zorder>
+             <zorder>label_46</zorder>
+             <zorder>label_cred_leveld</zorder>
+             <zorder>label_cred_prog</zorder>
+             <zorder>label_cred_art</zorder>
+             <zorder>label_cred_3d</zorder>
+             <zorder>label_cred_sound</zorder>
+             <zorder>label_cred_thanksto</zorder>
+             <zorder>label_32</zorder>
+             <zorder>label_41</zorder>
+             <zorder>label_66</zorder>
+             <zorder>label_67</zorder>
+             <zorder>label_70</zorder>
+             <zorder>label_69</zorder>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_30">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_15">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_37">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
+  <include location="../../xkill-resources - Copy/xkill-gui/xkill.qrc"/>
  </resources>
  <connections>
   <connection>
