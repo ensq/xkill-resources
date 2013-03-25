@@ -1,5 +1,15 @@
 <RCC>
   <qresource prefix="/xkill">
+    <file>images/credits/530187203.png</file>
+    <file>images/credits/537503535.png</file>
+    <file>images/credits/537503537.png</file>
+    <file>images/credits/537503549.png</file>
+    <file>images/credits/537503551.png</file>
+    <file>images/credits/537503961.png</file>
+    <file>images/credits/538853935.png</file>
+    <file>images/credits/538867647.png</file>
+    <file>images/credits/538878103.png</file>
+    <file>images/credits/538881387.png</file>
     <file>images/credits/fbx-logo.png</file>
     <file>images/credits/bullet_logo.png</file>
     <file>images/credits/fmod-logo.png</file>

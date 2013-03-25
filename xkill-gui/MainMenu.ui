@@ -2082,7 +2082,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2274</height>
+          <height>2505</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -4443,9 +4443,9 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-2151</y>
           <width>683</width>
-          <height>3149</height>
+          <height>3997</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_46">
@@ -4585,16 +4585,6 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_11">
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="pixmap">
-                 <pixmap resource="xkill.qrc">:/xkill/images/icons/hacks/state_executing.png</pixmap>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QLabel" name="label_in_4">
                 <property name="styleSheet">
                  <string notr="true">color: rgba(240, 240, 230, 150);
@@ -4713,6 +4703,111 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
+               <widget class="QLabel" name="label_81">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_53">
+                <item>
+                 <spacer name="horizontalSpacer_112">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_87">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503551.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_83">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503535.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_86">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538881387.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_113">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
                <widget class="QLabel" name="label_in_6">
                 <property name="styleSheet">
                  <string notr="true">color: rgba(240, 240, 230, 150);
@@ -4828,14 +4923,71 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_4">
-                <property name="text">
-                 <string/>
+               <widget class="QLabel" name="label_78">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
-                <property name="pixmap">
-                 <pixmap resource="xkill.qrc">:/xkill/images/icons/hacks/hack_speed.png</pixmap>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_52">
+                <item>
+                 <spacer name="horizontalSpacer_110">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_80">
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538878103.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_111">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_52">
@@ -4889,14 +5041,71 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_6">
-                <property name="text">
-                 <string/>
+               <widget class="QLabel" name="label_71">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
-                <property name="pixmap">
-                 <pixmap resource="xkill.qrc">:/xkill/images/icons/hacks/hack_jet.png</pixmap>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_48">
+                <item>
+                 <spacer name="horizontalSpacer_101">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503537.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_102">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_53">
@@ -4950,14 +5159,71 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_8">
-                <property name="text">
-                 <string/>
+               <widget class="QLabel" name="label_72">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
-                <property name="pixmap">
-                 <pixmap resource="xkill.qrc">:/xkill/images/icons/hacks/hack_cyclesteal.png</pixmap>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_49">
+                <item>
+                 <spacer name="horizontalSpacer_103">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_23">
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503549.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_104">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_55">
@@ -5011,14 +5277,71 @@ The last surviving process will be given a priority reward, the process will res
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="label_9">
-                <property name="text">
-                 <string/>
+               <widget class="QLabel" name="label_73">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
-                <property name="pixmap">
-                 <pixmap resource="xkill.qrc">:/xkill/images/icons/hacks/hack_power.png</pixmap>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_50">
+                <item>
+                 <spacer name="horizontalSpacer_105">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_74">
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/530187203.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_106">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_58">
@@ -5070,6 +5393,73 @@ The last surviving process will be given a priority reward, the process will res
                  <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_75">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_51">
+                <item>
+                 <spacer name="horizontalSpacer_107">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_77">
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538867647.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_109">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_61">
@@ -5237,7 +5627,7 @@ The last surviving process will be given a priority reward, the process will res
    <widget class="QFrame" name="frame_credits">
     <property name="geometry">
      <rect>
-      <x>1200</x>
+      <x>1670</x>
       <y>50</y>
       <width>781</width>
       <height>1211</height>
@@ -6025,7 +6415,6 @@ background-color: rgba(240, 240, 230, 50);</string>
  </widget>
  <resources>
   <include location="xkill.qrc"/>
-  <include location="../../xkill-resources - Copy/xkill-gui/xkill.qrc"/>
  </resources>
  <connections>
   <connection>
