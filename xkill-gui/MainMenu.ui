@@ -2082,7 +2082,7 @@ QPushButton
           <x>0</x>
           <y>0</y>
           <width>683</width>
-          <height>2505</height>
+          <height>2442</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -4443,9 +4443,9 @@ QLabel
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-2151</y>
+          <y>-2429</y>
           <width>683</width>
-          <height>3997</height>
+          <height>4770</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_46">
@@ -4502,7 +4502,8 @@ QLabel
                <widget class="QLabel" name="label_in_1">
                 <property name="styleSheet">
                  <string notr="true">	color: rgba(240, 240, 230, 150);
-	background-color: rgba(240, 240, 230, 50);</string>
+	background-color: rgba(240, 240, 230, 50);
+	margin-top: 0;</string>
                 </property>
                 <property name="text">
                  <string>XKILL Backstory</string>
@@ -4515,13 +4516,44 @@ QLabel
               <item>
                <widget class="QLabel" name="label_27">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In a forgotten store-room rests an ancient single-core processor.&lt;/p&gt;&lt;p&gt;In this harsh landscape, before multicore-technology, fierce gladiator tournaments are fought in digital arenas by processes struggling to be granted processor execution time (cycles) by the scheduler.&lt;/p&gt;&lt;p&gt;These tournaments consist of deadly combat as the processes battle to destroy one another.&lt;/p&gt;&lt;p&gt;The incentive for battle is that only one process at a time can execute on the processor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In a forgotten store-room rests an ancient single-core processor.&lt;/p&gt;&lt;p&gt;In this harsh landscape, before multicore-technology, fierce gladiator tournaments are fought in digital arenas by processes struggling to be granted processor execution time (&lt;span style=&quot; font-weight:600;&quot;&gt;cycles&lt;/span&gt;) by the scheduler.&lt;/p&gt;&lt;p&gt;These tournaments consist of deadly combat as the processes battle to destroy one another.&lt;/p&gt;&lt;p&gt;The incentive for battle is that only one process at a time can execute on the processor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_112">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_116">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="xkill.qrc">:/xkill/images/credits/banner.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>false</bool>
                 </property>
                </widget>
               </item>
@@ -4542,7 +4574,7 @@ background-color: rgba(240, 240, 230, 50);</string>
               <item>
                <widget class="QLabel" name="label_33">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You are playing as one the processes inside a single-core processor. &lt;/p&gt;&lt;p&gt;Priority is awarded to a process when it terminates another process. The goal of XKILL is to have as many cycles as possible.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Cycles can be retrieved in two ways:&lt;/p&gt;&lt;p&gt;By being &lt;span style=&quot; font-style:italic;&quot;&gt;executed&lt;/span&gt; (refer to &amp;quot;Execution&amp;quot;)&lt;br/&gt;By &lt;span style=&quot; font-style:italic;&quot;&gt;cycle-stealing&lt;/span&gt; (refer to &amp;quot;Cyclehack&amp;quot;)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;The game will end when one process reaches the cycle limit, or when the time limit is up.&lt;/p&gt;&lt;p&gt;The cycle limit, time limit and a bunch of other settings can be set in the &amp;quot;customize&amp;quot; menu before starting a match.&lt;/p&gt;&lt;p&gt;The winner of a match is the process having the most cycles.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You are playing as one the &lt;span style=&quot; text-decoration: underline;&quot;&gt;processes&lt;/span&gt; inside a &lt;span style=&quot; text-decoration: underline;&quot;&gt;single-core processor&lt;/span&gt;. &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Priority&lt;/span&gt; is awarded to a process when it terminates another process. The goal of XKILL is to have as many &lt;span style=&quot; font-weight:600;&quot;&gt;cycles&lt;/span&gt; as possible.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cycles&lt;/span&gt; can be retrieved in two ways:&lt;/p&gt;&lt;p&gt;By being &lt;span style=&quot; text-decoration: underline;&quot;&gt;executed&lt;/span&gt; (refer to &amp;quot;Execution&amp;quot;)&lt;br/&gt;By &lt;span style=&quot; text-decoration: underline;&quot;&gt;cycle-stealing&lt;/span&gt; (refer to &amp;quot;Cyclehack&amp;quot;)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;The game will end when one process reaches the &lt;span style=&quot; text-decoration: underline;&quot;&gt;cycle limit&lt;/span&gt;, or when the &lt;span style=&quot; text-decoration: underline;&quot;&gt;time limit&lt;/span&gt; is up.&lt;/p&gt;&lt;p&gt;The cycle limit, time limit and a bunch of other settings can be set in the &lt;span style=&quot; text-decoration: underline;&quot;&gt;customize&lt;/span&gt; menu before starting a match.&lt;/p&gt;&lt;p&gt;The winner of a match is the process having the most &lt;span style=&quot; font-weight:600;&quot;&gt;cycles&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4574,7 +4606,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;At regular intervals one process will be selected for execution by the scheduler.&lt;/p&gt;&lt;p&gt;During execution priority is exchanged for cycles.&lt;/p&gt;&lt;p&gt;The scheduler will select the process with the highest priority at the time of selection.&lt;/p&gt;&lt;p&gt;Being executed is not as harsh as it sounds.&lt;/p&gt;&lt;p&gt;The process being executed is granted a powerful laser weapon (Laser Automatic Sniper Execution Ray) for the duration of the execution.&lt;/p&gt;&lt;p&gt;If the executing process is terminated during execution the laser weapon will be lost along with all the unexchanged priority.&lt;/p&gt;&lt;p&gt;A process terminating the executing process will be given a priority reward.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;At regular intervals one process will be selected for &lt;span style=&quot; text-decoration: underline;&quot;&gt;execution&lt;/span&gt; by the scheduler.&lt;/p&gt;&lt;p&gt;During execution &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt; is exchanged for &lt;span style=&quot; font-weight:600;&quot;&gt;cycles&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;The scheduler will select the process with the highest &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt; at the time of selection.&lt;/p&gt;&lt;p&gt;Being executed is not as harsh as it sounds.&lt;/p&gt;&lt;p&gt;The process being executed is granted a powerful laser weapon (&lt;span style=&quot; font-style:italic;&quot;&gt;Laser Automatic Sniper Execution Ray&lt;/span&gt;) for the duration of the execution.&lt;/p&gt;&lt;p&gt;If the &lt;span style=&quot; font-style:italic;&quot;&gt;executing&lt;/span&gt; process is terminated during execution the laser weapon will be lost along with all the unexchanged &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;A process terminating the executing process will be given a &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt; reward.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4583,6 +4615,105 @@ The last surviving process will be given a priority reward, the process will res
                  <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_99">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_54">
+                <item>
+                 <spacer name="horizontalSpacer_114">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_89">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>:/xkill/images/credits/537503551.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_91">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/execution.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_93">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>:/xkill/images/credits/538881387.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_115">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_in_4">
@@ -4606,7 +4737,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If no process has the highest priority at the time of the scheduler's selection, the null process will run.&lt;/p&gt;&lt;p&gt;The null process represents a sudden death mode where the world is falling apart and no process will be able to respawn when terminated or falling out of bounds.&lt;/p&gt;&lt;p&gt;When only one process remains, the null process will stop its execution.&lt;/p&gt;&lt;p&gt;The last surviving process will be given a priority reward, all process will respawn, and the world will be reassembled.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If no process has the highest &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt; at the time of the scheduler's selection, the &lt;span style=&quot; text-decoration: underline;&quot;&gt;null process&lt;/span&gt; will run.&lt;/p&gt;&lt;p&gt;The null process represents a sudden death mode where the world is falling apart and no process will be able to respawn when terminated or falling out of bounds.&lt;/p&gt;&lt;p&gt;When only one process remains, the null process will stop its execution.&lt;/p&gt;&lt;p&gt;The last surviving process will be given a &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt; reward, all process will respawn, and the world will be reassembled.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4615,6 +4746,105 @@ The last surviving process will be given a priority reward, the process will res
                  <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_105">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_55">
+                <item>
+                 <spacer name="horizontalSpacer_116">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_100">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>:/xkill/images/credits/537503551.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_102">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/nullprocess.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_103">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>:/xkill/images/credits/538881387.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_117">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
               <item>
                <widget class="QLabel" name="label_in_5">
@@ -4638,7 +4868,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There exists three ammunition types: bullet, scatter and explosive.&lt;/p&gt;&lt;p&gt;These ammunition types can be fired with three different firing modes: single, semi and auto.&lt;/p&gt;&lt;p&gt;The weapon can have one ammuniton type and one firing mode active.&lt;/p&gt;&lt;p&gt;The active ammunition type and firing mode can be changed anytime during a match.&lt;/p&gt;&lt;p&gt;When changing active ammunition type or firing mode the crosshair will change appearance to represent your selection.&lt;/p&gt;&lt;p&gt;The small dots near the crosshair denotes the active firing mode.&lt;/p&gt;&lt;p&gt;The number of dots also represent the power of the firing mode, where fewer dots represent higher power.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;There exists three &lt;span style=&quot; text-decoration: underline;&quot;&gt;ammunition types&lt;/span&gt;: &lt;span style=&quot; font-weight:600;&quot;&gt;bullet&lt;/span&gt;, &lt;span style=&quot; font-weight:600;&quot;&gt;scatter&lt;/span&gt; and &lt;span style=&quot; font-weight:600;&quot;&gt;explosive&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;These ammunition types can be fired with three different firing modes: &lt;span style=&quot; font-weight:600;&quot;&gt;single&lt;/span&gt;, &lt;span style=&quot; font-weight:600;&quot;&gt;semi&lt;/span&gt; and &lt;span style=&quot; font-weight:600;&quot;&gt;auto&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;The weapon can have one ammuniton type and one firing mode active.&lt;/p&gt;&lt;p&gt;The active ammunition type and firing mode can be changed anytime during a match.&lt;/p&gt;&lt;p&gt;When changing active ammunition type or firing mode the crosshair will change appearance to represent your selection.&lt;/p&gt;&lt;p&gt;The small dots near the crosshair denotes the active &lt;span style=&quot; text-decoration: underline;&quot;&gt;firing mode&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;The number of dots also represent the power of the firing mode, where fewer dots represent higher power.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4736,6 +4966,19 @@ The last surviving process will be given a priority reward, the process will res
                  </spacer>
                 </item>
                 <item>
+                 <widget class="QLabel" name="label_83">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hud_ammo.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
                  <widget class="QLabel" name="label_87">
                   <property name="maximumSize">
                    <size>
@@ -4747,7 +4990,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503551.png</pixmap>
+                   <pixmap>:/xkill/images/credits/537503551.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -4755,18 +4998,12 @@ The last surviving process will be given a priority reward, the process will res
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_83">
-                  <property name="maximumSize">
-                   <size>
-                    <width>120</width>
-                    <height>100</height>
-                   </size>
-                  </property>
+                 <widget class="QLabel" name="label_108">
                   <property name="text">
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503535.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hud_aim.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -4785,7 +5022,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538881387.png</pixmap>
+                   <pixmap>:/xkill/images/credits/538881387.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -4861,7 +5098,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;On the arenas of XKILL a number of different hacks can be found.&lt;/p&gt;&lt;p&gt;Picking up a hack will improve the combat ability of the process for a given time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;On the arenas of XKILL a number of different &lt;span style=&quot; font-weight:600;&quot;&gt;hacks&lt;/span&gt; can be found.&lt;/p&gt;&lt;p&gt;Picking up a &lt;span style=&quot; font-weight:600;&quot;&gt;hack&lt;/span&gt; will improve the &lt;span style=&quot; text-decoration: underline;&quot;&gt;combat ability&lt;/span&gt; of the process for a given time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4873,6 +5110,67 @@ The last surviving process will be given a priority reward, the process will res
               </item>
               <item>
                <widget class="QLabel" name="label_51">
+                <property name="styleSheet">
+                 <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
+The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
+The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_56">
+                <item>
+                 <spacer name="horizontalSpacer_118">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_109">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hud-icons.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_119">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_110">
                 <property name="styleSheet">
                  <string notr="true">If no process has the highest prority at the time of the scheduler selection, the null process will run.
 The null process is a form of sudden death mode where the world is falling apart and no process will be able to respawn.
@@ -4912,7 +5210,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increases the movement speed of the process.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increases the movement &lt;span style=&quot; text-decoration: underline;&quot;&gt;speed&lt;/span&gt; of the process.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4967,7 +5265,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538878103.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hack_speed.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -5030,7 +5328,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process the ability to fly.&lt;/p&gt;&lt;p&gt;If a process is hit by a projectile the jethack will be deactivated for a short&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process the ability to &lt;span style=&quot; text-decoration: underline;&quot;&gt;fly&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;If a process is hit by a projectile the &lt;span style=&quot; text-decoration: underline;&quot;&gt;jethack&lt;/span&gt; will be deactivated for a short while.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5085,7 +5383,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503537.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hack_jet.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -5148,7 +5446,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process the ability to steal cycles from other processes.&lt;/p&gt;&lt;p&gt;When terminating another process, cycles will be awarded instead of priority.&lt;/p&gt;&lt;p&gt;The terminated process will lose a cycle if terminated by a process having cyclehack active.&lt;/p&gt;&lt;p&gt;The act of terminating another process using cyclehack is referred to as &amp;quot;cycle-stealing&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process the ability to &lt;span style=&quot; text-decoration: underline;&quot;&gt;steal&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; cycles&lt;/span&gt; from other processes.&lt;/p&gt;&lt;p&gt;When terminating another process, &lt;span style=&quot; font-weight:600;&quot;&gt;cycles&lt;/span&gt; will be awarded instead of &lt;span style=&quot; font-weight:600;&quot;&gt;priority&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;The terminated process will lose a &lt;span style=&quot; font-weight:600;&quot;&gt;cycle&lt;/span&gt; if terminated by a process having &lt;span style=&quot; text-decoration: underline;&quot;&gt;cyclehack&lt;/span&gt; active.&lt;/p&gt;&lt;p&gt;The act of terminating another process using cyclehack is referred to as &lt;span style=&quot; text-decoration: underline;&quot;&gt;cycle-stealing&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5203,7 +5501,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/537503549.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hack_cycle.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -5266,7 +5564,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Doubles the damage the process does when firing a weapon.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Doubles the &lt;span style=&quot; text-decoration: underline;&quot;&gt;damage&lt;/span&gt; the process does when firing a weapon.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5321,7 +5619,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/530187203.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hack_power.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -5384,7 +5682,7 @@ The null process is a form of sudden death mode where the world is falling apart
 The last surviving process will be given a priority reward, the process will respawn, and the world will be reassembled.</string>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process a random hack.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gives the process a &lt;span style=&quot; text-decoration: underline;&quot;&gt;random&lt;/span&gt; hack.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -5439,7 +5737,7 @@ The last surviving process will be given a priority reward, the process will res
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/538867647.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/hack_question.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -5630,7 +5928,7 @@ The last surviving process will be given a priority reward, the process will res
       <x>1670</x>
       <y>50</y>
       <width>781</width>
-      <height>1211</height>
+      <height>2181</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -5709,8 +6007,8 @@ QLabel
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>683</width>
-          <height>2132</height>
+          <width>700</width>
+          <height>2153</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -6251,7 +6549,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/bullet_logo.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/logo_bullet.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -6270,7 +6568,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/qt-logo.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/logo_qt.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -6293,7 +6591,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fmod-logo.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/logo_fmod.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -6312,7 +6610,7 @@ background-color: rgba(240, 240, 230, 50);</string>
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="xkill.qrc">:/xkill/images/credits/fbx-logo.png</pixmap>
+                   <pixmap resource="xkill.qrc">:/xkill/images/credits/logo_fbx.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>

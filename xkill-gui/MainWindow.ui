@@ -117,8 +117,8 @@
             <string notr="true">QTreeView
 {
 	/*Violet*/
-	background-color: #FFFEDF;
-	alternate-background-color: #FFFDC2;
+	background-color: #FFFFFF;
+	alternate-background-color: #F6F6F6;
 }</string>
            </property>
            <property name="alternatingRowColors">
